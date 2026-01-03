@@ -45,9 +45,9 @@
       if (!logo) return;
 
       if (theme === "dark") {
-        logo.src = "images/DemonLogoWhite.png";
-      } else {
         logo.src = "images/DemonLogoBlack.png";
+      } else {
+        logo.src = "images/DemonLogoWhite.png";
       }
     },
 
@@ -134,6 +134,12 @@
   const CollapsibleNav = {
     init() {
       this.sections = document.querySelectorAll(".nav-section");
+      // Reset old state format (one-time migration)
+      const version = localStorage.getItem("pocketdemon-nav-version");
+      if (version !== "2") {
+        localStorage.removeItem("pocketdemon-nav-state");
+        localStorage.setItem("pocketdemon-nav-version", "2");
+      }
       this.loadState();
       this.bindEvents();
     },
@@ -146,9 +152,9 @@
       this.sections.forEach((section) => {
         const title = section.querySelector(".nav-section-title")?.textContent;
         if (title) {
-          // Default to collapsed
-          const isCollapsed = savedState[title] !== false;
-          if (isCollapsed) {
+          // Check if explicitly set to open (true), otherwise collapse
+          const isOpen = savedState[title] === true;
+          if (!isOpen) {
             section.classList.add("collapsed");
           }
         }
@@ -160,6 +166,7 @@
       this.sections.forEach((section) => {
         const title = section.querySelector(".nav-section-title")?.textContent;
         if (title) {
+          // Save true if open, false if collapsed
           state[title] = !section.classList.contains("collapsed");
         }
       });
