@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venues - PocketDemon Manual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <h1>PocketDemon</h1>
+            <p class="tagline">Concert Tracker</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="getting-started.html">Getting Started</a></li>
+            <li class="nav-section">Core Features</li>
+            <li><a href="bands.html">Bands</a></li>
+            <li><a href="events.html">Events & Concerts</a></li>
+            <li><a href="venues.html" class="active">Venues</a></li>
+            <li><a href="statistics.html">Statistics</a></li>
+            <li><a href="maps.html">Maps</a></li>
+            <li class="nav-section">Social</li>
+            <li><a href="buddies.html">Concert Buddies</a></li>
+            <li><a href="sharing.html">Sharing</a></li>
+            <li class="nav-section">Collections</li>
+            <li><a href="wishlist.html">Wishlist</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="collection.html">Media Collection</a></li>
+            <li><a href="merch.html">Merchandise</a></li>
+            <li class="nav-section">Data</li>
+            <li><a href="backup.html">Backup & Sync</a></li>
+            <li><a href="import.html">Import Data</a></li>
+            <li><a href="integrations.html">Integrations</a></li>
+            <li class="nav-section">More</li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="spending.html">Spending Tracker</a></li>
+            <li><a href="year-in-review.html">Year in Review</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <div class="version">v1.0.22</div>
+    </nav>
+
+    <main class="content">
+        <header>
+            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+            <h1>Venues</h1>
+        </header>
+
+        <section class="page-content">
+            <h2>Managing Venues</h2>
+            <p>Venues are the locations where concerts happen - from small clubs to massive festival grounds.</p>
+
+            <h2>Creating a Venue</h2>
+            <ol>
+                <li>Go to <strong>More</strong> &rarr; <strong>Venues</strong></li>
+                <li>Tap the <strong>+</strong> button</li>
+                <li>Enter venue details:
+                    <ul>
+                        <li><strong>Name</strong> - Venue name</li>
+                        <li><strong>City</strong> - City location</li>
+                        <li><strong>Country</strong> - Country (use picker for flags)</li>
+                        <li><strong>Address</strong> - Street address (optional)</li>
+                        <li><strong>GPS Coordinates</strong> - For map display</li>
+                        <li><strong>Capacity</strong> - Venue size (optional)</li>
+                    </ul>
+                </li>
+                <li>Tap <strong>Save</strong></li>
+            </ol>
+
+            <div class="info-box tip">
+                <h4>Tip</h4>
+                <p>Use the <strong>Enrich from Ticketmaster</strong> option to automatically fetch venue photos, address, and GPS coordinates.</p>
+            </div>
+
+            <h2>Venue Navigation</h2>
+            <p>PocketDemon uses progressive disclosure based on your collection size:</p>
+
+            <table>
+                <tr>
+                    <th>Collection Size</th>
+                    <th>Navigation Style</th>
+                </tr>
+                <tr>
+                    <td>Less than 8 venues</td>
+                    <td>Direct list of all venues</td>
+                </tr>
+                <tr>
+                    <td>8+ venues</td>
+                    <td>Grouped by city</td>
+                </tr>
+                <tr>
+                    <td>12+ cities</td>
+                    <td>Grouped by country → city</td>
+                </tr>
+            </table>
+
+            <h2>Venue Display Options</h2>
+            <p>Customize how venues are shown in Settings → Appearance:</p>
+            <ul>
+                <li><strong>Country Flags</strong> - Show colorful or grayscale flags</li>
+                <li><strong>Compact Mode</strong> - Smaller list items</li>
+                <li><strong>Sort Order</strong> - By name, visit count, or most recent</li>
+            </ul>
+
+            <h2>Cruise Ship Venues</h2>
+            <p>For concerts on cruise ships:</p>
+            <ol>
+                <li>Create a venue with the ship name</li>
+                <li>Enable <strong>Is Cruise Ship</strong></li>
+                <li>Events at this venue will be tracked as cruise concerts</li>
+                <li>Add port stops with dates for itinerary tracking</li>
+            </ol>
+
+            <h2>Bucket List Venues</h2>
+            <p>Track venues you want to visit but haven't yet:</p>
+            <ol>
+                <li>Create the venue</li>
+                <li>Enable <strong>Bucket List</strong> toggle</li>
+                <li>The venue appears in a separate "Bucket List" section</li>
+            </ol>
+
+            <p>Bucket list features:</p>
+            <ul>
+                <li>Venues are shown separately from visited venues</li>
+                <li>Excluded from venue statistics</li>
+                <li>Automatically removed when you attend an event there</li>
+                <li>Can manually mark as visited anytime</li>
+            </ul>
+
+            <h2>Venue Details</h2>
+            <p>Tap a venue to see:</p>
+            <ul>
+                <li><strong>Photo</strong> - Venue image (from Ticketmaster or your photos)</li>
+                <li><strong>Location</strong> - Address, city, country</li>
+                <li><strong>Events</strong> - All events you've attended here</li>
+                <li><strong>Statistics</strong> - Total visits, bands seen, first/last visit</li>
+                <li><strong>Map</strong> - Location on map with directions button</li>
+            </ul>
+
+            <h2>Enriching Venue Data</h2>
+            <p>PocketDemon can fetch venue information from Ticketmaster:</p>
+            <ol>
+                <li>Open venue details</li>
+                <li>Tap <strong>Enrich</strong></li>
+                <li>Data fetched includes:
+                    <ul>
+                        <li>Official venue photo</li>
+                        <li>Street address</li>
+                        <li>GPS coordinates</li>
+                        <li>Ticketmaster venue ID</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h2>Venue Map</h2>
+            <p>View all your venues on a map:</p>
+            <ol>
+                <li>Go to <strong>More</strong> &rarr; <strong>Maps</strong> &rarr; <strong>Venue Map</strong></li>
+                <li>Venues are grouped by city with marker clustering</li>
+                <li>Tap a marker to see venue name and visit count</li>
+                <li>Tap again for directions</li>
+            </ol>
+
+            <h2>Getting Directions</h2>
+            <p>Open navigation to any venue:</p>
+            <ol>
+                <li>Open venue details</li>
+                <li>Tap the <strong>Directions</strong> button</li>
+                <li>Opens in your default maps app (Google Maps, Apple Maps, etc.)</li>
+            </ol>
+
+            <div class="info-box note">
+                <h4>Note</h4>
+                <p>Directions require GPS coordinates. Use the Enrich feature or manually enter coordinates.</p>
+            </div>
+
+            <h2>Venue Achievements</h2>
+            <p>Unlock badges by visiting venues:</p>
+            <ul>
+                <li><strong>Venue Visitor</strong> - Visit 10 different venues</li>
+                <li><strong>Venue Explorer</strong> - Visit 25 different venues</li>
+                <li><strong>Venue Hunter</strong> - Visit 50 different venues</li>
+                <li><strong>Venue Collector</strong> - Visit 100 different venues</li>
+                <li><strong>Venue Connoisseur</strong> - Visit 250 different venues</li>
+            </ul>
+
+            <p>Regular visitor badges:</p>
+            <ul>
+                <li><strong>Regular</strong> - Visit the same venue 5 times</li>
+                <li><strong>Local Hero</strong> - Visit the same venue 10 times</li>
+                <li><strong>Home Turf</strong> - Visit the same venue 25 times</li>
+                <li><strong>Resident</strong> - Visit the same venue 50 times</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2024-2025 Technodystopia. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Concerts - PocketDemon Manual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <h1>PocketDemon</h1>
+            <p class="tagline">Concert Tracker</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="getting-started.html">Getting Started</a></li>
+            <li class="nav-section">Core Features</li>
+            <li><a href="bands.html">Bands</a></li>
+            <li><a href="events.html" class="active">Events & Concerts</a></li>
+            <li><a href="venues.html">Venues</a></li>
+            <li><a href="statistics.html">Statistics</a></li>
+            <li><a href="maps.html">Maps</a></li>
+            <li class="nav-section">Social</li>
+            <li><a href="buddies.html">Concert Buddies</a></li>
+            <li><a href="sharing.html">Sharing</a></li>
+            <li class="nav-section">Collections</li>
+            <li><a href="wishlist.html">Wishlist</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="collection.html">Media Collection</a></li>
+            <li><a href="merch.html">Merchandise</a></li>
+            <li class="nav-section">Data</li>
+            <li><a href="backup.html">Backup & Sync</a></li>
+            <li><a href="import.html">Import Data</a></li>
+            <li><a href="integrations.html">Integrations</a></li>
+            <li class="nav-section">More</li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="spending.html">Spending Tracker</a></li>
+            <li><a href="year-in-review.html">Year in Review</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <div class="version">v1.0.22</div>
+    </nav>
+
+    <main class="content">
+        <header>
+            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+            <h1>Events & Concerts</h1>
+        </header>
+
+        <section class="page-content">
+            <h2>Understanding Events vs Concerts</h2>
+            <p>In PocketDemon:</p>
+            <ul>
+                <li><strong>Event</strong> = A show at a venue on a specific date (e.g., "Wacken Open Air 2024")</li>
+                <li><strong>Concert</strong> = A band performing at an event (e.g., "Slayer at Wacken 2024")</li>
+            </ul>
+            <p>One event can have multiple concerts (all the bands you saw that day/night).</p>
+
+            <h2>Creating an Event</h2>
+            <ol>
+                <li>Go to the <strong>Events</strong> tab</li>
+                <li>Tap the <strong>+</strong> button</li>
+                <li>Fill in the details:
+                    <ul>
+                        <li><strong>Name</strong> - Event or tour name</li>
+                        <li><strong>Venue</strong> - Select existing or create new</li>
+                        <li><strong>Date</strong> - When it happened</li>
+                        <li><strong>End Date</strong> - For multi-day festivals</li>
+                        <li><strong>Is Festival</strong> - Toggle for festival events</li>
+                        <li><strong>Ticket Price</strong> - Optional cost tracking</li>
+                        <li><strong>Currency</strong> - 13+ currencies supported</li>
+                        <li><strong>Notes</strong> - Personal memories</li>
+                    </ul>
+                </li>
+                <li>Tap <strong>Save</strong></li>
+            </ol>
+
+            <h2>Event Types</h2>
+
+            <h3>Single Shows</h3>
+            <p>A regular concert on one evening. Just set the date and leave end date empty.</p>
+
+            <h3>Multi-Day Events</h3>
+            <p>Festivals spanning multiple days:</p>
+            <ol>
+                <li>Set the start date</li>
+                <li>Set the end date</li>
+                <li>Enable <strong>Is Festival</strong></li>
+            </ol>
+            <p>The app will show the full date range and track all bands across all days.</p>
+
+            <h3>Cruise Ship Events</h3>
+            <p>For concerts on cruise ships (like 70000 Tons of Metal):</p>
+            <ol>
+                <li>Create a venue marked as "Cruise Ship"</li>
+                <li>Create the event at that venue</li>
+                <li>Add port stops with dates</li>
+            </ol>
+            <p>Cruise events support full itinerary tracking with multiple ports.</p>
+
+            <h2>Adding Bands to Events</h2>
+            <ol>
+                <li>Open the event</li>
+                <li>Tap <strong>Add Band</strong></li>
+                <li>Search for the band or create new</li>
+                <li>Set your rating (1-5 stars)</li>
+                <li>Add optional notes about the performance</li>
+                <li>Tap <strong>Add</strong></li>
+            </ol>
+
+            <div class="info-box tip">
+                <h4>Tip</h4>
+                <p>You can add the same band multiple times to one event (e.g., if they played two sets at a festival).</p>
+            </div>
+
+            <h2>Concert Ratings</h2>
+            <p>Rate each performance from 1-5 stars. This affects:</p>
+            <ul>
+                <li>Average rating calculations in statistics</li>
+                <li>Year in Review highlights</li>
+                <li>Sorting and filtering options</li>
+            </ul>
+
+            <h2>Concert Reviews</h2>
+            <p>For more detailed feedback, use the multi-criteria review system:</p>
+            <ol>
+                <li>Open a concert (band at event)</li>
+                <li>Tap <strong>Add Review</strong></li>
+                <li>Rate five categories:
+                    <ul>
+                        <li>Performance</li>
+                        <li>Sound Quality</li>
+                        <li>Stage Presence</li>
+                        <li>Setlist</li>
+                        <li>Overall Experience</li>
+                    </ul>
+                </li>
+                <li>Add a written review (optional)</li>
+                <li>Save the review</li>
+            </ol>
+
+            <h2>Ticket Tracking</h2>
+            <p>Track your concert spending:</p>
+            <ul>
+                <li><strong>Price</strong> - What you paid</li>
+                <li><strong>Currency</strong> - EUR, USD, GBP, SEK, and 10+ more</li>
+                <li><strong>Ticket Type</strong> - General, VIP, Weekend Pass, etc.</li>
+            </ul>
+            <p>View spending analysis in the <a href="spending.html">Spending Tracker</a>.</p>
+
+            <h2>Event Photos</h2>
+            <p>Add photos to remember the night:</p>
+            <ol>
+                <li>Open the event</li>
+                <li>Tap <strong>Add Photo</strong></li>
+                <li>Select from gallery or take new</li>
+                <li>Photos are automatically compressed to save space</li>
+            </ol>
+            <p>See <a href="gallery.html">Photo Gallery</a> for more on managing photos.</p>
+
+            <h2>Setlists</h2>
+            <p>View what songs were played:</p>
+            <ol>
+                <li>Open a concert</li>
+                <li>Tap <strong>View Setlist</strong></li>
+                <li>PocketDemon fetches the setlist from setlist.fm</li>
+                <li>Tap any song for Genius lyrics</li>
+            </ol>
+
+            <div class="info-box note">
+                <h4>Note</h4>
+                <p>Setlists require an internet connection and may not be available for all concerts.</p>
+            </div>
+
+            <h2>Concert Buddies</h2>
+            <p>Track who you went with:</p>
+            <ol>
+                <li>Open the event</li>
+                <li>Tap <strong>Add Buddy</strong></li>
+                <li>Select from your buddies list</li>
+            </ol>
+            <p>See <a href="buddies.html">Concert Buddies</a> for setting up buddies.</p>
+
+            <h2>Timeline View</h2>
+            <p>Browse your concert history chronologically:</p>
+            <ol>
+                <li>Go to <strong>More</strong> &rarr; <strong>Timeline</strong></li>
+                <li>Events are grouped by Year &rarr; Month &rarr; Event</li>
+                <li>Tap to expand and see bands at each event</li>
+            </ol>
+
+            <h2>Calendar Export</h2>
+            <p>Export events to your calendar app:</p>
+            <ol>
+                <li>Open the event</li>
+                <li>Tap menu &rarr; <strong>Export to Calendar</strong></li>
+                <li>An ICS file is created</li>
+                <li>Open with iOS Calendar, Google Calendar, etc.</li>
+            </ol>
+
+            <h2>Future Events</h2>
+            <p>You can add future events to plan your concert calendar. Note:</p>
+            <ul>
+                <li>Future events appear in the Events list</li>
+                <li>They are <strong>excluded</strong> from statistics</li>
+                <li>They appear on the calendar view</li>
+                <li>Once the date passes, they count toward stats</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2024-2025 Technodystopia. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
