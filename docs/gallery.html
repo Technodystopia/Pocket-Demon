@@ -1,272 +1,439 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - PocketDemon Manual</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/icon.png">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gallery - PocketDemon Manual</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/png" href="images/icon.png" />
+    </head>
+    <body>
         <nav class="sidebar">
-        <div class="logo">
-            <img src="images/DemonLogoBlack.png" alt="PocketDemon Logo" class="logo-image" width="44" height="44">
-            <div class="logo-text">
-                <h1>PocketDemon</h1>
-                <p class="tagline">Concert Tracker</p>
+            <div class="logo">
+                <img
+                    src="images/DemonLogoBlack.png"
+                    alt="PocketDemon Logo"
+                    class="logo-image"
+                    width="44"
+                    height="44"
+                />
+                <div class="logo-text">
+                    <h1>PocketDemon</h1>
+                    <p class="tagline">Concert Tracker</p>
+                </div>
             </div>
-        </div>
 
-        <div class="sidebar-search">
-            <div class="search-container">
-                <span class="search-icon">🔍</span>
-                <input type="text" class="search-input" placeholder="Search docs... (/)">
-                <div class="search-results"></div>
+            <div class="sidebar-search">
+                <div class="search-container">
+                    <span class="search-icon">🔍</span>
+                    <input
+                        type="text"
+                        class="search-input"
+                        placeholder="Search docs... (/)"
+                    />
+                    <div class="search-results"></div>
+                </div>
             </div>
-        </div>
 
-        <ul class="nav-links">
-            <li><a href="index.html"><span class="nav-icon">🏠</span> Home</a></li>
-            <li><a href="getting-started.html"><span class="nav-icon">🚀</span> Getting Started</a></li>
-            
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Core Features</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="bands.html"><span class="nav-icon">🎸</span> Bands</a></li>
-                    <li><a href="events.html"><span class="nav-icon">🎫</span> Events & Concerts</a></li>
-                    <li><a href="venues.html"><span class="nav-icon">🏟️</span> Venues</a></li>
-                    <li><a href="statistics.html"><span class="nav-icon">📊</span> Statistics</a></li>
-                    <li><a href="maps.html"><span class="nav-icon">🗺️</span> Maps</a></li>
-                </ul>
-            </li>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html"
+                        ><span class="nav-icon">🏠</span> Home</a
+                    >
+                </li>
+                <li>
+                    <a href="getting-started.html"
+                        ><span class="nav-icon">🚀</span> Getting Started</a
+                    >
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Social</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="buddies.html"><span class="nav-icon">👥</span> Concert Buddies</a></li>
-                    <li><a href="sharing.html"><span class="nav-icon">📤</span> Sharing</a></li>
-                </ul>
-            </li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Core Features</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="bands.html"
+                                ><span class="nav-icon">🎸</span> Bands</a
+                            >
+                        </li>
+                        <li>
+                            <a href="events.html"
+                                ><span class="nav-icon">🎫</span> Events &
+                                Concerts</a
+                            >
+                        </li>
+                        <li>
+                            <a href="venues.html"
+                                ><span class="nav-icon">🏟️</span> Venues</a
+                            >
+                        </li>
+                        <li>
+                            <a href="statistics.html"
+                                ><span class="nav-icon">📊</span> Statistics</a
+                            >
+                        </li>
+                        <li>
+                            <a href="maps.html"
+                                ><span class="nav-icon">🗺️</span> Maps</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Collections</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="wishlist.html"><span class="nav-icon">⭐</span> Wishlist</a></li>
-                    <li><a href="gallery.html" class="active"><span class="nav-icon">📷</span> Photo Gallery</a></li>
-                    <li><a href="collection.html"><span class="nav-icon">💿</span> Media Collection</a></li>
-                    <li><a href="merch.html"><span class="nav-icon">👕</span> Merchandise</a></li>
-                </ul>
-            </li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Social</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="buddies.html"
+                                ><span class="nav-icon">👥</span> Concert
+                                Buddies</a
+                            >
+                        </li>
+                        <li>
+                            <a href="sharing.html"
+                                ><span class="nav-icon">📤</span> Sharing</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Data</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="backup.html"><span class="nav-icon">☁️</span> Backup & Sync</a></li>
-                    <li><a href="import.html"><span class="nav-icon">📥</span> Import Data</a></li>
-                    <li><a href="integrations.html"><span class="nav-icon">🔗</span> Integrations</a></li>
-                </ul>
-            </li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Collections</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="wishlist.html"
+                                ><span class="nav-icon">⭐</span> Wishlist</a
+                            >
+                        </li>
+                        <li>
+                            <a href="gallery.html" class="active"
+                                ><span class="nav-icon">📷</span> Photo
+                                Gallery</a
+                            >
+                        </li>
+                        <li>
+                            <a href="collection.html"
+                                ><span class="nav-icon">💿</span> Media
+                                Collection</a
+                            >
+                        </li>
+                        <li>
+                            <a href="merch.html"
+                                ><span class="nav-icon">👕</span> Merchandise</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">More</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="achievements.html"><span class="nav-icon">🏆</span> Achievements</a></li>
-                    <li><a href="spending.html"><span class="nav-icon">💰</span> Spending Tracker</a></li>
-                    <li><a href="year-in-review.html"><span class="nav-icon">📅</span> Year in Review</a></li>
-                    <li><a href="settings.html"><span class="nav-icon">⚙️</span> Settings</a></li>
-                    <li><a href="faq.html"><span class="nav-icon">❓</span> FAQ</a></li>
-                </ul>
-            </li>
-        </ul>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Data</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="backup.html"
+                                ><span class="nav-icon">☁️</span> Backup &
+                                Sync</a
+                            >
+                        </li>
+                        <li>
+                            <a href="import.html"
+                                ><span class="nav-icon">📥</span> Import Data</a
+                            >
+                        </li>
+                        <li>
+                            <a href="integrations.html"
+                                ><span class="nav-icon">🔗</span>
+                                Integrations</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-        <div class="sidebar-footer">
-            <button class="theme-toggle" aria-label="Toggle theme">
-                <span class="theme-toggle-icon">☀️</span>
-                <span class="theme-toggle-label">Light</span>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">More</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="achievements.html"
+                                ><span class="nav-icon">🏆</span>
+                                Achievements</a
+                            >
+                        </li>
+                        <li>
+                            <a href="spending.html"
+                                ><span class="nav-icon">💰</span> Spending
+                                Tracker</a
+                            >
+                        </li>
+                        <li>
+                            <a href="year-in-review.html"
+                                ><span class="nav-icon">📅</span> Year in
+                                Review</a
+                            >
+                        </li>
+                        <li>
+                            <a href="settings.html"
+                                ><span class="nav-icon">⚙️</span> Settings</a
+                            >
+                        </li>
+                        <li>
+                            <a href="faq.html"
+                                ><span class="nav-icon">❓</span> FAQ</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-toggle-icon">☀️</span>
+                    <span class="theme-toggle-label">Light</span>
+                </button>
+                <span class="version">v1.0.23</span>
+            </div>
+        </nav>
+
+        <main class="content">
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-            <span class="version">v1.0.22</span>
-        </div>
-    </nav>
 
-    <main class="content">
-        <button class="menu-toggle" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+            <h1>Photo Gallery</h1>
+            <p class="subtitle">
+                Store and organize your concert photos and memories
+            </p>
 
-        <h1>Photo Gallery</h1>
-        <p class="subtitle">Store and organize your concert photos and memories</p>
+            <section>
+                <h2>Overview</h2>
+                <p>
+                    The Gallery feature lets you attach photos to your concert
+                    entries, creating a visual record of your concert-going
+                    journey.
+                </p>
 
-        <section>
-            <h2>Overview</h2>
-            <p>The Gallery feature lets you attach photos to your concert entries, creating a visual record of your concert-going journey.</p>
+                <div class="screenshot-placeholder">
+                    <p>Gallery grid view</p>
+                </div>
+            </section>
 
-            <div class="screenshot-placeholder">
-                <p>Gallery grid view</p>
+            <section>
+                <h2>Adding Photos</h2>
+
+                <h3>From a Concert Entry</h3>
+                <ol>
+                    <li>Open any concert in your history</li>
+                    <li>Scroll to the <strong>Photos</strong> section</li>
+                    <li>Tap <strong>Add Photos</strong></li>
+                    <li>
+                        Choose from:
+                        <ul>
+                            <li><strong>Camera</strong> - Take a new photo</li>
+                            <li>
+                                <strong>Gallery</strong> - Select from your
+                                device
+                            </li>
+                            <li>
+                                <strong>Files</strong> - Import from file
+                                storage
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h3>Batch Import</h3>
+                <p>Add multiple photos at once:</p>
+                <ol>
+                    <li>Go to <strong>Gallery</strong> from the main menu</li>
+                    <li>Tap the <strong>+</strong> button</li>
+                    <li>Select multiple photos</li>
+                    <li>
+                        PocketDemon will attempt to match photos to concerts
+                        based on:
+                        <ul>
+                            <li>Photo date/time metadata</li>
+                            <li>Location data (if available)</li>
+                        </ul>
+                    </li>
+                    <li>Review and confirm matches</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Gallery Views</h2>
+
+                <h3>Grid View</h3>
+                <p>
+                    See all your photos in a scrollable grid. Tap any photo to
+                    view it full-screen.
+                </p>
+
+                <h3>Timeline View</h3>
+                <p>
+                    Photos organized chronologically with concert dates as
+                    headers.
+                </p>
+
+                <h3>By Concert</h3>
+                <p>Browse photos grouped by the concert they're attached to.</p>
+
+                <h3>By Venue</h3>
+                <p>
+                    See all photos taken at a specific venue across all your
+                    visits.
+                </p>
+
+                <h3>By Band</h3>
+                <p>View all photos from concerts featuring a specific band.</p>
+            </section>
+
+            <section>
+                <h2>Photo Details</h2>
+                <p>Each photo can include:</p>
+                <ul>
+                    <li>
+                        <strong>Caption</strong> - Add a description or memory
+                    </li>
+                    <li>
+                        <strong>Tags</strong> - Tag bands visible in the photo
+                    </li>
+                    <li><strong>Favorite</strong> - Mark your best shots</li>
+                    <li>
+                        <strong>Location</strong> - Automatically captured or
+                        manually set
+                    </li>
+                </ul>
+
+                <div class="tip-box">
+                    <h4>Pro Tip</h4>
+                    <p>
+                        Tag bands in your photos to easily find them later.
+                        "Show me all photos of [Band Name]" becomes possible!
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Storage Options</h2>
+
+                <h3>Local Storage</h3>
+                <p>
+                    Photos are stored on your device by default. This provides:
+                </p>
+                <ul>
+                    <li>Full resolution images</li>
+                    <li>Offline access</li>
+                    <li>No cloud dependency</li>
+                </ul>
+
+                <h3>Cloud Backup</h3>
+                <p>If you have Dropbox integration enabled:</p>
+                <ul>
+                    <li>Photos are backed up automatically</li>
+                    <li>Sync across devices</li>
+                    <li>Recoverable if you lose your device</li>
+                </ul>
+
+                <div class="warning-box">
+                    <h4>Storage Space</h4>
+                    <p>
+                        Photos can take up significant storage space. Consider
+                        enabling cloud backup and using the "Optimize Storage"
+                        option in Settings to keep thumbnails locally while
+                        storing full-resolution images in the cloud.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Memories Feature</h2>
+                <p>
+                    PocketDemon creates automatic "Memories" from your gallery:
+                </p>
+
+                <h3>On This Day</h3>
+                <p>See photos from concerts on this date in previous years.</p>
+
+                <h3>Year Collections</h3>
+                <p>Automatic albums for each year of concert-going.</p>
+
+                <h3>Best Of</h3>
+                <p>Your favorited photos compiled into a highlight reel.</p>
+
+                <h3>Festival Memories</h3>
+                <p>Photos from multi-day events grouped together.</p>
+            </section>
+
+            <section>
+                <h2>Sharing Photos</h2>
+                <ul>
+                    <li>
+                        <strong>Individual photos</strong> - Share any photo
+                        directly
+                    </li>
+                    <li>
+                        <strong>Photo sets</strong> - Share multiple photos as a
+                        collection
+                    </li>
+                    <li>
+                        <strong>With buddies</strong> - Share photos with
+                        connected buddies
+                    </li>
+                    <li>
+                        <strong>To social media</strong> - Export with
+                        PocketDemon branding
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Managing Storage</h2>
+
+                <h3>Optimize Storage</h3>
+                <p>Settings > Storage > Optimize Photos</p>
+                <ul>
+                    <li>Keeps thumbnails on device</li>
+                    <li>Full resolution stored in cloud</li>
+                    <li>Downloads full image when needed</li>
+                </ul>
+
+                <h3>Delete Options</h3>
+                <ul>
+                    <li>
+                        <strong>Delete from concert</strong> - Removes photo
+                        from concert but keeps file
+                    </li>
+                    <li>
+                        <strong>Delete permanently</strong> - Removes photo
+                        completely
+                    </li>
+                    <li>
+                        <strong>Bulk delete</strong> - Select multiple photos to
+                        remove
+                    </li>
+                </ul>
+            </section>
+
+            <div class="nav-footer">
+                <a href="sharing.html" class="nav-prev">Previous: Sharing</a>
+                <a href="collection.html" class="nav-next">Next: Collection</a>
             </div>
-        </section>
+        </main>
 
-        <section>
-            <h2>Adding Photos</h2>
-
-            <h3>From a Concert Entry</h3>
-            <ol>
-                <li>Open any concert in your history</li>
-                <li>Scroll to the <strong>Photos</strong> section</li>
-                <li>Tap <strong>Add Photos</strong></li>
-                <li>Choose from:
-                    <ul>
-                        <li><strong>Camera</strong> - Take a new photo</li>
-                        <li><strong>Gallery</strong> - Select from your device</li>
-                        <li><strong>Files</strong> - Import from file storage</li>
-                    </ul>
-                </li>
-            </ol>
-
-            <h3>Batch Import</h3>
-            <p>Add multiple photos at once:</p>
-            <ol>
-                <li>Go to <strong>Gallery</strong> from the main menu</li>
-                <li>Tap the <strong>+</strong> button</li>
-                <li>Select multiple photos</li>
-                <li>PocketDemon will attempt to match photos to concerts based on:
-                    <ul>
-                        <li>Photo date/time metadata</li>
-                        <li>Location data (if available)</li>
-                    </ul>
-                </li>
-                <li>Review and confirm matches</li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>Gallery Views</h2>
-
-            <h3>Grid View</h3>
-            <p>See all your photos in a scrollable grid. Tap any photo to view it full-screen.</p>
-
-            <h3>Timeline View</h3>
-            <p>Photos organized chronologically with concert dates as headers.</p>
-
-            <h3>By Concert</h3>
-            <p>Browse photos grouped by the concert they're attached to.</p>
-
-            <h3>By Venue</h3>
-            <p>See all photos taken at a specific venue across all your visits.</p>
-
-            <h3>By Band</h3>
-            <p>View all photos from concerts featuring a specific band.</p>
-        </section>
-
-        <section>
-            <h2>Photo Details</h2>
-            <p>Each photo can include:</p>
-            <ul>
-                <li><strong>Caption</strong> - Add a description or memory</li>
-                <li><strong>Tags</strong> - Tag bands visible in the photo</li>
-                <li><strong>Favorite</strong> - Mark your best shots</li>
-                <li><strong>Location</strong> - Automatically captured or manually set</li>
-            </ul>
-
-            <div class="tip-box">
-                <h4>Pro Tip</h4>
-                <p>Tag bands in your photos to easily find them later. "Show me all photos of [Band Name]" becomes possible!</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Storage Options</h2>
-
-            <h3>Local Storage</h3>
-            <p>Photos are stored on your device by default. This provides:</p>
-            <ul>
-                <li>Full resolution images</li>
-                <li>Offline access</li>
-                <li>No cloud dependency</li>
-            </ul>
-
-            <h3>Cloud Backup</h3>
-            <p>If you have Dropbox integration enabled:</p>
-            <ul>
-                <li>Photos are backed up automatically</li>
-                <li>Sync across devices</li>
-                <li>Recoverable if you lose your device</li>
-            </ul>
-
-            <div class="warning-box">
-                <h4>Storage Space</h4>
-                <p>Photos can take up significant storage space. Consider enabling cloud backup and using the "Optimize Storage" option in Settings to keep thumbnails locally while storing full-resolution images in the cloud.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Memories Feature</h2>
-            <p>PocketDemon creates automatic "Memories" from your gallery:</p>
-
-            <h3>On This Day</h3>
-            <p>See photos from concerts on this date in previous years.</p>
-
-            <h3>Year Collections</h3>
-            <p>Automatic albums for each year of concert-going.</p>
-
-            <h3>Best Of</h3>
-            <p>Your favorited photos compiled into a highlight reel.</p>
-
-            <h3>Festival Memories</h3>
-            <p>Photos from multi-day events grouped together.</p>
-        </section>
-
-        <section>
-            <h2>Sharing Photos</h2>
-            <ul>
-                <li><strong>Individual photos</strong> - Share any photo directly</li>
-                <li><strong>Photo sets</strong> - Share multiple photos as a collection</li>
-                <li><strong>With buddies</strong> - Share photos with connected buddies</li>
-                <li><strong>To social media</strong> - Export with PocketDemon branding</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Managing Storage</h2>
-
-            <h3>Optimize Storage</h3>
-            <p>Settings > Storage > Optimize Photos</p>
-            <ul>
-                <li>Keeps thumbnails on device</li>
-                <li>Full resolution stored in cloud</li>
-                <li>Downloads full image when needed</li>
-            </ul>
-
-            <h3>Delete Options</h3>
-            <ul>
-                <li><strong>Delete from concert</strong> - Removes photo from concert but keeps file</li>
-                <li><strong>Delete permanently</strong> - Removes photo completely</li>
-                <li><strong>Bulk delete</strong> - Select multiple photos to remove</li>
-            </ul>
-        </section>
-
-        <div class="nav-footer">
-            <a href="sharing.html" class="nav-prev">Previous: Sharing</a>
-            <a href="collection.html" class="nav-next">Next: Collection</a>
-        </div>
-    </main>
-
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>

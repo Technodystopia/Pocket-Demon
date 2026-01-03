@@ -1,349 +1,684 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Settings - PocketDemon Manual</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/icon.png">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Settings - PocketDemon Manual</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/png" href="images/icon.png" />
+    </head>
+    <body>
         <nav class="sidebar">
-        <div class="logo">
-            <img src="images/DemonLogoBlack.png" alt="PocketDemon Logo" class="logo-image" width="44" height="44">
-            <div class="logo-text">
-                <h1>PocketDemon</h1>
-                <p class="tagline">Concert Tracker</p>
+            <div class="logo">
+                <img
+                    src="images/DemonLogoBlack.png"
+                    alt="PocketDemon Logo"
+                    class="logo-image"
+                    width="44"
+                    height="44"
+                />
+                <div class="logo-text">
+                    <h1>PocketDemon</h1>
+                    <p class="tagline">Concert Tracker</p>
+                </div>
             </div>
-        </div>
 
-        <div class="sidebar-search">
-            <div class="search-container">
-                <span class="search-icon">🔍</span>
-                <input type="text" class="search-input" placeholder="Search docs... (/)">
-                <div class="search-results"></div>
+            <div class="sidebar-search">
+                <div class="search-container">
+                    <span class="search-icon">🔍</span>
+                    <input
+                        type="text"
+                        class="search-input"
+                        placeholder="Search docs... (/)"
+                    />
+                    <div class="search-results"></div>
+                </div>
             </div>
-        </div>
 
-        <ul class="nav-links">
-            <li><a href="index.html"><span class="nav-icon">🏠</span> Home</a></li>
-            <li><a href="getting-started.html"><span class="nav-icon">🚀</span> Getting Started</a></li>
-            
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Core Features</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="bands.html"><span class="nav-icon">🎸</span> Bands</a></li>
-                    <li><a href="events.html"><span class="nav-icon">🎫</span> Events & Concerts</a></li>
-                    <li><a href="venues.html"><span class="nav-icon">🏟️</span> Venues</a></li>
-                    <li><a href="statistics.html"><span class="nav-icon">📊</span> Statistics</a></li>
-                    <li><a href="maps.html"><span class="nav-icon">🗺️</span> Maps</a></li>
-                </ul>
-            </li>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html"
+                        ><span class="nav-icon">🏠</span> Home</a
+                    >
+                </li>
+                <li>
+                    <a href="getting-started.html"
+                        ><span class="nav-icon">🚀</span> Getting Started</a
+                    >
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Social</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="buddies.html"><span class="nav-icon">👥</span> Concert Buddies</a></li>
-                    <li><a href="sharing.html"><span class="nav-icon">📤</span> Sharing</a></li>
-                </ul>
-            </li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Core Features</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="bands.html"
+                                ><span class="nav-icon">🎸</span> Bands</a
+                            >
+                        </li>
+                        <li>
+                            <a href="events.html"
+                                ><span class="nav-icon">🎫</span> Events &
+                                Concerts</a
+                            >
+                        </li>
+                        <li>
+                            <a href="venues.html"
+                                ><span class="nav-icon">🏟️</span> Venues</a
+                            >
+                        </li>
+                        <li>
+                            <a href="statistics.html"
+                                ><span class="nav-icon">📊</span> Statistics</a
+                            >
+                        </li>
+                        <li>
+                            <a href="maps.html"
+                                ><span class="nav-icon">🗺️</span> Maps</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Collections</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="wishlist.html"><span class="nav-icon">⭐</span> Wishlist</a></li>
-                    <li><a href="gallery.html"><span class="nav-icon">📷</span> Photo Gallery</a></li>
-                    <li><a href="collection.html"><span class="nav-icon">💿</span> Media Collection</a></li>
-                    <li><a href="merch.html"><span class="nav-icon">👕</span> Merchandise</a></li>
-                </ul>
-            </li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Social</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="buddies.html"
+                                ><span class="nav-icon">👥</span> Concert
+                                Buddies</a
+                            >
+                        </li>
+                        <li>
+                            <a href="sharing.html"
+                                ><span class="nav-icon">📤</span> Sharing</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Data</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="backup.html"><span class="nav-icon">☁️</span> Backup & Sync</a></li>
-                    <li><a href="import.html"><span class="nav-icon">📥</span> Import Data</a></li>
-                    <li><a href="integrations.html"><span class="nav-icon">🔗</span> Integrations</a></li>
-                </ul>
-            </li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Collections</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="wishlist.html"
+                                ><span class="nav-icon">⭐</span> Wishlist</a
+                            >
+                        </li>
+                        <li>
+                            <a href="gallery.html"
+                                ><span class="nav-icon">📷</span> Photo
+                                Gallery</a
+                            >
+                        </li>
+                        <li>
+                            <a href="collection.html"
+                                ><span class="nav-icon">💿</span> Media
+                                Collection</a
+                            >
+                        </li>
+                        <li>
+                            <a href="merch.html"
+                                ><span class="nav-icon">👕</span> Merchandise</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">More</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="achievements.html"><span class="nav-icon">🏆</span> Achievements</a></li>
-                    <li><a href="spending.html"><span class="nav-icon">💰</span> Spending Tracker</a></li>
-                    <li><a href="year-in-review.html"><span class="nav-icon">📅</span> Year in Review</a></li>
-                    <li><a href="settings.html" class="active"><span class="nav-icon">⚙️</span> Settings</a></li>
-                    <li><a href="faq.html"><span class="nav-icon">❓</span> FAQ</a></li>
-                </ul>
-            </li>
-        </ul>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Data</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="backup.html"
+                                ><span class="nav-icon">☁️</span> Backup &
+                                Sync</a
+                            >
+                        </li>
+                        <li>
+                            <a href="import.html"
+                                ><span class="nav-icon">📥</span> Import Data</a
+                            >
+                        </li>
+                        <li>
+                            <a href="integrations.html"
+                                ><span class="nav-icon">🔗</span>
+                                Integrations</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-        <div class="sidebar-footer">
-            <button class="theme-toggle" aria-label="Toggle theme">
-                <span class="theme-toggle-icon">☀️</span>
-                <span class="theme-toggle-label">Light</span>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">More</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="achievements.html"
+                                ><span class="nav-icon">🏆</span>
+                                Achievements</a
+                            >
+                        </li>
+                        <li>
+                            <a href="spending.html"
+                                ><span class="nav-icon">💰</span> Spending
+                                Tracker</a
+                            >
+                        </li>
+                        <li>
+                            <a href="year-in-review.html"
+                                ><span class="nav-icon">📅</span> Year in
+                                Review</a
+                            >
+                        </li>
+                        <li>
+                            <a href="settings.html" class="active"
+                                ><span class="nav-icon">⚙️</span> Settings</a
+                            >
+                        </li>
+                        <li>
+                            <a href="faq.html"
+                                ><span class="nav-icon">❓</span> FAQ</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-toggle-icon">☀️</span>
+                    <span class="theme-toggle-label">Light</span>
+                </button>
+                <span class="version">v1.0.23</span>
+            </div>
+        </nav>
+
+        <main class="content">
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-            <span class="version">v1.0.22</span>
-        </div>
-    </nav>
 
-    <main class="content">
-        <button class="menu-toggle" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+            <h1>Settings</h1>
+            <p class="subtitle">
+                Customize PocketDemon to fit your preferences
+            </p>
 
-        <h1>Settings</h1>
-        <p class="subtitle">Customize PocketDemon to fit your preferences</p>
+            <section>
+                <h2>Accessing Settings</h2>
+                <p>
+                    Tap the <strong>gear icon</strong> in the top right corner
+                    from any main screen, or navigate to
+                    <strong>Settings</strong> from the main menu.
+                </p>
+            </section>
 
-        <section>
-            <h2>Accessing Settings</h2>
-            <p>Tap the <strong>gear icon</strong> in the top right corner from any main screen, or navigate to <strong>Settings</strong> from the main menu.</p>
-        </section>
+            <section>
+                <h2>Account</h2>
 
-        <section>
-            <h2>Account</h2>
+                <h3>Profile</h3>
+                <ul>
+                    <li>
+                        <strong>Display name</strong> - How you appear to
+                        buddies
+                    </li>
+                    <li><strong>Username</strong> - Your unique identifier</li>
+                    <li><strong>Profile photo</strong> - Your avatar image</li>
+                    <li><strong>Bio</strong> - Short description about you</li>
+                </ul>
 
-            <h3>Profile</h3>
-            <ul>
-                <li><strong>Display name</strong> - How you appear to buddies</li>
-                <li><strong>Username</strong> - Your unique identifier</li>
-                <li><strong>Profile photo</strong> - Your avatar image</li>
-                <li><strong>Bio</strong> - Short description about you</li>
-            </ul>
+                <h3>Privacy</h3>
+                <ul>
+                    <li>
+                        <strong>Profile visibility</strong> - Public, Friends
+                        only, Private
+                    </li>
+                    <li>
+                        <strong>Concert history</strong> - Who can see your past
+                        shows
+                    </li>
+                    <li>
+                        <strong>Statistics</strong> - Who can view your stats
+                    </li>
+                    <li>
+                        <strong>Location sharing</strong> - Enable/disable
+                        location features
+                    </li>
+                </ul>
+            </section>
 
-            <h3>Privacy</h3>
-            <ul>
-                <li><strong>Profile visibility</strong> - Public, Friends only, Private</li>
-                <li><strong>Concert history</strong> - Who can see your past shows</li>
-                <li><strong>Statistics</strong> - Who can view your stats</li>
-                <li><strong>Location sharing</strong> - Enable/disable location features</li>
-            </ul>
-        </section>
+            <section>
+                <h2>Appearance</h2>
 
-        <section>
-            <h2>Appearance</h2>
+                <h3>Theme</h3>
+                <ul>
+                    <li><strong>Dark mode</strong> - Always dark (default)</li>
+                    <li>
+                        <strong>Monochrome mode</strong> - OLED battery-saving
+                        true black
+                    </li>
+                </ul>
 
-            <h3>Theme</h3>
-            <ul>
-                <li><strong>Dark mode</strong> - Dark theme (default)</li>
-                <li><strong>Light mode</strong> - Light theme</li>
-                <li><strong>System</strong> - Follow device settings</li>
-                <li><strong>OLED Black</strong> - True black for OLED screens</li>
-            </ul>
+                <h3>Accent Colors</h3>
+                <p>Choose from 16 preset accent colors or create your own:</p>
+                <ul>
+                    <li>
+                        <strong>Preset colors</strong> - 16 carefully selected
+                        colors
+                    </li>
+                    <li>
+                        <strong>Custom color picker</strong> - Full color wheel
+                        for primary and secondary accent colors
+                    </li>
+                    <li>
+                        <strong>Background colors</strong> - Customize scaffold,
+                        surface, and card colors
+                    </li>
+                </ul>
 
-            <h3>Accent Color</h3>
-            <p>Choose your accent color for highlights and buttons:</p>
-            <ul>
-                <li>Purple (default)</li>
-                <li>Blue</li>
-                <li>Red</li>
-                <li>Green</li>
-                <li>Orange</li>
-                <li>Custom (pick any color)</li>
-            </ul>
+                <h3>Theme Presets</h3>
+                <p>Share your theme with others or import theirs:</p>
+                <ul>
+                    <li>
+                        <strong>Export theme</strong> - Generate a shareable
+                        theme code (format: <code>PD1:xxxxxxxx:xxxxxxxx</code>)
+                    </li>
+                    <li>
+                        <strong>Import theme</strong> - Paste a theme code to
+                        apply it
+                    </li>
+                </ul>
 
-            <h3>Text Size</h3>
-            <ul>
-                <li>Small</li>
-                <li>Medium (default)</li>
-                <li>Large</li>
-                <li>Extra Large</li>
-            </ul>
-        </section>
+                <h3>Haptic Feedback</h3>
+                <ul>
+                    <li>
+                        <strong>Enable/disable</strong> - Toggle tactile
+                        feedback on interactions
+                    </li>
+                </ul>
 
-        <section>
-            <h2>Preferences</h2>
+                <h3>Gallery Layout</h3>
+                <ul>
+                    <li>
+                        <strong>Photos per row</strong> - Configure 1-5 photos
+                        per row in main gallery
+                    </li>
+                    <li>
+                        <strong>Band gallery</strong> - Configure photos per row
+                        (2-6) and max rows (1-5) for band detail gallery
+                    </li>
+                </ul>
 
-            <h3>Region & Language</h3>
-            <ul>
-                <li><strong>Language</strong> - App interface language</li>
-                <li><strong>Region</strong> - For date formats and defaults</li>
-                <li><strong>Date format</strong> - MM/DD/YYYY, DD/MM/YYYY, etc.</li>
-                <li><strong>Time format</strong> - 12-hour or 24-hour</li>
-            </ul>
+                <h3>Quick Actions</h3>
+                <ul>
+                    <li>
+                        <strong>Customize</strong> - Reorder and show/hide home
+                        screen quick action buttons
+                    </li>
+                    <li>
+                        <strong>Edit mode</strong> - Long press to enter edit
+                        mode and rearrange buttons
+                    </li>
+                </ul>
+            </section>
 
-            <h3>Currency</h3>
-            <ul>
-                <li><strong>Default currency</strong> - For spending tracking</li>
-                <li><strong>Show conversions</strong> - Display equivalent in other currencies</li>
-            </ul>
+            <section>
+                <h2>Preferences</h2>
 
-            <h3>Units</h3>
-            <ul>
-                <li><strong>Distance</strong> - Miles or kilometers</li>
-            </ul>
-        </section>
+                <h3>Language</h3>
+                <p>
+                    PocketDemon supports 12 languages (all fully translated with
+                    900+ strings):
+                </p>
+                <ul>
+                    <li>English (source)</li>
+                    <li>German (Deutsch)</li>
+                    <li>Swedish (Svenska)</li>
+                    <li>Norwegian (Norsk)</li>
+                    <li>Finnish (Suomi)</li>
+                    <li>Estonian (Eesti)</li>
+                    <li>Spanish (Espanol)</li>
+                    <li>Portuguese (Portugues)</li>
+                    <li>French (Francais)</li>
+                    <li>Dutch (Nederlands)</li>
+                    <li>Polish (Polski)</li>
+                    <li>Italian (Italiano)</li>
+                </ul>
+                <p>
+                    The app automatically uses your device language if
+                    supported, or you can set it manually.
+                </p>
 
-        <section>
-            <h2>Notifications</h2>
+                <h3>Date Display</h3>
+                <ul>
+                    <li>
+                        <strong>Locale-aware formatting</strong> - Dates
+                        formatted according to your language setting
+                    </li>
+                    <li>
+                        <strong>Birthday</strong> - Set your birthday to see
+                        your age at each concert year in timeline view
+                    </li>
+                </ul>
 
-            <h3>Concert Reminders</h3>
-            <ul>
-                <li><strong>Upcoming concerts</strong> - Days before to remind</li>
-                <li><strong>Day of show</strong> - Morning reminder</li>
-                <li><strong>Pre-show</strong> - Hours before start time</li>
-            </ul>
+                <h3>Currency</h3>
+                <ul>
+                    <li>
+                        <strong>Preferred currency</strong> - Default currency
+                        for spending displays (EUR, USD, GBP, SEK, and 10+ more)
+                    </li>
+                    <li>
+                        <strong>Per-tab selector</strong> - Some spending tabs
+                        let you choose which currency to display
+                    </li>
+                </ul>
 
-            <h3>Social</h3>
-            <ul>
-                <li><strong>Buddy requests</strong> - New connection requests</li>
-                <li><strong>Buddy activity</strong> - When buddies attend shows</li>
-                <li><strong>Shared concerts</strong> - Mutual show notifications</li>
-            </ul>
+                <h3>Home Location</h3>
+                <ul>
+                    <li>
+                        <strong>Set location</strong> - Configure your home city
+                        for accurate distance calculations
+                    </li>
+                </ul>
+            </section>
 
-            <h3>Achievements</h3>
-            <ul>
-                <li><strong>Achievement unlocked</strong> - Badge notifications</li>
-                <li><strong>Progress updates</strong> - Milestone approaching</li>
-            </ul>
+            <section>
+                <h2>Venue Display</h2>
 
-            <h3>Wishlist</h3>
-            <ul>
-                <li><strong>Show alerts</strong> - When wishlist bands announce tours</li>
-                <li><strong>Ticket alerts</strong> - When tickets go on sale</li>
-            </ul>
-        </section>
+                <h3>Venue List Options</h3>
+                <ul>
+                    <li>
+                        <strong>Country flags</strong> - Show colorful or
+                        grayscale flags
+                    </li>
+                    <li>
+                        <strong>Compact mode</strong> - Toggle for denser venue
+                        lists
+                    </li>
+                </ul>
 
-        <section>
-            <h2>Data Management</h2>
+                <h3>Band Origins Map</h3>
+                <ul>
+                    <li>
+                        <strong>Display settings</strong> - Configure flag
+                        display on band origins map
+                    </li>
+                </ul>
+            </section>
 
-            <h3>Backup</h3>
-            <ul>
-                <li><strong>Auto-backup</strong> - Enable/disable automatic backups</li>
-                <li><strong>Backup frequency</strong> - How often to backup</li>
-                <li><strong>Backup location</strong> - Local or cloud</li>
-                <li><strong>Manual backup</strong> - Create backup now</li>
-            </ul>
+            <section>
+                <h2>Polaroid Style</h2>
+                <p>Customize how photos appear in polaroid view:</p>
 
-            <h3>Storage</h3>
-            <ul>
-                <li><strong>Cache size</strong> - View and clear cache</li>
-                <li><strong>Photo storage</strong> - Local vs cloud photos</li>
-                <li><strong>Optimize storage</strong> - Reduce local storage use</li>
-                <li><strong>Offline maps</strong> - Download maps for offline use</li>
-            </ul>
+                <h3>Style Presets</h3>
+                <ul>
+                    <li>Classic (white frame)</li>
+                    <li>Dark</li>
+                    <li>Vintage (sepia)</li>
+                    <li>Minimal</li>
+                    <li>Neon</li>
+                </ul>
 
-            <h3>Export</h3>
-            <ul>
-                <li><strong>Export all data</strong> - Complete JSON backup</li>
-                <li><strong>Export concerts</strong> - CSV of concert history</li>
-                <li><strong>Export statistics</strong> - Your stats summary</li>
-            </ul>
+                <h3>Font Options</h3>
+                <ul>
+                    <li>Handwritten (Caveat)</li>
+                    <li>Typewriter (Courier)</li>
+                    <li>Modern (sans-serif)</li>
+                    <li>Elegant (serif)</li>
+                </ul>
 
-            <h3>Delete</h3>
-            <ul>
-                <li><strong>Clear all data</strong> - Start fresh (irreversible)</li>
-                <li><strong>Delete account</strong> - Remove your account entirely</li>
-            </ul>
+                <h3>Visibility Toggles</h3>
+                <ul>
+                    <li>Show/hide caption</li>
+                    <li>Show/hide venue</li>
+                    <li>Show/hide date</li>
+                </ul>
 
-            <div class="warning-box">
-                <h4>Data Deletion</h4>
-                <p>Deleting data is permanent and cannot be undone. Always create a backup before deleting anything.</p>
+                <div class="info-box tip">
+                    <h4>Per-Photo Settings</h4>
+                    <p>
+                        Each photo can have its own polaroid style settings,
+                        configured when viewing the photo.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Data Management</h2>
+
+                <h3>Backup Options</h3>
+                <ul>
+                    <li>
+                        <strong>JSON backup</strong> - Full backup with
+                        validation and undo support
+                    </li>
+                    <li>
+                        <strong>JSON restore</strong> - Restore from a previous
+                        backup file
+                    </li>
+                    <li>
+                        <strong>CSV export</strong> - Spreadsheet-compatible
+                        export
+                    </li>
+                    <li>
+                        <strong>CSV import</strong> - Import with duplicate
+                        detection
+                    </li>
+                </ul>
+
+                <h3>Dropbox Sync</h3>
+                <ul>
+                    <li>
+                        <strong>Connect Dropbox</strong> - Enable cloud backup
+                    </li>
+                    <li>
+                        <strong>Auto-sync</strong> - Battery-friendly sync on
+                        app pause (15-minute cooldown)
+                    </li>
+                    <li>
+                        <strong>Photo sync</strong> - Upload and restore concert
+                        photos
+                    </li>
+                    <li><strong>Sync now</strong> - Trigger manual sync</li>
+                </ul>
+
+                <h3>Offline Operation</h3>
+                <ul>
+                    <li>
+                        <strong>Operation queue</strong> - Changes are queued
+                        when offline and replayed on reconnect
+                    </li>
+                    <li>
+                        <strong>Connectivity indicator</strong> - Visual status
+                        showing online/offline state
+                    </li>
+                </ul>
+
+                <div class="info-box warning">
+                    <h4>Data Safety</h4>
+                    <p>
+                        Always create a backup before making major changes.
+                        Deleted data cannot be recovered without a backup.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Integrations</h2>
+                <p>Manage your connected services:</p>
+                <ul>
+                    <li>
+                        <strong>Dropbox</strong> - Cloud backup and buddy
+                        connections
+                    </li>
+                    <li>
+                        <strong>Setlist.fm</strong> - Setlist viewing and
+                        concert import
+                    </li>
+                    <li><strong>Last.fm</strong> - Artist import</li>
+                    <li><strong>Discogs</strong> - Collection import</li>
+                    <li>
+                        <strong>MusicBrainz</strong> - Band enrichment
+                        (automatic)
+                    </li>
+                    <li>
+                        <strong>TheAudioDB</strong> - Artist photos (automatic)
+                    </li>
+                    <li>
+                        <strong>Ticketmaster</strong> - Venue data and event
+                        scanner
+                    </li>
+                </ul>
+                <p>
+                    See the <a href="integrations.html">Integrations</a> page
+                    for detailed setup instructions.
+                </p>
+            </section>
+
+            <section>
+                <h2>Maps</h2>
+
+                <h3>Map Provider</h3>
+                <ul>
+                    <li>
+                        <strong>OpenStreetMap</strong> - Default map provider
+                        via flutter_map
+                    </li>
+                </ul>
+
+                <h3>Offline Map Caching</h3>
+                <ul>
+                    <li>
+                        <strong>Tile caching</strong> - Map tiles are cached for
+                        offline viewing
+                    </li>
+                    <li>
+                        <strong>Cache management</strong> - View and clear
+                        cached tiles
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Desktop Features</h2>
+                <p>Additional features on Windows, macOS, and Linux:</p>
+
+                <h3>Keyboard Shortcuts</h3>
+                <ul>
+                    <li><strong>1-5</strong> - Navigate between main tabs</li>
+                    <li><strong>Ctrl+F</strong> - Focus search</li>
+                    <li><strong>Escape</strong> - Go back</li>
+                    <li><strong>Ctrl+,</strong> - Open settings</li>
+                </ul>
+
+                <h3>Window State</h3>
+                <ul>
+                    <li>
+                        <strong>Size persistence</strong> - Window size
+                        remembered across sessions
+                    </li>
+                    <li>
+                        <strong>Position persistence</strong> - Window position
+                        remembered
+                    </li>
+                    <li>
+                        <strong>Maximized state</strong> - Maximized state
+                        remembered
+                    </li>
+                </ul>
+
+                <h3>Responsive Layouts</h3>
+                <ul>
+                    <li>Grids adapt to screen width (4/6/8 columns)</li>
+                    <li>Content width constraints for comfortable reading</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Help & Support</h2>
+                <ul>
+                    <li>
+                        <strong>User manual</strong> - Opens this documentation
+                        (first-time users are directed here automatically)
+                    </li>
+                    <li>
+                        <strong>Send feedback</strong> - Anonymous in-app
+                        feedback without email client
+                    </li>
+                </ul>
+
+                <div class="info-box tip">
+                    <h4>First-Time Users</h4>
+                    <p>
+                        New users are automatically directed to the manual after
+                        registration to help them get started.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>About</h2>
+                <ul>
+                    <li>
+                        <strong>Version</strong> - Current app version (v1.0.23)
+                    </li>
+                    <li>
+                        <strong>Open source licenses</strong> - Third-party
+                        libraries used
+                    </li>
+                </ul>
+
+                <h3>Platform Support</h3>
+                <table>
+                    <tr>
+                        <th>Platform</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Android</td>
+                        <td>Fully supported</td>
+                    </tr>
+                    <tr>
+                        <td>iOS</td>
+                        <td>Fully supported</td>
+                    </tr>
+                    <tr>
+                        <td>macOS</td>
+                        <td>Fully supported</td>
+                    </tr>
+                    <tr>
+                        <td>Windows</td>
+                        <td>Supported (no BLE features)</td>
+                    </tr>
+                    <tr>
+                        <td>Linux</td>
+                        <td>Supported (no BLE features)</td>
+                    </tr>
+                </table>
+            </section>
+
+            <div class="nav-footer">
+                <a href="year-in-review.html" class="nav-prev"
+                    >Previous: Year in Review</a
+                >
+                <a href="faq.html" class="nav-next">Next: FAQ</a>
             </div>
-        </section>
+        </main>
 
-        <section>
-            <h2>Integrations</h2>
-            <p>Manage your connected services:</p>
-            <ul>
-                <li><strong>Setlist.fm</strong> - Connect/disconnect</li>
-                <li><strong>Last.fm</strong> - Connect/disconnect</li>
-                <li><strong>Discogs</strong> - Connect/disconnect</li>
-                <li><strong>Spotify</strong> - Connect/disconnect</li>
-                <li><strong>Dropbox</strong> - Connect/disconnect</li>
-            </ul>
-            <p>See the <a href="integrations.html">Integrations</a> page for detailed setup instructions.</p>
-        </section>
-
-        <section>
-            <h2>Maps</h2>
-
-            <h3>Map Provider</h3>
-            <ul>
-                <li><strong>Default</strong> - System default</li>
-                <li><strong>OpenStreetMap</strong> - Open source maps</li>
-                <li><strong>Google Maps</strong> - If available</li>
-                <li><strong>Apple Maps</strong> - iOS only</li>
-            </ul>
-
-            <h3>Offline Maps</h3>
-            <ul>
-                <li><strong>Download regions</strong> - Save maps for offline use</li>
-                <li><strong>Auto-download</strong> - Cache maps for upcoming concerts</li>
-                <li><strong>Storage limit</strong> - Max space for offline maps</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Advanced</h2>
-
-            <h3>Developer Options</h3>
-            <ul>
-                <li><strong>Debug mode</strong> - Enable detailed logging</li>
-                <li><strong>API timeout</strong> - Adjust connection timeouts</li>
-                <li><strong>Cache lifetime</strong> - How long to cache data</li>
-            </ul>
-
-            <h3>Experimental Features</h3>
-            <p>Try new features before they're officially released:</p>
-            <ul>
-                <li><strong>Beta features</strong> - Enable/disable beta functionality</li>
-                <li><strong>Feature flags</strong> - Individual feature toggles</li>
-            </ul>
-
-            <div class="info-box">
-                <h4>Experimental Features</h4>
-                <p>Beta features may be unstable. Enable at your own risk. Report bugs through the feedback option.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Help & Support</h2>
-            <ul>
-                <li><strong>User manual</strong> - Opens this documentation</li>
-                <li><strong>FAQ</strong> - Frequently asked questions</li>
-                <li><strong>Contact support</strong> - Send a support request</li>
-                <li><strong>Report a bug</strong> - Submit bug reports</li>
-                <li><strong>Feature request</strong> - Suggest new features</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>About</h2>
-            <ul>
-                <li><strong>Version</strong> - Current app version</li>
-                <li><strong>Build number</strong> - Specific build identifier</li>
-                <li><strong>Changelog</strong> - What's new in recent updates</li>
-                <li><strong>Open source licenses</strong> - Third-party libraries used</li>
-                <li><strong>Privacy policy</strong> - How your data is handled</li>
-                <li><strong>Terms of service</strong> - Usage terms</li>
-            </ul>
-        </section>
-
-        <div class="nav-footer">
-            <a href="year-in-review.html" class="nav-prev">Previous: Year in Review</a>
-            <a href="faq.html" class="nav-next">Next: FAQ</a>
-        </div>
-    </main>
-
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>

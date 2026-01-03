@@ -1,327 +1,496 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Year in Review - PocketDemon Manual</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/icon.png">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Year in Review - PocketDemon Manual</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/png" href="images/icon.png" />
+    </head>
+    <body>
         <nav class="sidebar">
-        <div class="logo">
-            <img src="images/DemonLogoBlack.png" alt="PocketDemon Logo" class="logo-image" width="44" height="44">
-            <div class="logo-text">
-                <h1>PocketDemon</h1>
-                <p class="tagline">Concert Tracker</p>
+            <div class="logo">
+                <img
+                    src="images/DemonLogoBlack.png"
+                    alt="PocketDemon Logo"
+                    class="logo-image"
+                    width="44"
+                    height="44"
+                />
+                <div class="logo-text">
+                    <h1>PocketDemon</h1>
+                    <p class="tagline">Concert Tracker</p>
+                </div>
             </div>
-        </div>
 
-        <div class="sidebar-search">
-            <div class="search-container">
-                <span class="search-icon">🔍</span>
-                <input type="text" class="search-input" placeholder="Search docs... (/)">
-                <div class="search-results"></div>
+            <div class="sidebar-search">
+                <div class="search-container">
+                    <span class="search-icon">🔍</span>
+                    <input
+                        type="text"
+                        class="search-input"
+                        placeholder="Search docs... (/)"
+                    />
+                    <div class="search-results"></div>
+                </div>
             </div>
-        </div>
 
-        <ul class="nav-links">
-            <li><a href="index.html"><span class="nav-icon">🏠</span> Home</a></li>
-            <li><a href="getting-started.html"><span class="nav-icon">🚀</span> Getting Started</a></li>
-            
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Core Features</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="bands.html"><span class="nav-icon">🎸</span> Bands</a></li>
-                    <li><a href="events.html"><span class="nav-icon">🎫</span> Events & Concerts</a></li>
-                    <li><a href="venues.html"><span class="nav-icon">🏟️</span> Venues</a></li>
-                    <li><a href="statistics.html"><span class="nav-icon">📊</span> Statistics</a></li>
-                    <li><a href="maps.html"><span class="nav-icon">🗺️</span> Maps</a></li>
-                </ul>
-            </li>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html"
+                        ><span class="nav-icon">🏠</span> Home</a
+                    >
+                </li>
+                <li>
+                    <a href="getting-started.html"
+                        ><span class="nav-icon">🚀</span> Getting Started</a
+                    >
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Social</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="buddies.html"><span class="nav-icon">👥</span> Concert Buddies</a></li>
-                    <li><a href="sharing.html"><span class="nav-icon">📤</span> Sharing</a></li>
-                </ul>
-            </li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Core Features</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="bands.html"
+                                ><span class="nav-icon">🎸</span> Bands</a
+                            >
+                        </li>
+                        <li>
+                            <a href="events.html"
+                                ><span class="nav-icon">🎫</span> Events &
+                                Concerts</a
+                            >
+                        </li>
+                        <li>
+                            <a href="venues.html"
+                                ><span class="nav-icon">🏟️</span> Venues</a
+                            >
+                        </li>
+                        <li>
+                            <a href="statistics.html"
+                                ><span class="nav-icon">📊</span> Statistics</a
+                            >
+                        </li>
+                        <li>
+                            <a href="maps.html"
+                                ><span class="nav-icon">🗺️</span> Maps</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Collections</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="wishlist.html"><span class="nav-icon">⭐</span> Wishlist</a></li>
-                    <li><a href="gallery.html"><span class="nav-icon">📷</span> Photo Gallery</a></li>
-                    <li><a href="collection.html"><span class="nav-icon">💿</span> Media Collection</a></li>
-                    <li><a href="merch.html"><span class="nav-icon">👕</span> Merchandise</a></li>
-                </ul>
-            </li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Social</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="buddies.html"
+                                ><span class="nav-icon">👥</span> Concert
+                                Buddies</a
+                            >
+                        </li>
+                        <li>
+                            <a href="sharing.html"
+                                ><span class="nav-icon">📤</span> Sharing</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Data</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="backup.html"><span class="nav-icon">☁️</span> Backup & Sync</a></li>
-                    <li><a href="import.html"><span class="nav-icon">📥</span> Import Data</a></li>
-                    <li><a href="integrations.html"><span class="nav-icon">🔗</span> Integrations</a></li>
-                </ul>
-            </li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Collections</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="wishlist.html"
+                                ><span class="nav-icon">⭐</span> Wishlist</a
+                            >
+                        </li>
+                        <li>
+                            <a href="gallery.html"
+                                ><span class="nav-icon">📷</span> Photo
+                                Gallery</a
+                            >
+                        </li>
+                        <li>
+                            <a href="collection.html"
+                                ><span class="nav-icon">💿</span> Media
+                                Collection</a
+                            >
+                        </li>
+                        <li>
+                            <a href="merch.html"
+                                ><span class="nav-icon">👕</span> Merchandise</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">More</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="achievements.html"><span class="nav-icon">🏆</span> Achievements</a></li>
-                    <li><a href="spending.html"><span class="nav-icon">💰</span> Spending Tracker</a></li>
-                    <li><a href="year-in-review.html" class="active"><span class="nav-icon">📅</span> Year in Review</a></li>
-                    <li><a href="settings.html"><span class="nav-icon">⚙️</span> Settings</a></li>
-                    <li><a href="faq.html"><span class="nav-icon">❓</span> FAQ</a></li>
-                </ul>
-            </li>
-        </ul>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Data</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="backup.html"
+                                ><span class="nav-icon">☁️</span> Backup &
+                                Sync</a
+                            >
+                        </li>
+                        <li>
+                            <a href="import.html"
+                                ><span class="nav-icon">📥</span> Import Data</a
+                            >
+                        </li>
+                        <li>
+                            <a href="integrations.html"
+                                ><span class="nav-icon">🔗</span>
+                                Integrations</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-        <div class="sidebar-footer">
-            <button class="theme-toggle" aria-label="Toggle theme">
-                <span class="theme-toggle-icon">☀️</span>
-                <span class="theme-toggle-label">Light</span>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">More</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="achievements.html"
+                                ><span class="nav-icon">🏆</span>
+                                Achievements</a
+                            >
+                        </li>
+                        <li>
+                            <a href="spending.html"
+                                ><span class="nav-icon">💰</span> Spending
+                                Tracker</a
+                            >
+                        </li>
+                        <li>
+                            <a href="year-in-review.html" class="active"
+                                ><span class="nav-icon">📅</span> Year in
+                                Review</a
+                            >
+                        </li>
+                        <li>
+                            <a href="settings.html"
+                                ><span class="nav-icon">⚙️</span> Settings</a
+                            >
+                        </li>
+                        <li>
+                            <a href="faq.html"
+                                ><span class="nav-icon">❓</span> FAQ</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-toggle-icon">☀️</span>
+                    <span class="theme-toggle-label">Light</span>
+                </button>
+                <span class="version">v1.0.23</span>
+            </div>
+        </nav>
+
+        <main class="content">
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-            <span class="version">v1.0.22</span>
-        </div>
-    </nav>
 
-    <main class="content">
-        <button class="menu-toggle" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+            <h1>Year in Review</h1>
+            <p class="subtitle">
+                Celebrate your concert year with a personalized recap
+            </p>
 
-        <h1>Year in Review</h1>
-        <p class="subtitle">Celebrate your concert year with a personalized recap</p>
+            <section>
+                <h2>Overview</h2>
+                <p>
+                    At the end of each year (or anytime you want), generate a
+                    comprehensive Year in Review that celebrates your
+                    concert-going journey.
+                </p>
 
-        <section>
-            <h2>Overview</h2>
-            <p>At the end of each year (or anytime you want), generate a comprehensive Year in Review that celebrates your concert-going journey.</p>
+                <div class="screenshot-placeholder">
+                    <p>Year in Review opening screen</p>
+                </div>
+            </section>
 
-            <div class="screenshot-placeholder">
-                <p>Year in Review opening screen</p>
+            <section>
+                <h2>Accessing Year in Review</h2>
+                <ol>
+                    <li>
+                        Go to <strong>Statistics</strong> from the main menu
+                    </li>
+                    <li>Tap <strong>Year in Review</strong></li>
+                    <li>Select the year to review</li>
+                    <li>Swipe through your personalized story</li>
+                </ol>
+
+                <div class="info-box">
+                    <h4>Availability</h4>
+                    <p>
+                        Year in Review is available for any year where you have
+                        at least 1 concert logged. More concerts = more detailed
+                        insights!
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>What's Included</h2>
+
+                <h3>The Numbers</h3>
+                <ul>
+                    <li>
+                        <strong>Total concerts</strong> - How many shows you
+                        attended
+                    </li>
+                    <li>
+                        <strong>Unique bands</strong> - Number of different
+                        artists seen
+                    </li>
+                    <li>
+                        <strong>Venues visited</strong> - How many different
+                        venues
+                    </li>
+                    <li>
+                        <strong>Cities/Countries</strong> - Geographic spread
+                    </li>
+                    <li>
+                        <strong>Total hours</strong> - Estimated time at shows
+                    </li>
+                </ul>
+
+                <h3>Highlights</h3>
+                <ul>
+                    <li>
+                        <strong>First concert of the year</strong> - Your year
+                        opener
+                    </li>
+                    <li>
+                        <strong>Last concert of the year</strong> - Your year
+                        closer
+                    </li>
+                    <li>
+                        <strong>Highest rated show</strong> - Your top concert
+                    </li>
+                    <li>
+                        <strong>Most seen band</strong> - Who you saw the most
+                    </li>
+                    <li>
+                        <strong>Most visited venue</strong> - Your home base
+                    </li>
+                </ul>
+
+                <h3>Genre Journey</h3>
+                <ul>
+                    <li>Breakdown of genres seen</li>
+                    <li>How your tastes evolved through the year</li>
+                    <li>New genres explored</li>
+                </ul>
+
+                <h3>Travel Stats</h3>
+                <ul>
+                    <li>Miles/kilometers traveled for concerts</li>
+                    <li>Furthest concert from home</li>
+                    <li>Map of all venues visited</li>
+                    <li>New cities discovered</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Personal Insights</h2>
+
+                <h3>Concert Persona</h3>
+                <p>
+                    Based on your activity, PocketDemon assigns you a "persona":
+                </p>
+                <ul>
+                    <li>
+                        <strong>Festival Warrior</strong> - Lots of festival
+                        attendance
+                    </li>
+                    <li>
+                        <strong>Local Legend</strong> - Supporting the local
+                        scene
+                    </li>
+                    <li>
+                        <strong>Road Warrior</strong> - Traveling far for shows
+                    </li>
+                    <li>
+                        <strong>Genre Explorer</strong> - Diverse musical tastes
+                    </li>
+                    <li>
+                        <strong>Loyalty Lifer</strong> - Seeing favorites
+                        multiple times
+                    </li>
+                    <li>
+                        <strong>Front Row Fanatic</strong> - High attendance
+                        frequency
+                    </li>
+                </ul>
+
+                <h3>Milestones Reached</h3>
+                <ul>
+                    <li>Achievements unlocked this year</li>
+                    <li>Concert count milestones (50th, 100th, etc.)</li>
+                    <li>Personal records broken</li>
+                </ul>
+
+                <h3>Busiest Period</h3>
+                <ul>
+                    <li>Your busiest month</li>
+                    <li>Longest concert streak</li>
+                    <li>Most concerts in a week</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Spending Summary</h2>
+
+                <h3>Financial Overview</h3>
+                <ul>
+                    <li>Total spent on concerts</li>
+                    <li>Breakdown by category</li>
+                    <li>Average per show</li>
+                    <li>Comparison to previous year</li>
+                </ul>
+
+                <h3>Best Value</h3>
+                <ul>
+                    <li>Best value concert (cost per band/hour)</li>
+                    <li>Cheapest show attended</li>
+                    <li>Most expensive outing</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Memories</h2>
+
+                <h3>Photo Highlights</h3>
+                <p>A curated selection of your best photos from the year.</p>
+
+                <h3>Review Excerpts</h3>
+                <p>Highlights from your concert reviews and notes.</p>
+
+                <h3>On This Day</h3>
+                <p>
+                    Flashbacks to concerts from previous years on the same
+                    dates.
+                </p>
+            </section>
+
+            <section>
+                <h2>Comparisons</h2>
+
+                <h3>Year Over Year</h3>
+                <ul>
+                    <li>More or fewer concerts than last year?</li>
+                    <li>New bands vs returning favorites</li>
+                    <li>Genre shifts</li>
+                    <li>Spending changes</li>
+                </ul>
+
+                <h3>All-Time Context</h3>
+                <ul>
+                    <li>Where this year ranks in your history</li>
+                    <li>Percentage of total concerts</li>
+                    <li>Contribution to lifetime stats</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Sharing Your Year</h2>
+
+                <h3>Share Cards</h3>
+                <p>Generate shareable graphics:</p>
+                <ul>
+                    <li>Summary card with key stats</li>
+                    <li>Top concerts list</li>
+                    <li>Genre breakdown visualization</li>
+                    <li>Map of venues visited</li>
+                </ul>
+
+                <h3>Full Report</h3>
+                <p>Export your complete Year in Review:</p>
+                <ul>
+                    <li><strong>PDF</strong> - Printable report</li>
+                    <li>
+                        <strong>Image series</strong> - Social media friendly
+                    </li>
+                    <li>
+                        <strong>Web link</strong> - Shareable online version
+                    </li>
+                </ul>
+
+                <div class="screenshot-placeholder">
+                    <p>Year in Review share card</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Interactive Features</h2>
+
+                <h3>Story Mode</h3>
+                <p>Swipe through your year like a story:</p>
+                <ul>
+                    <li>Animated transitions</li>
+                    <li>Music snippets (if Spotify connected)</li>
+                    <li>Photo memories</li>
+                    <li>Achievement celebrations</li>
+                </ul>
+
+                <h3>Deep Dive</h3>
+                <p>Tap any stat to see more detail:</p>
+                <ul>
+                    <li>Full list of concerts</li>
+                    <li>Complete band list</li>
+                    <li>All venues visited</li>
+                    <li>Detailed spending breakdown</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Previous Years</h2>
+                <p>Access Year in Review for any past year:</p>
+                <ol>
+                    <li>Go to <strong>Year in Review</strong></li>
+                    <li>Tap the year selector at the top</li>
+                    <li>Choose any year with concert data</li>
+                </ol>
+
+                <div class="tip-box">
+                    <h4>Decade in Review</h4>
+                    <p>
+                        After 10 years of use, unlock the special "Decade in
+                        Review" feature for an even bigger celebration of your
+                        concert journey!
+                    </p>
+                </div>
+            </section>
+
+            <div class="nav-footer">
+                <a href="spending.html" class="nav-prev">Previous: Spending</a>
+                <a href="settings.html" class="nav-next">Next: Settings</a>
             </div>
-        </section>
+        </main>
 
-        <section>
-            <h2>Accessing Year in Review</h2>
-            <ol>
-                <li>Go to <strong>Statistics</strong> from the main menu</li>
-                <li>Tap <strong>Year in Review</strong></li>
-                <li>Select the year to review</li>
-                <li>Swipe through your personalized story</li>
-            </ol>
-
-            <div class="info-box">
-                <h4>Availability</h4>
-                <p>Year in Review is available for any year where you have at least 1 concert logged. More concerts = more detailed insights!</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>What's Included</h2>
-
-            <h3>The Numbers</h3>
-            <ul>
-                <li><strong>Total concerts</strong> - How many shows you attended</li>
-                <li><strong>Unique bands</strong> - Number of different artists seen</li>
-                <li><strong>Venues visited</strong> - How many different venues</li>
-                <li><strong>Cities/Countries</strong> - Geographic spread</li>
-                <li><strong>Total hours</strong> - Estimated time at shows</li>
-            </ul>
-
-            <h3>Highlights</h3>
-            <ul>
-                <li><strong>First concert of the year</strong> - Your year opener</li>
-                <li><strong>Last concert of the year</strong> - Your year closer</li>
-                <li><strong>Highest rated show</strong> - Your top concert</li>
-                <li><strong>Most seen band</strong> - Who you saw the most</li>
-                <li><strong>Most visited venue</strong> - Your home base</li>
-            </ul>
-
-            <h3>Genre Journey</h3>
-            <ul>
-                <li>Breakdown of genres seen</li>
-                <li>How your tastes evolved through the year</li>
-                <li>New genres explored</li>
-            </ul>
-
-            <h3>Travel Stats</h3>
-            <ul>
-                <li>Miles/kilometers traveled for concerts</li>
-                <li>Furthest concert from home</li>
-                <li>Map of all venues visited</li>
-                <li>New cities discovered</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Personal Insights</h2>
-
-            <h3>Concert Persona</h3>
-            <p>Based on your activity, PocketDemon assigns you a "persona":</p>
-            <ul>
-                <li><strong>Festival Warrior</strong> - Lots of festival attendance</li>
-                <li><strong>Local Legend</strong> - Supporting the local scene</li>
-                <li><strong>Road Warrior</strong> - Traveling far for shows</li>
-                <li><strong>Genre Explorer</strong> - Diverse musical tastes</li>
-                <li><strong>Loyalty Lifer</strong> - Seeing favorites multiple times</li>
-                <li><strong>Front Row Fanatic</strong> - High attendance frequency</li>
-            </ul>
-
-            <h3>Milestones Reached</h3>
-            <ul>
-                <li>Achievements unlocked this year</li>
-                <li>Concert count milestones (50th, 100th, etc.)</li>
-                <li>Personal records broken</li>
-            </ul>
-
-            <h3>Busiest Period</h3>
-            <ul>
-                <li>Your busiest month</li>
-                <li>Longest concert streak</li>
-                <li>Most concerts in a week</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Spending Summary</h2>
-
-            <h3>Financial Overview</h3>
-            <ul>
-                <li>Total spent on concerts</li>
-                <li>Breakdown by category</li>
-                <li>Average per show</li>
-                <li>Comparison to previous year</li>
-            </ul>
-
-            <h3>Best Value</h3>
-            <ul>
-                <li>Best value concert (cost per band/hour)</li>
-                <li>Cheapest show attended</li>
-                <li>Most expensive outing</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Memories</h2>
-
-            <h3>Photo Highlights</h3>
-            <p>A curated selection of your best photos from the year.</p>
-
-            <h3>Review Excerpts</h3>
-            <p>Highlights from your concert reviews and notes.</p>
-
-            <h3>On This Day</h3>
-            <p>Flashbacks to concerts from previous years on the same dates.</p>
-        </section>
-
-        <section>
-            <h2>Comparisons</h2>
-
-            <h3>Year Over Year</h3>
-            <ul>
-                <li>More or fewer concerts than last year?</li>
-                <li>New bands vs returning favorites</li>
-                <li>Genre shifts</li>
-                <li>Spending changes</li>
-            </ul>
-
-            <h3>All-Time Context</h3>
-            <ul>
-                <li>Where this year ranks in your history</li>
-                <li>Percentage of total concerts</li>
-                <li>Contribution to lifetime stats</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Sharing Your Year</h2>
-
-            <h3>Share Cards</h3>
-            <p>Generate shareable graphics:</p>
-            <ul>
-                <li>Summary card with key stats</li>
-                <li>Top concerts list</li>
-                <li>Genre breakdown visualization</li>
-                <li>Map of venues visited</li>
-            </ul>
-
-            <h3>Full Report</h3>
-            <p>Export your complete Year in Review:</p>
-            <ul>
-                <li><strong>PDF</strong> - Printable report</li>
-                <li><strong>Image series</strong> - Social media friendly</li>
-                <li><strong>Web link</strong> - Shareable online version</li>
-            </ul>
-
-            <div class="screenshot-placeholder">
-                <p>Year in Review share card</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Interactive Features</h2>
-
-            <h3>Story Mode</h3>
-            <p>Swipe through your year like a story:</p>
-            <ul>
-                <li>Animated transitions</li>
-                <li>Music snippets (if Spotify connected)</li>
-                <li>Photo memories</li>
-                <li>Achievement celebrations</li>
-            </ul>
-
-            <h3>Deep Dive</h3>
-            <p>Tap any stat to see more detail:</p>
-            <ul>
-                <li>Full list of concerts</li>
-                <li>Complete band list</li>
-                <li>All venues visited</li>
-                <li>Detailed spending breakdown</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Previous Years</h2>
-            <p>Access Year in Review for any past year:</p>
-            <ol>
-                <li>Go to <strong>Year in Review</strong></li>
-                <li>Tap the year selector at the top</li>
-                <li>Choose any year with concert data</li>
-            </ol>
-
-            <div class="tip-box">
-                <h4>Decade in Review</h4>
-                <p>After 10 years of use, unlock the special "Decade in Review" feature for an even bigger celebration of your concert journey!</p>
-            </div>
-        </section>
-
-        <div class="nav-footer">
-            <a href="spending.html" class="nav-prev">Previous: Spending</a>
-            <a href="settings.html" class="nav-next">Next: Settings</a>
-        </div>
-    </main>
-
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>

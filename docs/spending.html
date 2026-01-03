@@ -1,335 +1,487 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spending Tracker - PocketDemon Manual</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/icon.png">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Spending Tracker - PocketDemon Manual</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/png" href="images/icon.png" />
+    </head>
+    <body>
         <nav class="sidebar">
-        <div class="logo">
-            <img src="images/DemonLogoBlack.png" alt="PocketDemon Logo" class="logo-image" width="44" height="44">
-            <div class="logo-text">
-                <h1>PocketDemon</h1>
-                <p class="tagline">Concert Tracker</p>
+            <div class="logo">
+                <img
+                    src="images/DemonLogoBlack.png"
+                    alt="PocketDemon Logo"
+                    class="logo-image"
+                    width="44"
+                    height="44"
+                />
+                <div class="logo-text">
+                    <h1>PocketDemon</h1>
+                    <p class="tagline">Concert Tracker</p>
+                </div>
             </div>
-        </div>
 
-        <div class="sidebar-search">
-            <div class="search-container">
-                <span class="search-icon">🔍</span>
-                <input type="text" class="search-input" placeholder="Search docs... (/)">
-                <div class="search-results"></div>
+            <div class="sidebar-search">
+                <div class="search-container">
+                    <span class="search-icon">🔍</span>
+                    <input
+                        type="text"
+                        class="search-input"
+                        placeholder="Search docs... (/)"
+                    />
+                    <div class="search-results"></div>
+                </div>
             </div>
-        </div>
 
-        <ul class="nav-links">
-            <li><a href="index.html"><span class="nav-icon">🏠</span> Home</a></li>
-            <li><a href="getting-started.html"><span class="nav-icon">🚀</span> Getting Started</a></li>
-            
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Core Features</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="bands.html"><span class="nav-icon">🎸</span> Bands</a></li>
-                    <li><a href="events.html"><span class="nav-icon">🎫</span> Events & Concerts</a></li>
-                    <li><a href="venues.html"><span class="nav-icon">🏟️</span> Venues</a></li>
-                    <li><a href="statistics.html"><span class="nav-icon">📊</span> Statistics</a></li>
-                    <li><a href="maps.html"><span class="nav-icon">🗺️</span> Maps</a></li>
-                </ul>
-            </li>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html"
+                        ><span class="nav-icon">🏠</span> Home</a
+                    >
+                </li>
+                <li>
+                    <a href="getting-started.html"
+                        ><span class="nav-icon">🚀</span> Getting Started</a
+                    >
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Social</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="buddies.html"><span class="nav-icon">👥</span> Concert Buddies</a></li>
-                    <li><a href="sharing.html"><span class="nav-icon">📤</span> Sharing</a></li>
-                </ul>
-            </li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Core Features</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="bands.html"
+                                ><span class="nav-icon">🎸</span> Bands</a
+                            >
+                        </li>
+                        <li>
+                            <a href="events.html"
+                                ><span class="nav-icon">🎫</span> Events &
+                                Concerts</a
+                            >
+                        </li>
+                        <li>
+                            <a href="venues.html"
+                                ><span class="nav-icon">🏟️</span> Venues</a
+                            >
+                        </li>
+                        <li>
+                            <a href="statistics.html"
+                                ><span class="nav-icon">📊</span> Statistics</a
+                            >
+                        </li>
+                        <li>
+                            <a href="maps.html"
+                                ><span class="nav-icon">🗺️</span> Maps</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Collections</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="wishlist.html"><span class="nav-icon">⭐</span> Wishlist</a></li>
-                    <li><a href="gallery.html"><span class="nav-icon">📷</span> Photo Gallery</a></li>
-                    <li><a href="collection.html"><span class="nav-icon">💿</span> Media Collection</a></li>
-                    <li><a href="merch.html"><span class="nav-icon">👕</span> Merchandise</a></li>
-                </ul>
-            </li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Social</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="buddies.html"
+                                ><span class="nav-icon">👥</span> Concert
+                                Buddies</a
+                            >
+                        </li>
+                        <li>
+                            <a href="sharing.html"
+                                ><span class="nav-icon">📤</span> Sharing</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Data</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="backup.html"><span class="nav-icon">☁️</span> Backup & Sync</a></li>
-                    <li><a href="import.html"><span class="nav-icon">📥</span> Import Data</a></li>
-                    <li><a href="integrations.html"><span class="nav-icon">🔗</span> Integrations</a></li>
-                </ul>
-            </li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Collections</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="wishlist.html"
+                                ><span class="nav-icon">⭐</span> Wishlist</a
+                            >
+                        </li>
+                        <li>
+                            <a href="gallery.html"
+                                ><span class="nav-icon">📷</span> Photo
+                                Gallery</a
+                            >
+                        </li>
+                        <li>
+                            <a href="collection.html"
+                                ><span class="nav-icon">💿</span> Media
+                                Collection</a
+                            >
+                        </li>
+                        <li>
+                            <a href="merch.html"
+                                ><span class="nav-icon">👕</span> Merchandise</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">More</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="achievements.html"><span class="nav-icon">🏆</span> Achievements</a></li>
-                    <li><a href="spending.html" class="active"><span class="nav-icon">💰</span> Spending Tracker</a></li>
-                    <li><a href="year-in-review.html"><span class="nav-icon">📅</span> Year in Review</a></li>
-                    <li><a href="settings.html"><span class="nav-icon">⚙️</span> Settings</a></li>
-                    <li><a href="faq.html"><span class="nav-icon">❓</span> FAQ</a></li>
-                </ul>
-            </li>
-        </ul>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Data</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="backup.html"
+                                ><span class="nav-icon">☁️</span> Backup &
+                                Sync</a
+                            >
+                        </li>
+                        <li>
+                            <a href="import.html"
+                                ><span class="nav-icon">📥</span> Import Data</a
+                            >
+                        </li>
+                        <li>
+                            <a href="integrations.html"
+                                ><span class="nav-icon">🔗</span>
+                                Integrations</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-        <div class="sidebar-footer">
-            <button class="theme-toggle" aria-label="Toggle theme">
-                <span class="theme-toggle-icon">☀️</span>
-                <span class="theme-toggle-label">Light</span>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">More</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="achievements.html"
+                                ><span class="nav-icon">🏆</span>
+                                Achievements</a
+                            >
+                        </li>
+                        <li>
+                            <a href="spending.html" class="active"
+                                ><span class="nav-icon">💰</span> Spending
+                                Tracker</a
+                            >
+                        </li>
+                        <li>
+                            <a href="year-in-review.html"
+                                ><span class="nav-icon">📅</span> Year in
+                                Review</a
+                            >
+                        </li>
+                        <li>
+                            <a href="settings.html"
+                                ><span class="nav-icon">⚙️</span> Settings</a
+                            >
+                        </li>
+                        <li>
+                            <a href="faq.html"
+                                ><span class="nav-icon">❓</span> FAQ</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-toggle-icon">☀️</span>
+                    <span class="theme-toggle-label">Light</span>
+                </button>
+                <span class="version">v1.0.23</span>
+            </div>
+        </nav>
+
+        <main class="content">
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-            <span class="version">v1.0.22</span>
-        </div>
-    </nav>
 
-    <main class="content">
-        <button class="menu-toggle" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+            <h1>Spending Tracker</h1>
+            <p class="subtitle">
+                Track all your concert-related expenses in one place
+            </p>
 
-        <h1>Spending Tracker</h1>
-        <p class="subtitle">Track all your concert-related expenses in one place</p>
+            <section>
+                <h2>Overview</h2>
+                <p>
+                    The Spending Tracker gives you complete visibility into your
+                    concert-going expenses, from tickets to travel to merch.
+                </p>
 
-        <section>
-            <h2>Overview</h2>
-            <p>The Spending Tracker gives you complete visibility into your concert-going expenses, from tickets to travel to merch.</p>
-
-            <div class="screenshot-placeholder">
-                <p>Spending overview dashboard</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Expense Categories</h2>
-            <p>Track expenses across multiple categories:</p>
-
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <h3>Tickets</h3>
-                    <ul>
-                        <li>Ticket price</li>
-                        <li>Service fees</li>
-                        <li>VIP upgrades</li>
-                        <li>Meet & greet packages</li>
-                    </ul>
+                <div class="screenshot-placeholder">
+                    <p>Spending overview dashboard</p>
                 </div>
-                <div class="feature-card">
-                    <h3>Travel</h3>
-                    <ul>
-                        <li>Gas/fuel</li>
-                        <li>Flights</li>
-                        <li>Parking</li>
-                        <li>Rideshare/taxi</li>
-                        <li>Public transit</li>
-                    </ul>
+            </section>
+
+            <section>
+                <h2>Expense Categories</h2>
+                <p>Track expenses across multiple categories:</p>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>Tickets</h3>
+                        <ul>
+                            <li>Ticket price</li>
+                            <li>Service fees</li>
+                            <li>VIP upgrades</li>
+                            <li>Meet & greet packages</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Travel</h3>
+                        <ul>
+                            <li>Gas/fuel</li>
+                            <li>Flights</li>
+                            <li>Parking</li>
+                            <li>Rideshare/taxi</li>
+                            <li>Public transit</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Accommodation</h3>
+                        <ul>
+                            <li>Hotels</li>
+                            <li>Airbnb</li>
+                            <li>Camping fees</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3>At the Show</h3>
+                        <ul>
+                            <li>Merchandise</li>
+                            <li>Food & drinks</li>
+                            <li>Coat check</li>
+                            <li>Tips</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <h3>Accommodation</h3>
-                    <ul>
-                        <li>Hotels</li>
-                        <li>Airbnb</li>
-                        <li>Camping fees</li>
-                    </ul>
+            </section>
+
+            <section>
+                <h2>Adding Expenses</h2>
+
+                <h3>From a Concert</h3>
+                <ol>
+                    <li>Open the concert entry</li>
+                    <li>Scroll to <strong>Spending</strong> section</li>
+                    <li>Tap <strong>Add Expense</strong></li>
+                    <li>Select category and enter amount</li>
+                </ol>
+
+                <h3>Quick Add</h3>
+                <ol>
+                    <li>Go to <strong>Spending</strong> from main menu</li>
+                    <li>Tap the <strong>+</strong> button</li>
+                    <li>Select or search for the concert</li>
+                    <li>Add expense details</li>
+                </ol>
+
+                <h3>Expense Details</h3>
+                <ul>
+                    <li><strong>Amount</strong> - How much you spent</li>
+                    <li><strong>Category</strong> - Type of expense</li>
+                    <li><strong>Date</strong> - When you spent it</li>
+                    <li><strong>Notes</strong> - Additional details</li>
+                    <li><strong>Receipt photo</strong> - Attach a photo</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Currency Support</h2>
+                <p>For international concert-goers:</p>
+                <ul>
+                    <li>Enter expenses in any currency</li>
+                    <li>Automatic conversion to your home currency</li>
+                    <li>Historical exchange rates for accuracy</li>
+                    <li>View totals in any currency</li>
+                </ul>
+
+                <div class="info-box">
+                    <h4>Setting Your Currency</h4>
+                    <p>
+                        Set your default currency in Settings > Preferences >
+                        Currency. All reports will show totals in this currency.
+                    </p>
                 </div>
-                <div class="feature-card">
-                    <h3>At the Show</h3>
-                    <ul>
-                        <li>Merchandise</li>
-                        <li>Food & drinks</li>
-                        <li>Coat check</li>
-                        <li>Tips</li>
-                    </ul>
+            </section>
+
+            <section>
+                <h2>Spending Reports</h2>
+
+                <h3>Dashboard Overview</h3>
+                <ul>
+                    <li><strong>Total spent</strong> - All-time spending</li>
+                    <li><strong>This year</strong> - Current year total</li>
+                    <li>
+                        <strong>Average per concert</strong> - Your typical
+                        spend
+                    </li>
+                    <li>
+                        <strong>Highest single concert</strong> - Your biggest
+                        expense
+                    </li>
+                </ul>
+
+                <h3>Category Breakdown</h3>
+                <p>See how your money is distributed:</p>
+                <ul>
+                    <li>Pie chart by category</li>
+                    <li>Tickets vs merch vs travel</li>
+                    <li>Trends over time</li>
+                </ul>
+
+                <div class="screenshot-placeholder">
+                    <p>Spending category breakdown</p>
                 </div>
+
+                <h3>Time-Based Reports</h3>
+                <ul>
+                    <li><strong>Monthly</strong> - Spending by month</li>
+                    <li><strong>Yearly</strong> - Year-over-year comparison</li>
+                    <li>
+                        <strong>By festival</strong> - Multi-day event breakdown
+                    </li>
+                </ul>
+
+                <h3>By Band/Venue</h3>
+                <ul>
+                    <li>Which bands cost you most to see</li>
+                    <li>Most expensive venues</li>
+                    <li>Cost comparison across tours</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Budget Features</h2>
+
+                <h3>Set Budgets</h3>
+                <ul>
+                    <li>
+                        <strong>Annual budget</strong> - Set a yearly spending
+                        goal
+                    </li>
+                    <li>
+                        <strong>Per-concert budget</strong> - Typical concert
+                        limit
+                    </li>
+                    <li>
+                        <strong>Category budgets</strong> - Limit merch
+                        spending, etc.
+                    </li>
+                </ul>
+
+                <h3>Budget Tracking</h3>
+                <ul>
+                    <li>See budget remaining</li>
+                    <li>Get alerts when approaching limits</li>
+                    <li>Track progress throughout the year</li>
+                </ul>
+
+                <div class="tip-box">
+                    <h4>Smart Budgeting</h4>
+                    <p>
+                        PocketDemon can suggest budgets based on your historical
+                        spending patterns. Check Settings > Spending > Suggest
+                        Budget.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Cost Per Show Analysis</h2>
+                <p>Understand your true cost per concert:</p>
+
+                <h3>Metrics</h3>
+                <ul>
+                    <li>
+                        <strong>Cost per band</strong> - Total spent / bands
+                        seen
+                    </li>
+                    <li>
+                        <strong>Cost per hour</strong> - Including travel and
+                        wait time
+                    </li>
+                    <li>
+                        <strong>Festival value</strong> - Compare multi-day vs
+                        single shows
+                    </li>
+                </ul>
+
+                <h3>Efficiency Score</h3>
+                <p>PocketDemon calculates a "value score" based on:</p>
+                <ul>
+                    <li>Number of bands seen</li>
+                    <li>Total time at venue</li>
+                    <li>Total cost</li>
+                    <li>Your ratings</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Receipt Management</h2>
+                <ul>
+                    <li>Attach receipt photos to expenses</li>
+                    <li>Organize receipts by concert</li>
+                    <li>Export receipts for reimbursement</li>
+                    <li>Searchable receipt archive</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Export Options</h2>
+                <ul>
+                    <li><strong>CSV</strong> - Full expense spreadsheet</li>
+                    <li>
+                        <strong>PDF report</strong> - Formatted spending report
+                    </li>
+                    <li>
+                        <strong>By date range</strong> - Custom period exports
+                    </li>
+                    <li>
+                        <strong>Tax-ready</strong> - If concerts are
+                        business-related
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Shared Expenses</h2>
+                <p>For concerts with friends:</p>
+                <ul>
+                    <li>Mark expenses as shared</li>
+                    <li>Track who paid vs who owes</li>
+                    <li>Split calculations</li>
+                    <li>Settlement tracking</li>
+                </ul>
+            </section>
+
+            <div class="nav-footer">
+                <a href="integrations.html" class="nav-prev"
+                    >Previous: Integrations</a
+                >
+                <a href="year-in-review.html" class="nav-next"
+                    >Next: Year in Review</a
+                >
             </div>
-        </section>
+        </main>
 
-        <section>
-            <h2>Adding Expenses</h2>
-
-            <h3>From a Concert</h3>
-            <ol>
-                <li>Open the concert entry</li>
-                <li>Scroll to <strong>Spending</strong> section</li>
-                <li>Tap <strong>Add Expense</strong></li>
-                <li>Select category and enter amount</li>
-            </ol>
-
-            <h3>Quick Add</h3>
-            <ol>
-                <li>Go to <strong>Spending</strong> from main menu</li>
-                <li>Tap the <strong>+</strong> button</li>
-                <li>Select or search for the concert</li>
-                <li>Add expense details</li>
-            </ol>
-
-            <h3>Expense Details</h3>
-            <ul>
-                <li><strong>Amount</strong> - How much you spent</li>
-                <li><strong>Category</strong> - Type of expense</li>
-                <li><strong>Date</strong> - When you spent it</li>
-                <li><strong>Notes</strong> - Additional details</li>
-                <li><strong>Receipt photo</strong> - Attach a photo</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Currency Support</h2>
-            <p>For international concert-goers:</p>
-            <ul>
-                <li>Enter expenses in any currency</li>
-                <li>Automatic conversion to your home currency</li>
-                <li>Historical exchange rates for accuracy</li>
-                <li>View totals in any currency</li>
-            </ul>
-
-            <div class="info-box">
-                <h4>Setting Your Currency</h4>
-                <p>Set your default currency in Settings > Preferences > Currency. All reports will show totals in this currency.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Spending Reports</h2>
-
-            <h3>Dashboard Overview</h3>
-            <ul>
-                <li><strong>Total spent</strong> - All-time spending</li>
-                <li><strong>This year</strong> - Current year total</li>
-                <li><strong>Average per concert</strong> - Your typical spend</li>
-                <li><strong>Highest single concert</strong> - Your biggest expense</li>
-            </ul>
-
-            <h3>Category Breakdown</h3>
-            <p>See how your money is distributed:</p>
-            <ul>
-                <li>Pie chart by category</li>
-                <li>Tickets vs merch vs travel</li>
-                <li>Trends over time</li>
-            </ul>
-
-            <div class="screenshot-placeholder">
-                <p>Spending category breakdown</p>
-            </div>
-
-            <h3>Time-Based Reports</h3>
-            <ul>
-                <li><strong>Monthly</strong> - Spending by month</li>
-                <li><strong>Yearly</strong> - Year-over-year comparison</li>
-                <li><strong>By festival</strong> - Multi-day event breakdown</li>
-            </ul>
-
-            <h3>By Band/Venue</h3>
-            <ul>
-                <li>Which bands cost you most to see</li>
-                <li>Most expensive venues</li>
-                <li>Cost comparison across tours</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Budget Features</h2>
-
-            <h3>Set Budgets</h3>
-            <ul>
-                <li><strong>Annual budget</strong> - Set a yearly spending goal</li>
-                <li><strong>Per-concert budget</strong> - Typical concert limit</li>
-                <li><strong>Category budgets</strong> - Limit merch spending, etc.</li>
-            </ul>
-
-            <h3>Budget Tracking</h3>
-            <ul>
-                <li>See budget remaining</li>
-                <li>Get alerts when approaching limits</li>
-                <li>Track progress throughout the year</li>
-            </ul>
-
-            <div class="tip-box">
-                <h4>Smart Budgeting</h4>
-                <p>PocketDemon can suggest budgets based on your historical spending patterns. Check Settings > Spending > Suggest Budget.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Cost Per Show Analysis</h2>
-            <p>Understand your true cost per concert:</p>
-
-            <h3>Metrics</h3>
-            <ul>
-                <li><strong>Cost per band</strong> - Total spent / bands seen</li>
-                <li><strong>Cost per hour</strong> - Including travel and wait time</li>
-                <li><strong>Festival value</strong> - Compare multi-day vs single shows</li>
-            </ul>
-
-            <h3>Efficiency Score</h3>
-            <p>PocketDemon calculates a "value score" based on:</p>
-            <ul>
-                <li>Number of bands seen</li>
-                <li>Total time at venue</li>
-                <li>Total cost</li>
-                <li>Your ratings</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Receipt Management</h2>
-            <ul>
-                <li>Attach receipt photos to expenses</li>
-                <li>Organize receipts by concert</li>
-                <li>Export receipts for reimbursement</li>
-                <li>Searchable receipt archive</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Export Options</h2>
-            <ul>
-                <li><strong>CSV</strong> - Full expense spreadsheet</li>
-                <li><strong>PDF report</strong> - Formatted spending report</li>
-                <li><strong>By date range</strong> - Custom period exports</li>
-                <li><strong>Tax-ready</strong> - If concerts are business-related</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Shared Expenses</h2>
-            <p>For concerts with friends:</p>
-            <ul>
-                <li>Mark expenses as shared</li>
-                <li>Track who paid vs who owes</li>
-                <li>Split calculations</li>
-                <li>Settlement tracking</li>
-            </ul>
-        </section>
-
-        <div class="nav-footer">
-            <a href="integrations.html" class="nav-prev">Previous: Integrations</a>
-            <a href="year-in-review.html" class="nav-next">Next: Year in Review</a>
-        </div>
-    </main>
-
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>

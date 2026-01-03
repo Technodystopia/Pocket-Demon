@@ -1,255 +1,404 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Import Data - PocketDemon Manual</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/icon.png">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Import Data - PocketDemon Manual</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/png" href="images/icon.png" />
+    </head>
+    <body>
         <nav class="sidebar">
-        <div class="logo">
-            <img src="images/DemonLogoBlack.png" alt="PocketDemon Logo" class="logo-image" width="44" height="44">
-            <div class="logo-text">
-                <h1>PocketDemon</h1>
-                <p class="tagline">Concert Tracker</p>
+            <div class="logo">
+                <img
+                    src="images/DemonLogoBlack.png"
+                    alt="PocketDemon Logo"
+                    class="logo-image"
+                    width="44"
+                    height="44"
+                />
+                <div class="logo-text">
+                    <h1>PocketDemon</h1>
+                    <p class="tagline">Concert Tracker</p>
+                </div>
             </div>
-        </div>
 
-        <div class="sidebar-search">
-            <div class="search-container">
-                <span class="search-icon">🔍</span>
-                <input type="text" class="search-input" placeholder="Search docs... (/)">
-                <div class="search-results"></div>
+            <div class="sidebar-search">
+                <div class="search-container">
+                    <span class="search-icon">🔍</span>
+                    <input
+                        type="text"
+                        class="search-input"
+                        placeholder="Search docs... (/)"
+                    />
+                    <div class="search-results"></div>
+                </div>
             </div>
-        </div>
 
-        <ul class="nav-links">
-            <li><a href="index.html"><span class="nav-icon">🏠</span> Home</a></li>
-            <li><a href="getting-started.html"><span class="nav-icon">🚀</span> Getting Started</a></li>
-            
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Core Features</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="bands.html"><span class="nav-icon">🎸</span> Bands</a></li>
-                    <li><a href="events.html"><span class="nav-icon">🎫</span> Events & Concerts</a></li>
-                    <li><a href="venues.html"><span class="nav-icon">🏟️</span> Venues</a></li>
-                    <li><a href="statistics.html"><span class="nav-icon">📊</span> Statistics</a></li>
-                    <li><a href="maps.html"><span class="nav-icon">🗺️</span> Maps</a></li>
-                </ul>
-            </li>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html"
+                        ><span class="nav-icon">🏠</span> Home</a
+                    >
+                </li>
+                <li>
+                    <a href="getting-started.html"
+                        ><span class="nav-icon">🚀</span> Getting Started</a
+                    >
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Social</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="buddies.html"><span class="nav-icon">👥</span> Concert Buddies</a></li>
-                    <li><a href="sharing.html"><span class="nav-icon">📤</span> Sharing</a></li>
-                </ul>
-            </li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Core Features</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="bands.html"
+                                ><span class="nav-icon">🎸</span> Bands</a
+                            >
+                        </li>
+                        <li>
+                            <a href="events.html"
+                                ><span class="nav-icon">🎫</span> Events &
+                                Concerts</a
+                            >
+                        </li>
+                        <li>
+                            <a href="venues.html"
+                                ><span class="nav-icon">🏟️</span> Venues</a
+                            >
+                        </li>
+                        <li>
+                            <a href="statistics.html"
+                                ><span class="nav-icon">📊</span> Statistics</a
+                            >
+                        </li>
+                        <li>
+                            <a href="maps.html"
+                                ><span class="nav-icon">🗺️</span> Maps</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Collections</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="wishlist.html"><span class="nav-icon">⭐</span> Wishlist</a></li>
-                    <li><a href="gallery.html"><span class="nav-icon">📷</span> Photo Gallery</a></li>
-                    <li><a href="collection.html"><span class="nav-icon">💿</span> Media Collection</a></li>
-                    <li><a href="merch.html"><span class="nav-icon">👕</span> Merchandise</a></li>
-                </ul>
-            </li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Social</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="buddies.html"
+                                ><span class="nav-icon">👥</span> Concert
+                                Buddies</a
+                            >
+                        </li>
+                        <li>
+                            <a href="sharing.html"
+                                ><span class="nav-icon">📤</span> Sharing</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Data</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="backup.html"><span class="nav-icon">☁️</span> Backup & Sync</a></li>
-                    <li><a href="import.html" class="active"><span class="nav-icon">📥</span> Import Data</a></li>
-                    <li><a href="integrations.html"><span class="nav-icon">🔗</span> Integrations</a></li>
-                </ul>
-            </li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Collections</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="wishlist.html"
+                                ><span class="nav-icon">⭐</span> Wishlist</a
+                            >
+                        </li>
+                        <li>
+                            <a href="gallery.html"
+                                ><span class="nav-icon">📷</span> Photo
+                                Gallery</a
+                            >
+                        </li>
+                        <li>
+                            <a href="collection.html"
+                                ><span class="nav-icon">💿</span> Media
+                                Collection</a
+                            >
+                        </li>
+                        <li>
+                            <a href="merch.html"
+                                ><span class="nav-icon">👕</span> Merchandise</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">More</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="achievements.html"><span class="nav-icon">🏆</span> Achievements</a></li>
-                    <li><a href="spending.html"><span class="nav-icon">💰</span> Spending Tracker</a></li>
-                    <li><a href="year-in-review.html"><span class="nav-icon">📅</span> Year in Review</a></li>
-                    <li><a href="settings.html"><span class="nav-icon">⚙️</span> Settings</a></li>
-                    <li><a href="faq.html"><span class="nav-icon">❓</span> FAQ</a></li>
-                </ul>
-            </li>
-        </ul>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Data</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="backup.html"
+                                ><span class="nav-icon">☁️</span> Backup &
+                                Sync</a
+                            >
+                        </li>
+                        <li>
+                            <a href="import.html" class="active"
+                                ><span class="nav-icon">📥</span> Import Data</a
+                            >
+                        </li>
+                        <li>
+                            <a href="integrations.html"
+                                ><span class="nav-icon">🔗</span>
+                                Integrations</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-        <div class="sidebar-footer">
-            <button class="theme-toggle" aria-label="Toggle theme">
-                <span class="theme-toggle-icon">☀️</span>
-                <span class="theme-toggle-label">Light</span>
-            </button>
-            <span class="version">v1.0.22</span>
-        </div>
-    </nav>
-
-    <main class="content">
-        <header>
-            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-            <h1>Import Data</h1>
-        </header>
-
-        <section class="page-content">
-            <h2>Bring Your Concert History</h2>
-            <p>PocketDemon can import your concert history from several sources.</p>
-
-            <h2>Setlist.fm Import</h2>
-            <p>Import concerts you've marked as "attended" on setlist.fm:</p>
-            <ol>
-                <li>Go to <strong>Settings</strong> &rarr; <strong>Import</strong></li>
-                <li>Tap <strong>Import from Setlist.fm</strong></li>
-                <li>Enter your setlist.fm username</li>
-                <li>Tap <strong>Search</strong></li>
-                <li>Review found concerts</li>
-                <li>Select which to import</li>
-                <li>Tap <strong>Import Selected</strong></li>
-            </ol>
-
-            <h3>What Gets Imported</h3>
-            <ul>
-                <li>Event name and date</li>
-                <li>Venue with city and country</li>
-                <li>Band name</li>
-                <li>Setlist (cached for later viewing)</li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">More</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="achievements.html"
+                                ><span class="nav-icon">🏆</span>
+                                Achievements</a
+                            >
+                        </li>
+                        <li>
+                            <a href="spending.html"
+                                ><span class="nav-icon">💰</span> Spending
+                                Tracker</a
+                            >
+                        </li>
+                        <li>
+                            <a href="year-in-review.html"
+                                ><span class="nav-icon">📅</span> Year in
+                                Review</a
+                            >
+                        </li>
+                        <li>
+                            <a href="settings.html"
+                                ><span class="nav-icon">⚙️</span> Settings</a
+                            >
+                        </li>
+                        <li>
+                            <a href="faq.html"
+                                ><span class="nav-icon">❓</span> FAQ</a
+                            >
+                        </li>
+                    </ul>
+                </li>
             </ul>
 
-            <div class="info-box tip">
-                <h4>Tip</h4>
-                <p>After importing, use the <strong>Enrich</strong> feature on bands to fetch additional metadata from MusicBrainz.</p>
+            <div class="sidebar-footer">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-toggle-icon">☀️</span>
+                    <span class="theme-toggle-label">Light</span>
+                </button>
+                <span class="version">v1.0.23</span>
             </div>
+        </nav>
 
-            <h2>Last.fm Import</h2>
-            <p>Import artists from your Last.fm library:</p>
+        <main class="content">
+            <header>
+                <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+                <h1>Import Data</h1>
+            </header>
 
-            <h3>Top Artists</h3>
-            <ol>
-                <li>Go to <strong>Settings</strong> &rarr; <strong>Import</strong></li>
-                <li>Tap <strong>Import from Last.fm</strong></li>
-                <li>Enter your Last.fm username</li>
-                <li>Select <strong>Top Artists</strong></li>
-                <li>Choose time period (overall, year, month, week)</li>
-                <li>Review the list</li>
-                <li>Import as bands or add to wishlist</li>
-            </ol>
+            <section class="page-content">
+                <h2>Bring Your Concert History</h2>
+                <p>
+                    PocketDemon can import your concert history from several
+                    sources.
+                </p>
 
-            <h3>Library Artists</h3>
-            <ol>
-                <li>Same steps, but select <strong>Library Artists</strong></li>
-                <li>Shows all artists in your Last.fm library</li>
-                <li>Includes play counts</li>
-            </ol>
+                <h2>Setlist.fm Import</h2>
+                <p>
+                    Import concerts you've marked as "attended" on setlist.fm:
+                </p>
+                <ol>
+                    <li>
+                        Go to <strong>Settings</strong> &rarr;
+                        <strong>Import</strong>
+                    </li>
+                    <li>Tap <strong>Import from Setlist.fm</strong></li>
+                    <li>Enter your setlist.fm username</li>
+                    <li>Tap <strong>Search</strong></li>
+                    <li>Review found concerts</li>
+                    <li>Select which to import</li>
+                    <li>Tap <strong>Import Selected</strong></li>
+                </ol>
 
-            <div class="info-box note">
-                <h4>Note</h4>
-                <p>Last.fm import adds bands to your collection but doesn't create events - you'll need to add the concert details manually.</p>
-            </div>
+                <h3>What Gets Imported</h3>
+                <ul>
+                    <li>Event name and date</li>
+                    <li>Venue with city and country</li>
+                    <li>Band name</li>
+                    <li>Setlist (cached for later viewing)</li>
+                </ul>
 
-            <h2>Discogs Import</h2>
-            <p>Import your physical media collection from Discogs:</p>
-            <ol>
-                <li>Go to <strong>More</strong> &rarr; <strong>Collection</strong></li>
-                <li>Tap menu &rarr; <strong>Import from Discogs</strong></li>
-                <li>Enter your Discogs username</li>
-                <li>Select collection folder</li>
-                <li>Review releases</li>
-                <li>Import to your collection</li>
-            </ol>
+                <div class="info-box tip">
+                    <h4>Tip</h4>
+                    <p>
+                        After importing, use the <strong>Enrich</strong> feature
+                        on bands to fetch additional metadata from MusicBrainz.
+                    </p>
+                </div>
 
-            <h3>What Gets Imported</h3>
-            <ul>
-                <li>Artist/band name</li>
-                <li>Release title</li>
-                <li>Year</li>
-                <li>Label and catalog number</li>
-                <li>Format (vinyl, CD, cassette)</li>
-                <li>Format details (LP, 7", etc.)</li>
-            </ul>
+                <h2>Last.fm Import</h2>
+                <p>Import artists from your Last.fm library:</p>
 
-            <h2>CSV Import</h2>
-            <p>Import from spreadsheets:</p>
-            <ol>
-                <li>Go to <strong>Settings</strong> &rarr; <strong>Import</strong></li>
-                <li>Tap <strong>Import CSV</strong></li>
-                <li>Select your CSV file</li>
-                <li>Map columns to fields</li>
-                <li>Preview import</li>
-                <li>Confirm import</li>
-            </ol>
+                <h3>Top Artists</h3>
+                <ol>
+                    <li>
+                        Go to <strong>Settings</strong> &rarr;
+                        <strong>Import</strong>
+                    </li>
+                    <li>Tap <strong>Import from Last.fm</strong></li>
+                    <li>Enter your Last.fm username</li>
+                    <li>Select <strong>Top Artists</strong></li>
+                    <li>Choose time period (overall, year, month, week)</li>
+                    <li>Review the list</li>
+                    <li>Import as bands or add to wishlist</li>
+                </ol>
 
-            <h3>CSV Format</h3>
-            <p>Required columns depend on what you're importing:</p>
+                <h3>Library Artists</h3>
+                <ol>
+                    <li>
+                        Same steps, but select <strong>Library Artists</strong>
+                    </li>
+                    <li>Shows all artists in your Last.fm library</li>
+                    <li>Includes play counts</li>
+                </ol>
 
-            <h4>Bands CSV</h4>
-            <pre><code>name,country,genres
+                <div class="info-box note">
+                    <h4>Note</h4>
+                    <p>
+                        Last.fm import adds bands to your collection but doesn't
+                        create events - you'll need to add the concert details
+                        manually.
+                    </p>
+                </div>
+
+                <h2>Discogs Import</h2>
+                <p>Import your physical media collection from Discogs:</p>
+                <ol>
+                    <li>
+                        Go to <strong>More</strong> &rarr;
+                        <strong>Collection</strong>
+                    </li>
+                    <li>
+                        Tap menu &rarr; <strong>Import from Discogs</strong>
+                    </li>
+                    <li>Enter your Discogs username</li>
+                    <li>Select collection folder</li>
+                    <li>Review releases</li>
+                    <li>Import to your collection</li>
+                </ol>
+
+                <h3>What Gets Imported</h3>
+                <ul>
+                    <li>Artist/band name</li>
+                    <li>Release title</li>
+                    <li>Year</li>
+                    <li>Label and catalog number</li>
+                    <li>Format (vinyl, CD, cassette)</li>
+                    <li>Format details (LP, 7", etc.)</li>
+                </ul>
+
+                <h2>CSV Import</h2>
+                <p>Import from spreadsheets:</p>
+                <ol>
+                    <li>
+                        Go to <strong>Settings</strong> &rarr;
+                        <strong>Import</strong>
+                    </li>
+                    <li>Tap <strong>Import CSV</strong></li>
+                    <li>Select your CSV file</li>
+                    <li>Map columns to fields</li>
+                    <li>Preview import</li>
+                    <li>Confirm import</li>
+                </ol>
+
+                <h3>CSV Format</h3>
+                <p>Required columns depend on what you're importing:</p>
+
+                <h4>Bands CSV</h4>
+                <pre><code>name,country,genres
 Metallica,United States,"Thrash Metal, Heavy Metal"
 Iron Maiden,United Kingdom,Heavy Metal</code></pre>
 
-            <h4>Events CSV</h4>
-            <pre><code>name,date,venue,city,country
+                <h4>Events CSV</h4>
+                <pre><code>name,date,venue,city,country
 Wacken 2024,2024-08-01,Wacken Festival Grounds,Wacken,Germany</code></pre>
 
-            <h2>Duplicate Detection</h2>
-            <p>PocketDemon detects duplicates during import:</p>
-            <ul>
-                <li>Exact name matches are flagged</li>
-                <li>Similar names are suggested for review</li>
-                <li>Choose to skip, merge, or create new</li>
-            </ul>
+                <h2>Duplicate Detection</h2>
+                <p>PocketDemon detects duplicates during import:</p>
+                <ul>
+                    <li>Exact name matches are flagged</li>
+                    <li>Similar names are suggested for review</li>
+                    <li>Choose to skip, merge, or create new</li>
+                </ul>
 
-            <h2>Lineup Checker Import</h2>
-            <p>Quick way to add bands from festival lineups:</p>
-            <ol>
-                <li>Go to <strong>More</strong> &rarr; <strong>Lineup Checker</strong></li>
-                <li>Paste the lineup (any format)</li>
-                <li>Tap <strong>Check Lineup</strong></li>
-                <li>See which bands you've seen, wishlisted, or are new</li>
-                <li>Select new bands to add to wishlist</li>
-            </ol>
+                <h2>Lineup Checker Import</h2>
+                <p>Quick way to add bands from festival lineups:</p>
+                <ol>
+                    <li>
+                        Go to <strong>More</strong> &rarr;
+                        <strong>Lineup Checker</strong>
+                    </li>
+                    <li>Paste the lineup (any format)</li>
+                    <li>Tap <strong>Check Lineup</strong></li>
+                    <li>See which bands you've seen, wishlisted, or are new</li>
+                    <li>Select new bands to add to wishlist</li>
+                </ol>
 
-            <h3>Supported Formats</h3>
-            <p>The parser handles various lineup formats:</p>
-            <ul>
-                <li>One band per line</li>
-                <li>Comma-separated</li>
-                <li>Bullet points</li>
-                <li>With or without times/stages</li>
-            </ul>
+                <h3>Supported Formats</h3>
+                <p>The parser handles various lineup formats:</p>
+                <ul>
+                    <li>One band per line</li>
+                    <li>Comma-separated</li>
+                    <li>Bullet points</li>
+                    <li>With or without times/stages</li>
+                </ul>
 
-            <h2>Import Best Practices</h2>
-            <ol>
-                <li><strong>Backup first</strong> - Always backup before large imports</li>
-                <li><strong>Start small</strong> - Test with a few records first</li>
-                <li><strong>Review duplicates</strong> - Take time to resolve matches</li>
-                <li><strong>Enrich after</strong> - Use batch enrich for imported bands</li>
-                <li><strong>Check achievements</strong> - New badges may unlock!</li>
-            </ol>
-        </section>
+                <h2>Import Best Practices</h2>
+                <ol>
+                    <li>
+                        <strong>Backup first</strong> - Always backup before
+                        large imports
+                    </li>
+                    <li>
+                        <strong>Start small</strong> - Test with a few records
+                        first
+                    </li>
+                    <li>
+                        <strong>Review duplicates</strong> - Take time to
+                        resolve matches
+                    </li>
+                    <li>
+                        <strong>Enrich after</strong> - Use batch enrich for
+                        imported bands
+                    </li>
+                    <li>
+                        <strong>Check achievements</strong> - New badges may
+                        unlock!
+                    </li>
+                </ol>
+            </section>
 
-        <footer>
-            <p>&copy; 2024-2025 Technodystopia. All rights reserved.</p>
-        </footer>
-    </main>
+            <footer>
+                <p>&copy; 2024-2025 Technodystopia. All rights reserved.</p>
+            </footer>
+        </main>
 
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>

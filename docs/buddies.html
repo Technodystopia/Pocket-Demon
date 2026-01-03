@@ -1,275 +1,433 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Concert Buddies - PocketDemon Manual</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/icon.png">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Concert Buddies - PocketDemon Manual</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/png" href="images/icon.png" />
+    </head>
+    <body>
         <nav class="sidebar">
-        <div class="logo">
-            <img src="images/DemonLogoBlack.png" alt="PocketDemon Logo" class="logo-image" width="44" height="44">
-            <div class="logo-text">
-                <h1>PocketDemon</h1>
-                <p class="tagline">Concert Tracker</p>
-            </div>
-        </div>
-
-        <div class="sidebar-search">
-            <div class="search-container">
-                <span class="search-icon">🔍</span>
-                <input type="text" class="search-input" placeholder="Search docs... (/)">
-                <div class="search-results"></div>
-            </div>
-        </div>
-
-        <ul class="nav-links">
-            <li><a href="index.html"><span class="nav-icon">🏠</span> Home</a></li>
-            <li><a href="getting-started.html"><span class="nav-icon">🚀</span> Getting Started</a></li>
-            
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Core Features</span>
-                    <span class="nav-section-toggle">▼</span>
+            <div class="logo">
+                <img
+                    src="images/DemonLogoBlack.png"
+                    alt="PocketDemon Logo"
+                    class="logo-image"
+                    width="44"
+                    height="44"
+                />
+                <div class="logo-text">
+                    <h1>PocketDemon</h1>
+                    <p class="tagline">Concert Tracker</p>
                 </div>
-                <ul class="nav-section-items">
-                    <li><a href="bands.html"><span class="nav-icon">🎸</span> Bands</a></li>
-                    <li><a href="events.html"><span class="nav-icon">🎫</span> Events & Concerts</a></li>
-                    <li><a href="venues.html"><span class="nav-icon">🏟️</span> Venues</a></li>
-                    <li><a href="statistics.html"><span class="nav-icon">📊</span> Statistics</a></li>
-                    <li><a href="maps.html"><span class="nav-icon">🗺️</span> Maps</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Social</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="buddies.html" class="active"><span class="nav-icon">👥</span> Concert Buddies</a></li>
-                    <li><a href="sharing.html"><span class="nav-icon">📤</span> Sharing</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Collections</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="wishlist.html"><span class="nav-icon">⭐</span> Wishlist</a></li>
-                    <li><a href="gallery.html"><span class="nav-icon">📷</span> Photo Gallery</a></li>
-                    <li><a href="collection.html"><span class="nav-icon">💿</span> Media Collection</a></li>
-                    <li><a href="merch.html"><span class="nav-icon">👕</span> Merchandise</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Data</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="backup.html"><span class="nav-icon">☁️</span> Backup & Sync</a></li>
-                    <li><a href="import.html"><span class="nav-icon">📥</span> Import Data</a></li>
-                    <li><a href="integrations.html"><span class="nav-icon">🔗</span> Integrations</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">More</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="achievements.html"><span class="nav-icon">🏆</span> Achievements</a></li>
-                    <li><a href="spending.html"><span class="nav-icon">💰</span> Spending Tracker</a></li>
-                    <li><a href="year-in-review.html"><span class="nav-icon">📅</span> Year in Review</a></li>
-                    <li><a href="settings.html"><span class="nav-icon">⚙️</span> Settings</a></li>
-                    <li><a href="faq.html"><span class="nav-icon">❓</span> FAQ</a></li>
-                </ul>
-            </li>
-        </ul>
-
-        <div class="sidebar-footer">
-            <button class="theme-toggle" aria-label="Toggle theme">
-                <span class="theme-toggle-icon">☀️</span>
-                <span class="theme-toggle-label">Light</span>
-            </button>
-            <span class="version">v1.0.22</span>
-        </div>
-    </nav>
-
-    <main class="content">
-        <header>
-            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-            <h1>Concert Buddies</h1>
-        </header>
-
-        <section class="page-content">
-            <h2>Track Who You Go With</h2>
-            <p>Concert Buddies lets you track friends you attend concerts with, compare stats, and share data.</p>
-
-            <h2>Adding a Buddy</h2>
-            <p>There are several ways to add buddies:</p>
-
-            <h3>QR Code (Recommended)</h3>
-            <ol>
-                <li>Go to <strong>More</strong> &rarr; <strong>Buddies</strong></li>
-                <li>Tap <strong>My QR Code</strong> to show yours</li>
-                <li>Have your friend scan it, or scan theirs</li>
-                <li>Both users are now connected</li>
-            </ol>
-
-            <h3>Manual Entry</h3>
-            <ol>
-                <li>Go to <strong>Buddies</strong></li>
-                <li>Tap the <strong>+</strong> button</li>
-                <li>Enter buddy's name</li>
-                <li>Tap <strong>Save</strong></li>
-            </ol>
-
-            <div class="info-box note">
-                <h4>Note</h4>
-                <p>Manually added buddies are local only. Use QR codes or Dropbox connections for full buddy features.</p>
             </div>
 
-            <h2>Dropbox Buddy Connections</h2>
-            <p>For the best buddy experience, connect via Dropbox:</p>
-            <ol>
-                <li>Both users must have Dropbox sync enabled</li>
-                <li>Scan each other's QR code (v2 format includes Dropbox ID)</li>
-                <li>Send a connection request</li>
-                <li>Accept the request when received</li>
-            </ol>
+            <div class="sidebar-search">
+                <div class="search-container">
+                    <span class="search-icon">🔍</span>
+                    <input
+                        type="text"
+                        class="search-input"
+                        placeholder="Search docs... (/)"
+                    />
+                    <div class="search-results"></div>
+                </div>
+            </div>
 
-            <p>Benefits of Dropbox connections:</p>
-            <ul>
-                <li>Stable identity across devices</li>
-                <li>Automatic profile sync</li>
-                <li>Share bands, events, and venues</li>
-                <li>Real-time updates</li>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html"
+                        ><span class="nav-icon">🏠</span> Home</a
+                    >
+                </li>
+                <li>
+                    <a href="getting-started.html"
+                        ><span class="nav-icon">🚀</span> Getting Started</a
+                    >
+                </li>
+
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Core Features</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="bands.html"
+                                ><span class="nav-icon">🎸</span> Bands</a
+                            >
+                        </li>
+                        <li>
+                            <a href="events.html"
+                                ><span class="nav-icon">🎫</span> Events &
+                                Concerts</a
+                            >
+                        </li>
+                        <li>
+                            <a href="venues.html"
+                                ><span class="nav-icon">🏟️</span> Venues</a
+                            >
+                        </li>
+                        <li>
+                            <a href="statistics.html"
+                                ><span class="nav-icon">📊</span> Statistics</a
+                            >
+                        </li>
+                        <li>
+                            <a href="maps.html"
+                                ><span class="nav-icon">🗺️</span> Maps</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Social</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="buddies.html" class="active"
+                                ><span class="nav-icon">👥</span> Concert
+                                Buddies</a
+                            >
+                        </li>
+                        <li>
+                            <a href="sharing.html"
+                                ><span class="nav-icon">📤</span> Sharing</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Collections</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="wishlist.html"
+                                ><span class="nav-icon">⭐</span> Wishlist</a
+                            >
+                        </li>
+                        <li>
+                            <a href="gallery.html"
+                                ><span class="nav-icon">📷</span> Photo
+                                Gallery</a
+                            >
+                        </li>
+                        <li>
+                            <a href="collection.html"
+                                ><span class="nav-icon">💿</span> Media
+                                Collection</a
+                            >
+                        </li>
+                        <li>
+                            <a href="merch.html"
+                                ><span class="nav-icon">👕</span> Merchandise</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Data</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="backup.html"
+                                ><span class="nav-icon">☁️</span> Backup &
+                                Sync</a
+                            >
+                        </li>
+                        <li>
+                            <a href="import.html"
+                                ><span class="nav-icon">📥</span> Import Data</a
+                            >
+                        </li>
+                        <li>
+                            <a href="integrations.html"
+                                ><span class="nav-icon">🔗</span>
+                                Integrations</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">More</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="achievements.html"
+                                ><span class="nav-icon">🏆</span>
+                                Achievements</a
+                            >
+                        </li>
+                        <li>
+                            <a href="spending.html"
+                                ><span class="nav-icon">💰</span> Spending
+                                Tracker</a
+                            >
+                        </li>
+                        <li>
+                            <a href="year-in-review.html"
+                                ><span class="nav-icon">📅</span> Year in
+                                Review</a
+                            >
+                        </li>
+                        <li>
+                            <a href="settings.html"
+                                ><span class="nav-icon">⚙️</span> Settings</a
+                            >
+                        </li>
+                        <li>
+                            <a href="faq.html"
+                                ><span class="nav-icon">❓</span> FAQ</a
+                            >
+                        </li>
+                    </ul>
+                </li>
             </ul>
 
-            <h2>Sharing Levels</h2>
-            <p>Control what each buddy can see:</p>
-
-            <table>
-                <tr>
-                    <th>Level</th>
-                    <th>What They See</th>
-                </tr>
-                <tr>
-                    <td><strong>Stats Only</strong></td>
-                    <td>Total counts, top bands, countries - no event details</td>
-                </tr>
-                <tr>
-                    <td><strong>Events</strong></td>
-                    <td>Stats plus event names and dates</td>
-                </tr>
-                <tr>
-                    <td><strong>Full Access</strong></td>
-                    <td>Complete access to bands, events, and venues</td>
-                </tr>
-            </table>
-
-            <h3>Setting Sharing Level</h3>
-            <ol>
-                <li>Open the buddy's profile</li>
-                <li>Tap <strong>Sharing Settings</strong></li>
-                <li>Select the sharing level</li>
-                <li>Changes sync automatically</li>
-            </ol>
-
-            <h2>Attaching Buddies to Events</h2>
-            <ol>
-                <li>Open an event</li>
-                <li>Tap <strong>Add Buddy</strong></li>
-                <li>Select buddies who attended</li>
-                <li>They'll appear on the event detail</li>
-            </ol>
-
-            <h2>Concert Twin Score</h2>
-            <p>See how compatible you are with each buddy:</p>
-            <ul>
-                <li><strong>Shared Bands</strong> - Bands you've both seen</li>
-                <li><strong>Shared Events</strong> - Events attended together</li>
-                <li><strong>Genre Overlap</strong> - Similar music taste</li>
-                <li><strong>Twin Score</strong> - Overall compatibility percentage</li>
-            </ul>
-
-            <h2>Buddy Leaderboard</h2>
-            <p>The leaderboard shows your top 3 compatible buddies on a podium:</p>
-            <ol>
-                <li>Go to <strong>Buddies</strong></li>
-                <li>Tap <strong>Leaderboard</strong></li>
-                <li>See podium with gold, silver, bronze positions</li>
-                <li>Based on concert twin score</li>
-            </ol>
-
-            <h2>Group Stats</h2>
-            <p>Compare statistics across your buddy group:</p>
-            <ul>
-                <li><strong>Combined Stats</strong> - Total across all buddies</li>
-                <li><strong>Overlap Metrics</strong> - What you share in common</li>
-                <li><strong>Gap Analysis</strong> - Bands they've seen that you haven't</li>
-                <li><strong>Trend Comparison</strong> - Who's been more active</li>
-            </ul>
-
-            <h2>Entity Sharing</h2>
-            <p>Share specific items with buddies:</p>
-
-            <h3>Sharing a Band</h3>
-            <ol>
-                <li>Open the band detail</li>
-                <li>Tap <strong>Share</strong> &rarr; <strong>Share with Buddy</strong></li>
-                <li>Select which buddies to share with</li>
-                <li>They'll receive it in their inbox</li>
-            </ol>
-
-            <h3>Buddy Inbox</h3>
-            <p>Receive shared items from buddies:</p>
-            <ol>
-                <li>Go to <strong>Buddies</strong> &rarr; <strong>Inbox</strong></li>
-                <li>See pending shared items</li>
-                <li>Tap to preview</li>
-                <li><strong>Accept</strong> to add to your collection</li>
-                <li><strong>Dismiss</strong> to ignore</li>
-            </ol>
-
-            <h2>Bluetooth Sharing</h2>
-            <p>Share at festivals without WiFi:</p>
-            <ol>
-                <li>Go to <strong>Buddies</strong> &rarr; <strong>BLE Share</strong></li>
-                <li>One person taps <strong>Advertise</strong></li>
-                <li>Other person taps <strong>Scan</strong></li>
-                <li>Select what to share</li>
-                <li>Data transfers directly via Bluetooth</li>
-            </ol>
-
-            <div class="info-box warning">
-                <h4>Platform Note</h4>
-                <p>Bluetooth sharing is only available on Android and iOS. Not supported on desktop platforms.</p>
+            <div class="sidebar-footer">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-toggle-icon">☀️</span>
+                    <span class="theme-toggle-label">Light</span>
+                </button>
+                <span class="version">v1.0.23</span>
             </div>
+        </nav>
 
-            <h2>Concert Attendance Proof</h2>
-            <p>Create shareable social media cards:</p>
-            <ol>
-                <li>Open an event</li>
-                <li>Tap <strong>Share</strong> &rarr; <strong>Attendance Proof</strong></li>
-                <li>A card is generated with event details</li>
-                <li>Share to Instagram, Twitter, etc.</li>
-            </ol>
-        </section>
+        <main class="content">
+            <header>
+                <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+                <h1>Concert Buddies</h1>
+            </header>
 
-        <footer>
-            <p>&copy; 2024-2025 Technodystopia. All rights reserved.</p>
-        </footer>
-    </main>
+            <section class="page-content">
+                <h2>Track Who You Go With</h2>
+                <p>
+                    Concert Buddies lets you track friends you attend concerts
+                    with, compare stats, and share data.
+                </p>
 
-    <script src="script.js"></script>
-</body>
+                <h2>Adding a Buddy</h2>
+                <p>There are several ways to add buddies:</p>
+
+                <h3>QR Code (Recommended)</h3>
+                <ol>
+                    <li>
+                        Go to <strong>More</strong> &rarr;
+                        <strong>Buddies</strong>
+                    </li>
+                    <li>Tap <strong>My QR Code</strong> to show yours</li>
+                    <li>Have your friend scan it, or scan theirs</li>
+                    <li>Both users are now connected</li>
+                </ol>
+
+                <h3>Manual Entry</h3>
+                <ol>
+                    <li>Go to <strong>Buddies</strong></li>
+                    <li>Tap the <strong>+</strong> button</li>
+                    <li>Enter buddy's name</li>
+                    <li>Tap <strong>Save</strong></li>
+                </ol>
+
+                <div class="info-box note">
+                    <h4>Note</h4>
+                    <p>
+                        Manually added buddies are local only. Use QR codes or
+                        Dropbox connections for full buddy features.
+                    </p>
+                </div>
+
+                <h2>Dropbox Buddy Connections</h2>
+                <p>For the best buddy experience, connect via Dropbox:</p>
+                <ol>
+                    <li>Both users must have Dropbox sync enabled</li>
+                    <li>
+                        Scan each other's QR code (v2 format includes Dropbox
+                        ID)
+                    </li>
+                    <li>Send a connection request</li>
+                    <li>Accept the request when received</li>
+                </ol>
+
+                <p>Benefits of Dropbox connections:</p>
+                <ul>
+                    <li>Stable identity across devices</li>
+                    <li>Automatic profile sync</li>
+                    <li>Share bands, events, and venues</li>
+                    <li>Real-time updates</li>
+                </ul>
+
+                <h2>Sharing Levels</h2>
+                <p>Control what each buddy can see:</p>
+
+                <table>
+                    <tr>
+                        <th>Level</th>
+                        <th>What They See</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Stats Only</strong></td>
+                        <td>
+                            Total counts, top bands, countries - no event
+                            details
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Events</strong></td>
+                        <td>Stats plus event names and dates</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Full Access</strong></td>
+                        <td>Complete access to bands, events, and venues</td>
+                    </tr>
+                </table>
+
+                <h3>Setting Sharing Level</h3>
+                <ol>
+                    <li>Open the buddy's profile</li>
+                    <li>Tap <strong>Sharing Settings</strong></li>
+                    <li>Select the sharing level</li>
+                    <li>Changes sync automatically</li>
+                </ol>
+
+                <h2>Attaching Buddies to Events</h2>
+                <ol>
+                    <li>Open an event</li>
+                    <li>Tap <strong>Add Buddy</strong></li>
+                    <li>Select buddies who attended</li>
+                    <li>They'll appear on the event detail</li>
+                </ol>
+
+                <h2>Concert Twin Score</h2>
+                <p>See how compatible you are with each buddy:</p>
+                <ul>
+                    <li>
+                        <strong>Shared Bands</strong> - Bands you've both seen
+                    </li>
+                    <li>
+                        <strong>Shared Events</strong> - Events attended
+                        together
+                    </li>
+                    <li>
+                        <strong>Genre Overlap</strong> - Similar music taste
+                    </li>
+                    <li>
+                        <strong>Twin Score</strong> - Overall compatibility
+                        percentage
+                    </li>
+                </ul>
+
+                <h2>Buddy Leaderboard</h2>
+                <p>
+                    The leaderboard shows your top 3 compatible buddies on a
+                    podium:
+                </p>
+                <ol>
+                    <li>Go to <strong>Buddies</strong></li>
+                    <li>Tap <strong>Leaderboard</strong></li>
+                    <li>See podium with gold, silver, bronze positions</li>
+                    <li>Based on concert twin score</li>
+                </ol>
+
+                <h2>Group Stats</h2>
+                <p>Compare statistics across your buddy group:</p>
+                <ul>
+                    <li>
+                        <strong>Combined Stats</strong> - Total across all
+                        buddies
+                    </li>
+                    <li>
+                        <strong>Overlap Metrics</strong> - What you share in
+                        common
+                    </li>
+                    <li>
+                        <strong>Gap Analysis</strong> - Bands they've seen that
+                        you haven't
+                    </li>
+                    <li>
+                        <strong>Trend Comparison</strong> - Who's been more
+                        active
+                    </li>
+                </ul>
+
+                <h2>Entity Sharing</h2>
+                <p>Share specific items with buddies:</p>
+
+                <h3>Sharing a Band</h3>
+                <ol>
+                    <li>Open the band detail</li>
+                    <li>
+                        Tap <strong>Share</strong> &rarr;
+                        <strong>Share with Buddy</strong>
+                    </li>
+                    <li>Select which buddies to share with</li>
+                    <li>They'll receive it in their inbox</li>
+                </ol>
+
+                <h3>Buddy Inbox</h3>
+                <p>Receive shared items from buddies:</p>
+                <ol>
+                    <li>
+                        Go to <strong>Buddies</strong> &rarr;
+                        <strong>Inbox</strong>
+                    </li>
+                    <li>See pending shared items</li>
+                    <li>Tap to preview</li>
+                    <li><strong>Accept</strong> to add to your collection</li>
+                    <li><strong>Dismiss</strong> to ignore</li>
+                </ol>
+
+                <h2>Bluetooth Sharing</h2>
+                <p>Share at festivals without WiFi:</p>
+                <ol>
+                    <li>
+                        Go to <strong>Buddies</strong> &rarr;
+                        <strong>BLE Share</strong>
+                    </li>
+                    <li>One person taps <strong>Advertise</strong></li>
+                    <li>Other person taps <strong>Scan</strong></li>
+                    <li>Select what to share</li>
+                    <li>Data transfers directly via Bluetooth</li>
+                </ol>
+
+                <div class="info-box warning">
+                    <h4>Platform Note</h4>
+                    <p>
+                        Bluetooth sharing is only available on Android and iOS.
+                        Not supported on desktop platforms.
+                    </p>
+                </div>
+
+                <h2>Concert Attendance Proof</h2>
+                <p>Create shareable social media cards:</p>
+                <ol>
+                    <li>Open an event</li>
+                    <li>
+                        Tap <strong>Share</strong> &rarr;
+                        <strong>Attendance Proof</strong>
+                    </li>
+                    <li>A card is generated with event details</li>
+                    <li>Share to Instagram, Twitter, etc.</li>
+                </ol>
+            </section>
+
+            <footer>
+                <p>&copy; 2024-2025 Technodystopia. All rights reserved.</p>
+            </footer>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
 </html>

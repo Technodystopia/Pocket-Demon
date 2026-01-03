@@ -1,293 +1,440 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Backup & Sync - PocketDemon Manual</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/icon.png">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Backup & Sync - PocketDemon Manual</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/png" href="images/icon.png" />
+    </head>
+    <body>
         <nav class="sidebar">
-        <div class="logo">
-            <img src="images/DemonLogoBlack.png" alt="PocketDemon Logo" class="logo-image" width="44" height="44">
-            <div class="logo-text">
-                <h1>PocketDemon</h1>
-                <p class="tagline">Concert Tracker</p>
-            </div>
-        </div>
-
-        <div class="sidebar-search">
-            <div class="search-container">
-                <span class="search-icon">🔍</span>
-                <input type="text" class="search-input" placeholder="Search docs... (/)">
-                <div class="search-results"></div>
-            </div>
-        </div>
-
-        <ul class="nav-links">
-            <li><a href="index.html"><span class="nav-icon">🏠</span> Home</a></li>
-            <li><a href="getting-started.html"><span class="nav-icon">🚀</span> Getting Started</a></li>
-            
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Core Features</span>
-                    <span class="nav-section-toggle">▼</span>
+            <div class="logo">
+                <img
+                    src="images/DemonLogoBlack.png"
+                    alt="PocketDemon Logo"
+                    class="logo-image"
+                    width="44"
+                    height="44"
+                />
+                <div class="logo-text">
+                    <h1>PocketDemon</h1>
+                    <p class="tagline">Concert Tracker</p>
                 </div>
-                <ul class="nav-section-items">
-                    <li><a href="bands.html"><span class="nav-icon">🎸</span> Bands</a></li>
-                    <li><a href="events.html"><span class="nav-icon">🎫</span> Events & Concerts</a></li>
-                    <li><a href="venues.html"><span class="nav-icon">🏟️</span> Venues</a></li>
-                    <li><a href="statistics.html"><span class="nav-icon">📊</span> Statistics</a></li>
-                    <li><a href="maps.html"><span class="nav-icon">🗺️</span> Maps</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Social</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="buddies.html"><span class="nav-icon">👥</span> Concert Buddies</a></li>
-                    <li><a href="sharing.html"><span class="nav-icon">📤</span> Sharing</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Collections</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="wishlist.html"><span class="nav-icon">⭐</span> Wishlist</a></li>
-                    <li><a href="gallery.html"><span class="nav-icon">📷</span> Photo Gallery</a></li>
-                    <li><a href="collection.html"><span class="nav-icon">💿</span> Media Collection</a></li>
-                    <li><a href="merch.html"><span class="nav-icon">👕</span> Merchandise</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Data</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="backup.html" class="active"><span class="nav-icon">☁️</span> Backup & Sync</a></li>
-                    <li><a href="import.html"><span class="nav-icon">📥</span> Import Data</a></li>
-                    <li><a href="integrations.html"><span class="nav-icon">🔗</span> Integrations</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">More</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="achievements.html"><span class="nav-icon">🏆</span> Achievements</a></li>
-                    <li><a href="spending.html"><span class="nav-icon">💰</span> Spending Tracker</a></li>
-                    <li><a href="year-in-review.html"><span class="nav-icon">📅</span> Year in Review</a></li>
-                    <li><a href="settings.html"><span class="nav-icon">⚙️</span> Settings</a></li>
-                    <li><a href="faq.html"><span class="nav-icon">❓</span> FAQ</a></li>
-                </ul>
-            </li>
-        </ul>
-
-        <div class="sidebar-footer">
-            <button class="theme-toggle" aria-label="Toggle theme">
-                <span class="theme-toggle-icon">☀️</span>
-                <span class="theme-toggle-label">Light</span>
-            </button>
-            <span class="version">v1.0.22</span>
-        </div>
-    </nav>
-
-    <main class="content">
-        <header>
-            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-            <h1>Backup & Sync</h1>
-        </header>
-
-        <section class="page-content">
-            <h2>Protecting Your Data</h2>
-            <p>PocketDemon offers multiple ways to backup and sync your concert data.</p>
-
-            <h2>Local Backup (JSON)</h2>
-            <p>Export your entire database to a JSON file:</p>
-            <ol>
-                <li>Go to <strong>Settings</strong> &rarr; <strong>Backup & Restore</strong></li>
-                <li>Tap <strong>Export Backup</strong></li>
-                <li>Choose where to save the file</li>
-                <li>File includes all bands, events, venues, buddies, and settings</li>
-            </ol>
-
-            <h3>Restoring from Backup</h3>
-            <ol>
-                <li>Go to <strong>Settings</strong> &rarr; <strong>Backup & Restore</strong></li>
-                <li>Tap <strong>Import Backup</strong></li>
-                <li>Select your backup JSON file</li>
-                <li>Review the import summary</li>
-                <li>Confirm to restore</li>
-            </ol>
-
-            <div class="info-box warning">
-                <h4>Warning</h4>
-                <p>Restoring a backup will replace your current data. Make sure to backup first!</p>
             </div>
 
-            <h2>CSV Export</h2>
-            <p>Export data in spreadsheet-compatible format:</p>
-            <ol>
-                <li>Go to <strong>Settings</strong> &rarr; <strong>Export</strong></li>
-                <li>Select what to export (Bands, Events, Venues)</li>
-                <li>Tap <strong>Export CSV</strong></li>
-                <li>Open in Excel, Google Sheets, etc.</li>
-            </ol>
-
-            <h2>Dropbox Cloud Sync</h2>
-            <p>The recommended way to backup and sync across devices.</p>
-
-            <h3>Setting Up Dropbox</h3>
-            <ol>
-                <li>Go to <strong>Settings</strong> &rarr; <strong>Cloud Sync</strong></li>
-                <li>Tap <strong>Connect to Dropbox</strong></li>
-                <li>Sign in to your Dropbox account</li>
-                <li>Authorize PocketDemon</li>
-                <li>You'll be redirected back to the app</li>
-            </ol>
-
-            <h3>Manual Sync</h3>
-            <ol>
-                <li>Go to <strong>Settings</strong> &rarr; <strong>Cloud Sync</strong></li>
-                <li>Tap <strong>Sync Now</strong></li>
-                <li>Wait for sync to complete</li>
-                <li>Status shows last sync time</li>
-            </ol>
-
-            <h3>Auto-Sync</h3>
-            <p>Enable automatic background sync:</p>
-            <ol>
-                <li>Go to <strong>Settings</strong> &rarr; <strong>Cloud Sync</strong></li>
-                <li>Enable <strong>Auto-Sync</strong></li>
-                <li>Sync runs when you leave the app</li>
-                <li>15-minute cooldown to save battery</li>
-            </ol>
-
-            <div class="info-box tip">
-                <h4>Tip</h4>
-                <p>Auto-sync is battery-friendly. It only syncs when you background the app, not continuously.</p>
+            <div class="sidebar-search">
+                <div class="search-container">
+                    <span class="search-icon">🔍</span>
+                    <input
+                        type="text"
+                        class="search-input"
+                        placeholder="Search docs... (/)"
+                    />
+                    <div class="search-results"></div>
+                </div>
             </div>
 
-            <h2>What Gets Synced</h2>
-            <table>
-                <tr>
-                    <th>Data Type</th>
-                    <th>Synced</th>
-                </tr>
-                <tr>
-                    <td>Bands</td>
-                    <td>Yes - including photos, logos</td>
-                </tr>
-                <tr>
-                    <td>Events</td>
-                    <td>Yes - including photos</td>
-                </tr>
-                <tr>
-                    <td>Venues</td>
-                    <td>Yes - including photos</td>
-                </tr>
-                <tr>
-                    <td>Concerts (band at event)</td>
-                    <td>Yes</td>
-                </tr>
-                <tr>
-                    <td>Ratings & Reviews</td>
-                    <td>Yes</td>
-                </tr>
-                <tr>
-                    <td>Buddies</td>
-                    <td>Yes</td>
-                </tr>
-                <tr>
-                    <td>Wishlist</td>
-                    <td>Yes</td>
-                </tr>
-                <tr>
-                    <td>Achievements</td>
-                    <td>Yes</td>
-                </tr>
-                <tr>
-                    <td>Collection & Merch</td>
-                    <td>Yes</td>
-                </tr>
-                <tr>
-                    <td>Settings</td>
-                    <td>Partial (preferences sync)</td>
-                </tr>
-            </table>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html"
+                        ><span class="nav-icon">🏠</span> Home</a
+                    >
+                </li>
+                <li>
+                    <a href="getting-started.html"
+                        ><span class="nav-icon">🚀</span> Getting Started</a
+                    >
+                </li>
 
-            <h2>Photo Sync</h2>
-            <p>Photos can also be synced to Dropbox:</p>
-            <ol>
-                <li>Enable <strong>Photo Sync</strong> in Cloud Sync settings</li>
-                <li>Photos upload during sync</li>
-                <li>Restore photos when setting up a new device</li>
-            </ol>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Core Features</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="bands.html"
+                                ><span class="nav-icon">🎸</span> Bands</a
+                            >
+                        </li>
+                        <li>
+                            <a href="events.html"
+                                ><span class="nav-icon">🎫</span> Events &
+                                Concerts</a
+                            >
+                        </li>
+                        <li>
+                            <a href="venues.html"
+                                ><span class="nav-icon">🏟️</span> Venues</a
+                            >
+                        </li>
+                        <li>
+                            <a href="statistics.html"
+                                ><span class="nav-icon">📊</span> Statistics</a
+                            >
+                        </li>
+                        <li>
+                            <a href="maps.html"
+                                ><span class="nav-icon">🗺️</span> Maps</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <div class="info-box note">
-                <h4>Note</h4>
-                <p>Photos are compressed before sync to save storage and bandwidth.</p>
-            </div>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Social</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="buddies.html"
+                                ><span class="nav-icon">👥</span> Concert
+                                Buddies</a
+                            >
+                        </li>
+                        <li>
+                            <a href="sharing.html"
+                                ><span class="nav-icon">📤</span> Sharing</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <h2>Conflict Resolution</h2>
-            <p>When the same record is modified on multiple devices:</p>
-            <ul>
-                <li>Field-level merging is used when possible</li>
-                <li>Last-write-wins for conflicting fields</li>
-                <li>Deterministic tie-breaking (same result on all devices)</li>
-                <li>Conflict history is recorded for debugging</li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Collections</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="wishlist.html"
+                                ><span class="nav-icon">⭐</span> Wishlist</a
+                            >
+                        </li>
+                        <li>
+                            <a href="gallery.html"
+                                ><span class="nav-icon">📷</span> Photo
+                                Gallery</a
+                            >
+                        </li>
+                        <li>
+                            <a href="collection.html"
+                                ><span class="nav-icon">💿</span> Media
+                                Collection</a
+                            >
+                        </li>
+                        <li>
+                            <a href="merch.html"
+                                ><span class="nav-icon">👕</span> Merchandise</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Data</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="backup.html" class="active"
+                                ><span class="nav-icon">☁️</span> Backup &
+                                Sync</a
+                            >
+                        </li>
+                        <li>
+                            <a href="import.html"
+                                ><span class="nav-icon">📥</span> Import Data</a
+                            >
+                        </li>
+                        <li>
+                            <a href="integrations.html"
+                                ><span class="nav-icon">🔗</span>
+                                Integrations</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">More</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="achievements.html"
+                                ><span class="nav-icon">🏆</span>
+                                Achievements</a
+                            >
+                        </li>
+                        <li>
+                            <a href="spending.html"
+                                ><span class="nav-icon">💰</span> Spending
+                                Tracker</a
+                            >
+                        </li>
+                        <li>
+                            <a href="year-in-review.html"
+                                ><span class="nav-icon">📅</span> Year in
+                                Review</a
+                            >
+                        </li>
+                        <li>
+                            <a href="settings.html"
+                                ><span class="nav-icon">⚙️</span> Settings</a
+                            >
+                        </li>
+                        <li>
+                            <a href="faq.html"
+                                ><span class="nav-icon">❓</span> FAQ</a
+                            >
+                        </li>
+                    </ul>
+                </li>
             </ul>
 
-            <h2>Sync Troubleshooting</h2>
+            <div class="sidebar-footer">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-toggle-icon">☀️</span>
+                    <span class="theme-toggle-label">Light</span>
+                </button>
+                <span class="version">v1.0.23</span>
+            </div>
+        </nav>
 
-            <h3>Sync Stuck or Failing</h3>
-            <ol>
-                <li>Check internet connection</li>
-                <li>Try <strong>Sync Now</strong> manually</li>
-                <li>If still failing, disconnect and reconnect Dropbox</li>
-            </ol>
+        <main class="content">
+            <header>
+                <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+                <h1>Backup & Sync</h1>
+            </header>
 
-            <h3>Missing Data After Sync</h3>
-            <ol>
-                <li>Wait for sync to fully complete</li>
-                <li>Pull-to-refresh on list screens</li>
-                <li>Check if data exists on another device</li>
-            </ol>
+            <section class="page-content">
+                <h2>Protecting Your Data</h2>
+                <p>
+                    PocketDemon offers multiple ways to backup and sync your
+                    concert data.
+                </p>
 
-            <h3>Disconnecting Dropbox</h3>
-            <ol>
-                <li>Go to <strong>Settings</strong> &rarr; <strong>Cloud Sync</strong></li>
-                <li>Tap <strong>Disconnect</strong></li>
-                <li>Local data remains intact</li>
-                <li>Cloud data remains in Dropbox</li>
-            </ol>
+                <h2>Local Backup (JSON)</h2>
+                <p>Export your entire database to a JSON file:</p>
+                <ol>
+                    <li>
+                        Go to <strong>Settings</strong> &rarr;
+                        <strong>Backup & Restore</strong>
+                    </li>
+                    <li>Tap <strong>Export Backup</strong></li>
+                    <li>Choose where to save the file</li>
+                    <li>
+                        File includes all bands, events, venues, buddies, and
+                        settings
+                    </li>
+                </ol>
 
-            <h2>Desktop OAuth</h2>
-            <p>On Windows, macOS, and Linux, Dropbox login works via localhost redirect:</p>
-            <ol>
-                <li>Click <strong>Connect to Dropbox</strong></li>
-                <li>Browser opens to Dropbox login</li>
-                <li>After authorization, browser redirects to localhost</li>
-                <li>App captures the token automatically</li>
-            </ol>
-        </section>
+                <h3>Restoring from Backup</h3>
+                <ol>
+                    <li>
+                        Go to <strong>Settings</strong> &rarr;
+                        <strong>Backup & Restore</strong>
+                    </li>
+                    <li>Tap <strong>Import Backup</strong></li>
+                    <li>Select your backup JSON file</li>
+                    <li>Review the import summary</li>
+                    <li>Confirm to restore</li>
+                </ol>
 
-        <footer>
-            <p>&copy; 2024-2025 Technodystopia. All rights reserved.</p>
-        </footer>
-    </main>
+                <div class="info-box warning">
+                    <h4>Warning</h4>
+                    <p>
+                        Restoring a backup will replace your current data. Make
+                        sure to backup first!
+                    </p>
+                </div>
 
-    <script src="script.js"></script>
-</body>
+                <h2>CSV Export</h2>
+                <p>Export data in spreadsheet-compatible format:</p>
+                <ol>
+                    <li>
+                        Go to <strong>Settings</strong> &rarr;
+                        <strong>Export</strong>
+                    </li>
+                    <li>Select what to export (Bands, Events, Venues)</li>
+                    <li>Tap <strong>Export CSV</strong></li>
+                    <li>Open in Excel, Google Sheets, etc.</li>
+                </ol>
+
+                <h2>Dropbox Cloud Sync</h2>
+                <p>The recommended way to backup and sync across devices.</p>
+
+                <h3>Setting Up Dropbox</h3>
+                <ol>
+                    <li>
+                        Go to <strong>Settings</strong> &rarr;
+                        <strong>Cloud Sync</strong>
+                    </li>
+                    <li>Tap <strong>Connect to Dropbox</strong></li>
+                    <li>Sign in to your Dropbox account</li>
+                    <li>Authorize PocketDemon</li>
+                    <li>You'll be redirected back to the app</li>
+                </ol>
+
+                <h3>Manual Sync</h3>
+                <ol>
+                    <li>
+                        Go to <strong>Settings</strong> &rarr;
+                        <strong>Cloud Sync</strong>
+                    </li>
+                    <li>Tap <strong>Sync Now</strong></li>
+                    <li>Wait for sync to complete</li>
+                    <li>Status shows last sync time</li>
+                </ol>
+
+                <h3>Auto-Sync</h3>
+                <p>Enable automatic background sync:</p>
+                <ol>
+                    <li>
+                        Go to <strong>Settings</strong> &rarr;
+                        <strong>Cloud Sync</strong>
+                    </li>
+                    <li>Enable <strong>Auto-Sync</strong></li>
+                    <li>Sync runs when you leave the app</li>
+                    <li>15-minute cooldown to save battery</li>
+                </ol>
+
+                <div class="info-box tip">
+                    <h4>Tip</h4>
+                    <p>
+                        Auto-sync is battery-friendly. It only syncs when you
+                        background the app, not continuously.
+                    </p>
+                </div>
+
+                <h2>What Gets Synced</h2>
+                <table>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Synced</th>
+                    </tr>
+                    <tr>
+                        <td>Bands</td>
+                        <td>Yes - including photos, logos</td>
+                    </tr>
+                    <tr>
+                        <td>Events</td>
+                        <td>Yes - including photos</td>
+                    </tr>
+                    <tr>
+                        <td>Venues</td>
+                        <td>Yes - including photos</td>
+                    </tr>
+                    <tr>
+                        <td>Concerts (band at event)</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Ratings & Reviews</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Buddies</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Wishlist</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Achievements</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Collection & Merch</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Settings</td>
+                        <td>Partial (preferences sync)</td>
+                    </tr>
+                </table>
+
+                <h2>Photo Sync</h2>
+                <p>Photos can also be synced to Dropbox:</p>
+                <ol>
+                    <li>
+                        Enable <strong>Photo Sync</strong> in Cloud Sync
+                        settings
+                    </li>
+                    <li>Photos upload during sync</li>
+                    <li>Restore photos when setting up a new device</li>
+                </ol>
+
+                <div class="info-box note">
+                    <h4>Note</h4>
+                    <p>
+                        Photos are compressed before sync to save storage and
+                        bandwidth.
+                    </p>
+                </div>
+
+                <h2>Conflict Resolution</h2>
+                <p>When the same record is modified on multiple devices:</p>
+                <ul>
+                    <li>Field-level merging is used when possible</li>
+                    <li>Last-write-wins for conflicting fields</li>
+                    <li>
+                        Deterministic tie-breaking (same result on all devices)
+                    </li>
+                    <li>Conflict history is recorded for debugging</li>
+                </ul>
+
+                <h2>Sync Troubleshooting</h2>
+
+                <h3>Sync Stuck or Failing</h3>
+                <ol>
+                    <li>Check internet connection</li>
+                    <li>Try <strong>Sync Now</strong> manually</li>
+                    <li>If still failing, disconnect and reconnect Dropbox</li>
+                </ol>
+
+                <h3>Missing Data After Sync</h3>
+                <ol>
+                    <li>Wait for sync to fully complete</li>
+                    <li>Pull-to-refresh on list screens</li>
+                    <li>Check if data exists on another device</li>
+                </ol>
+
+                <h3>Disconnecting Dropbox</h3>
+                <ol>
+                    <li>
+                        Go to <strong>Settings</strong> &rarr;
+                        <strong>Cloud Sync</strong>
+                    </li>
+                    <li>Tap <strong>Disconnect</strong></li>
+                    <li>Local data remains intact</li>
+                    <li>Cloud data remains in Dropbox</li>
+                </ol>
+
+                <h2>Desktop OAuth</h2>
+                <p>
+                    On Windows, macOS, and Linux, Dropbox login works via
+                    localhost redirect:
+                </p>
+                <ol>
+                    <li>Click <strong>Connect to Dropbox</strong></li>
+                    <li>Browser opens to Dropbox login</li>
+                    <li>After authorization, browser redirects to localhost</li>
+                    <li>App captures the token automatically</li>
+                </ol>
+            </section>
+
+            <footer>
+                <p>&copy; 2024-2025 Technodystopia. All rights reserved.</p>
+            </footer>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
 </html>

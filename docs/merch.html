@@ -1,341 +1,485 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merch Tracker - PocketDemon Manual</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/icon.png">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Merch Tracker - PocketDemon Manual</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/png" href="images/icon.png" />
+    </head>
+    <body>
         <nav class="sidebar">
-        <div class="logo">
-            <img src="images/DemonLogoBlack.png" alt="PocketDemon Logo" class="logo-image" width="44" height="44">
-            <div class="logo-text">
-                <h1>PocketDemon</h1>
-                <p class="tagline">Concert Tracker</p>
+            <div class="logo">
+                <img
+                    src="images/DemonLogoBlack.png"
+                    alt="PocketDemon Logo"
+                    class="logo-image"
+                    width="44"
+                    height="44"
+                />
+                <div class="logo-text">
+                    <h1>PocketDemon</h1>
+                    <p class="tagline">Concert Tracker</p>
+                </div>
             </div>
-        </div>
 
-        <div class="sidebar-search">
-            <div class="search-container">
-                <span class="search-icon">🔍</span>
-                <input type="text" class="search-input" placeholder="Search docs... (/)">
-                <div class="search-results"></div>
+            <div class="sidebar-search">
+                <div class="search-container">
+                    <span class="search-icon">🔍</span>
+                    <input
+                        type="text"
+                        class="search-input"
+                        placeholder="Search docs... (/)"
+                    />
+                    <div class="search-results"></div>
+                </div>
             </div>
-        </div>
 
-        <ul class="nav-links">
-            <li><a href="index.html"><span class="nav-icon">🏠</span> Home</a></li>
-            <li><a href="getting-started.html"><span class="nav-icon">🚀</span> Getting Started</a></li>
-            
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Core Features</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="bands.html"><span class="nav-icon">🎸</span> Bands</a></li>
-                    <li><a href="events.html"><span class="nav-icon">🎫</span> Events & Concerts</a></li>
-                    <li><a href="venues.html"><span class="nav-icon">🏟️</span> Venues</a></li>
-                    <li><a href="statistics.html"><span class="nav-icon">📊</span> Statistics</a></li>
-                    <li><a href="maps.html"><span class="nav-icon">🗺️</span> Maps</a></li>
-                </ul>
-            </li>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html"
+                        ><span class="nav-icon">🏠</span> Home</a
+                    >
+                </li>
+                <li>
+                    <a href="getting-started.html"
+                        ><span class="nav-icon">🚀</span> Getting Started</a
+                    >
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Social</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="buddies.html"><span class="nav-icon">👥</span> Concert Buddies</a></li>
-                    <li><a href="sharing.html"><span class="nav-icon">📤</span> Sharing</a></li>
-                </ul>
-            </li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Core Features</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="bands.html"
+                                ><span class="nav-icon">🎸</span> Bands</a
+                            >
+                        </li>
+                        <li>
+                            <a href="events.html"
+                                ><span class="nav-icon">🎫</span> Events &
+                                Concerts</a
+                            >
+                        </li>
+                        <li>
+                            <a href="venues.html"
+                                ><span class="nav-icon">🏟️</span> Venues</a
+                            >
+                        </li>
+                        <li>
+                            <a href="statistics.html"
+                                ><span class="nav-icon">📊</span> Statistics</a
+                            >
+                        </li>
+                        <li>
+                            <a href="maps.html"
+                                ><span class="nav-icon">🗺️</span> Maps</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Collections</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="wishlist.html"><span class="nav-icon">⭐</span> Wishlist</a></li>
-                    <li><a href="gallery.html"><span class="nav-icon">📷</span> Photo Gallery</a></li>
-                    <li><a href="collection.html"><span class="nav-icon">💿</span> Media Collection</a></li>
-                    <li><a href="merch.html" class="active"><span class="nav-icon">👕</span> Merchandise</a></li>
-                </ul>
-            </li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Social</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="buddies.html"
+                                ><span class="nav-icon">👥</span> Concert
+                                Buddies</a
+                            >
+                        </li>
+                        <li>
+                            <a href="sharing.html"
+                                ><span class="nav-icon">📤</span> Sharing</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Data</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="backup.html"><span class="nav-icon">☁️</span> Backup & Sync</a></li>
-                    <li><a href="import.html"><span class="nav-icon">📥</span> Import Data</a></li>
-                    <li><a href="integrations.html"><span class="nav-icon">🔗</span> Integrations</a></li>
-                </ul>
-            </li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Collections</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="wishlist.html"
+                                ><span class="nav-icon">⭐</span> Wishlist</a
+                            >
+                        </li>
+                        <li>
+                            <a href="gallery.html"
+                                ><span class="nav-icon">📷</span> Photo
+                                Gallery</a
+                            >
+                        </li>
+                        <li>
+                            <a href="collection.html"
+                                ><span class="nav-icon">💿</span> Media
+                                Collection</a
+                            >
+                        </li>
+                        <li>
+                            <a href="merch.html" class="active"
+                                ><span class="nav-icon">👕</span> Merchandise</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">More</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="achievements.html"><span class="nav-icon">🏆</span> Achievements</a></li>
-                    <li><a href="spending.html"><span class="nav-icon">💰</span> Spending Tracker</a></li>
-                    <li><a href="year-in-review.html"><span class="nav-icon">📅</span> Year in Review</a></li>
-                    <li><a href="settings.html"><span class="nav-icon">⚙️</span> Settings</a></li>
-                    <li><a href="faq.html"><span class="nav-icon">❓</span> FAQ</a></li>
-                </ul>
-            </li>
-        </ul>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Data</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="backup.html"
+                                ><span class="nav-icon">☁️</span> Backup &
+                                Sync</a
+                            >
+                        </li>
+                        <li>
+                            <a href="import.html"
+                                ><span class="nav-icon">📥</span> Import Data</a
+                            >
+                        </li>
+                        <li>
+                            <a href="integrations.html"
+                                ><span class="nav-icon">🔗</span>
+                                Integrations</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-        <div class="sidebar-footer">
-            <button class="theme-toggle" aria-label="Toggle theme">
-                <span class="theme-toggle-icon">☀️</span>
-                <span class="theme-toggle-label">Light</span>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">More</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="achievements.html"
+                                ><span class="nav-icon">🏆</span>
+                                Achievements</a
+                            >
+                        </li>
+                        <li>
+                            <a href="spending.html"
+                                ><span class="nav-icon">💰</span> Spending
+                                Tracker</a
+                            >
+                        </li>
+                        <li>
+                            <a href="year-in-review.html"
+                                ><span class="nav-icon">📅</span> Year in
+                                Review</a
+                            >
+                        </li>
+                        <li>
+                            <a href="settings.html"
+                                ><span class="nav-icon">⚙️</span> Settings</a
+                            >
+                        </li>
+                        <li>
+                            <a href="faq.html"
+                                ><span class="nav-icon">❓</span> FAQ</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-toggle-icon">☀️</span>
+                    <span class="theme-toggle-label">Light</span>
+                </button>
+                <span class="version">v1.0.23</span>
+            </div>
+        </nav>
+
+        <main class="content">
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-            <span class="version">v1.0.22</span>
-        </div>
-    </nav>
 
-    <main class="content">
-        <button class="menu-toggle" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+            <h1>Merch Tracker</h1>
+            <p class="subtitle">
+                Keep track of all your concert merchandise purchases
+            </p>
 
-        <h1>Merch Tracker</h1>
-        <p class="subtitle">Keep track of all your concert merchandise purchases</p>
+            <section>
+                <h2>Overview</h2>
+                <p>
+                    The Merch Tracker helps you catalog and organize all the
+                    merchandise you've bought at concerts, from t-shirts to
+                    posters to limited edition items.
+                </p>
 
-        <section>
-            <h2>Overview</h2>
-            <p>The Merch Tracker helps you catalog and organize all the merchandise you've bought at concerts, from t-shirts to posters to limited edition items.</p>
-
-            <div class="screenshot-placeholder">
-                <p>Merch collection overview</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Adding Merch Items</h2>
-
-            <h3>Quick Add from Concert</h3>
-            <ol>
-                <li>Open a concert entry</li>
-                <li>Scroll to <strong>Merch</strong> section</li>
-                <li>Tap <strong>Add Merch</strong></li>
-                <li>Select item type and enter details</li>
-            </ol>
-
-            <h3>From Merch Screen</h3>
-            <ol>
-                <li>Go to <strong>Merch</strong> from main menu</li>
-                <li>Tap the <strong>+</strong> button</li>
-                <li>Link to a concert (optional)</li>
-                <li>Enter item details</li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>Item Types</h2>
-            <p>Categorize your merch by type:</p>
-
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <h3>Apparel</h3>
-                    <ul>
-                        <li>T-shirts</li>
-                        <li>Hoodies</li>
-                        <li>Jackets</li>
-                        <li>Hats</li>
-                        <li>Patches</li>
-                        <li>Pins/Buttons</li>
-                    </ul>
+                <div class="screenshot-placeholder">
+                    <p>Merch collection overview</p>
                 </div>
-                <div class="feature-card">
-                    <h3>Media</h3>
-                    <ul>
-                        <li>Vinyl records</li>
-                        <li>CDs</li>
-                        <li>Cassettes</li>
-                        <li>DVDs/Blu-rays</li>
-                    </ul>
+            </section>
+
+            <section>
+                <h2>Adding Merch Items</h2>
+
+                <h3>Quick Add from Concert</h3>
+                <ol>
+                    <li>Open a concert entry</li>
+                    <li>Scroll to <strong>Merch</strong> section</li>
+                    <li>Tap <strong>Add Merch</strong></li>
+                    <li>Select item type and enter details</li>
+                </ol>
+
+                <h3>From Merch Screen</h3>
+                <ol>
+                    <li>Go to <strong>Merch</strong> from main menu</li>
+                    <li>Tap the <strong>+</strong> button</li>
+                    <li>Link to a concert (optional)</li>
+                    <li>Enter item details</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Item Types</h2>
+                <p>Categorize your merch by type:</p>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>Apparel</h3>
+                        <ul>
+                            <li>T-shirts</li>
+                            <li>Hoodies</li>
+                            <li>Jackets</li>
+                            <li>Hats</li>
+                            <li>Patches</li>
+                            <li>Pins/Buttons</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Media</h3>
+                        <ul>
+                            <li>Vinyl records</li>
+                            <li>CDs</li>
+                            <li>Cassettes</li>
+                            <li>DVDs/Blu-rays</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Art & Prints</h3>
+                        <ul>
+                            <li>Posters</li>
+                            <li>Screen prints</li>
+                            <li>Setlists</li>
+                            <li>Signed items</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Other</h3>
+                        <ul>
+                            <li>Stickers</li>
+                            <li>Guitar picks</li>
+                            <li>Drumsticks</li>
+                            <li>Other memorabilia</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <h3>Art & Prints</h3>
-                    <ul>
-                        <li>Posters</li>
-                        <li>Screen prints</li>
-                        <li>Setlists</li>
-                        <li>Signed items</li>
-                    </ul>
+            </section>
+
+            <section>
+                <h2>Item Details</h2>
+                <p>Track comprehensive details for each item:</p>
+
+                <h3>Basic Info</h3>
+                <ul>
+                    <li><strong>Name/Description</strong> - What is it?</li>
+                    <li><strong>Band</strong> - Which band's merch</li>
+                    <li><strong>Type</strong> - Category of item</li>
+                    <li><strong>Size</strong> - For apparel items</li>
+                    <li><strong>Color</strong> - Item color</li>
+                </ul>
+
+                <h3>Purchase Details</h3>
+                <ul>
+                    <li><strong>Price</strong> - What you paid</li>
+                    <li><strong>Date</strong> - When you bought it</li>
+                    <li><strong>Concert</strong> - Link to specific show</li>
+                    <li><strong>Location</strong> - Venue or online store</li>
+                </ul>
+
+                <h3>Special Attributes</h3>
+                <ul>
+                    <li><strong>Limited edition</strong> - Flag rare items</li>
+                    <li>
+                        <strong>Numbered</strong> - For numbered prints (#/500)
+                    </li>
+                    <li><strong>Signed</strong> - Autographed items</li>
+                    <li><strong>Tour exclusive</strong> - Only sold on tour</li>
+                    <li><strong>Condition</strong> - Rate item condition</li>
+                </ul>
+
+                <h3>Photos</h3>
+                <p>Add photos of your merch items. Great for:</p>
+                <ul>
+                    <li>Insurance documentation</li>
+                    <li>Showing off unique items</li>
+                    <li>Tracking wear/condition over time</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Organizing Merch</h2>
+
+                <h3>Views</h3>
+                <ul>
+                    <li>
+                        <strong>Gallery</strong> - Visual grid of items with
+                        photos
+                    </li>
+                    <li><strong>List</strong> - Compact text listing</li>
+                    <li><strong>By Band</strong> - Grouped by artist</li>
+                    <li><strong>By Concert</strong> - Grouped by show</li>
+                </ul>
+
+                <h3>Filters</h3>
+                <ul>
+                    <li>Item type</li>
+                    <li>Band</li>
+                    <li>Year purchased</li>
+                    <li>Price range</li>
+                    <li>Size (for apparel)</li>
+                    <li>Special items only</li>
+                </ul>
+
+                <h3>Sort Options</h3>
+                <ul>
+                    <li>Date added</li>
+                    <li>Purchase date</li>
+                    <li>Band name</li>
+                    <li>Price</li>
+                    <li>Item type</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Merch Statistics</h2>
+                <p>See insights about your merch spending:</p>
+
+                <ul>
+                    <li>
+                        <strong>Total spent</strong> - All-time merch spending
+                    </li>
+                    <li>
+                        <strong>By year</strong> - Annual spending breakdown
+                    </li>
+                    <li>
+                        <strong>By band</strong> - Which bands get your money
+                    </li>
+                    <li>
+                        <strong>By type</strong> - T-shirts vs vinyl vs other
+                    </li>
+                    <li>
+                        <strong>Average per show</strong> - How much you
+                        typically spend
+                    </li>
+                    <li>
+                        <strong>Most expensive item</strong> - Your priciest
+                        purchase
+                    </li>
+                </ul>
+
+                <div class="screenshot-placeholder">
+                    <p>Merch spending statistics</p>
                 </div>
-                <div class="feature-card">
-                    <h3>Other</h3>
-                    <ul>
-                        <li>Stickers</li>
-                        <li>Guitar picks</li>
-                        <li>Drumsticks</li>
-                        <li>Other memorabilia</li>
-                    </ul>
+            </section>
+
+            <section>
+                <h2>Apparel Inventory</h2>
+                <p>Special features for clothing items:</p>
+
+                <h3>Size Tracking</h3>
+                <ul>
+                    <li>Set your default size</li>
+                    <li>Track items in different sizes</li>
+                    <li>Filter by size to see what fits</li>
+                </ul>
+
+                <h3>Wear Tracking</h3>
+                <ul>
+                    <li>Mark items as "worn" or "unworn"</li>
+                    <li>Track last worn date</li>
+                    <li>See your most/least worn items</li>
+                </ul>
+
+                <div class="tip-box">
+                    <h4>Closet Mode</h4>
+                    <p>
+                        Can't decide what to wear? Use the "Random Pick" feature
+                        to get a random shirt suggestion from your collection!
+                    </p>
                 </div>
+            </section>
+
+            <section>
+                <h2>Limited Edition Tracking</h2>
+                <p>Special handling for rare items:</p>
+                <ul>
+                    <li>Flag items as limited edition</li>
+                    <li>Track edition numbers (/250, /500, etc.)</li>
+                    <li>Document authenticity (certificates, receipts)</li>
+                    <li>Link to photos of packaging/tags</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Integration with Spending</h2>
+                <p>
+                    Merch purchases automatically feed into your spending
+                    tracker:
+                </p>
+                <ul>
+                    <li>Merch costs added to concert total spending</li>
+                    <li>Category breakdown in spending reports</li>
+                    <li>Year-over-year comparison</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Export Options</h2>
+                <ul>
+                    <li><strong>CSV</strong> - Full inventory spreadsheet</li>
+                    <li>
+                        <strong>Insurance report</strong> - Documented list with
+                        values and photos
+                    </li>
+                    <li>
+                        <strong>Collection summary</strong> - Overview for
+                        sharing
+                    </li>
+                </ul>
+            </section>
+
+            <div class="nav-footer">
+                <a href="collection.html" class="nav-prev"
+                    >Previous: Collection</a
+                >
+                <a href="integrations.html" class="nav-next"
+                    >Next: Integrations</a
+                >
             </div>
-        </section>
+        </main>
 
-        <section>
-            <h2>Item Details</h2>
-            <p>Track comprehensive details for each item:</p>
-
-            <h3>Basic Info</h3>
-            <ul>
-                <li><strong>Name/Description</strong> - What is it?</li>
-                <li><strong>Band</strong> - Which band's merch</li>
-                <li><strong>Type</strong> - Category of item</li>
-                <li><strong>Size</strong> - For apparel items</li>
-                <li><strong>Color</strong> - Item color</li>
-            </ul>
-
-            <h3>Purchase Details</h3>
-            <ul>
-                <li><strong>Price</strong> - What you paid</li>
-                <li><strong>Date</strong> - When you bought it</li>
-                <li><strong>Concert</strong> - Link to specific show</li>
-                <li><strong>Location</strong> - Venue or online store</li>
-            </ul>
-
-            <h3>Special Attributes</h3>
-            <ul>
-                <li><strong>Limited edition</strong> - Flag rare items</li>
-                <li><strong>Numbered</strong> - For numbered prints (#/500)</li>
-                <li><strong>Signed</strong> - Autographed items</li>
-                <li><strong>Tour exclusive</strong> - Only sold on tour</li>
-                <li><strong>Condition</strong> - Rate item condition</li>
-            </ul>
-
-            <h3>Photos</h3>
-            <p>Add photos of your merch items. Great for:</p>
-            <ul>
-                <li>Insurance documentation</li>
-                <li>Showing off unique items</li>
-                <li>Tracking wear/condition over time</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Organizing Merch</h2>
-
-            <h3>Views</h3>
-            <ul>
-                <li><strong>Gallery</strong> - Visual grid of items with photos</li>
-                <li><strong>List</strong> - Compact text listing</li>
-                <li><strong>By Band</strong> - Grouped by artist</li>
-                <li><strong>By Concert</strong> - Grouped by show</li>
-            </ul>
-
-            <h3>Filters</h3>
-            <ul>
-                <li>Item type</li>
-                <li>Band</li>
-                <li>Year purchased</li>
-                <li>Price range</li>
-                <li>Size (for apparel)</li>
-                <li>Special items only</li>
-            </ul>
-
-            <h3>Sort Options</h3>
-            <ul>
-                <li>Date added</li>
-                <li>Purchase date</li>
-                <li>Band name</li>
-                <li>Price</li>
-                <li>Item type</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Merch Statistics</h2>
-            <p>See insights about your merch spending:</p>
-
-            <ul>
-                <li><strong>Total spent</strong> - All-time merch spending</li>
-                <li><strong>By year</strong> - Annual spending breakdown</li>
-                <li><strong>By band</strong> - Which bands get your money</li>
-                <li><strong>By type</strong> - T-shirts vs vinyl vs other</li>
-                <li><strong>Average per show</strong> - How much you typically spend</li>
-                <li><strong>Most expensive item</strong> - Your priciest purchase</li>
-            </ul>
-
-            <div class="screenshot-placeholder">
-                <p>Merch spending statistics</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Apparel Inventory</h2>
-            <p>Special features for clothing items:</p>
-
-            <h3>Size Tracking</h3>
-            <ul>
-                <li>Set your default size</li>
-                <li>Track items in different sizes</li>
-                <li>Filter by size to see what fits</li>
-            </ul>
-
-            <h3>Wear Tracking</h3>
-            <ul>
-                <li>Mark items as "worn" or "unworn"</li>
-                <li>Track last worn date</li>
-                <li>See your most/least worn items</li>
-            </ul>
-
-            <div class="tip-box">
-                <h4>Closet Mode</h4>
-                <p>Can't decide what to wear? Use the "Random Pick" feature to get a random shirt suggestion from your collection!</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Limited Edition Tracking</h2>
-            <p>Special handling for rare items:</p>
-            <ul>
-                <li>Flag items as limited edition</li>
-                <li>Track edition numbers (/250, /500, etc.)</li>
-                <li>Document authenticity (certificates, receipts)</li>
-                <li>Link to photos of packaging/tags</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Integration with Spending</h2>
-            <p>Merch purchases automatically feed into your spending tracker:</p>
-            <ul>
-                <li>Merch costs added to concert total spending</li>
-                <li>Category breakdown in spending reports</li>
-                <li>Year-over-year comparison</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Export Options</h2>
-            <ul>
-                <li><strong>CSV</strong> - Full inventory spreadsheet</li>
-                <li><strong>Insurance report</strong> - Documented list with values and photos</li>
-                <li><strong>Collection summary</strong> - Overview for sharing</li>
-            </ul>
-        </section>
-
-        <div class="nav-footer">
-            <a href="collection.html" class="nav-prev">Previous: Collection</a>
-            <a href="integrations.html" class="nav-next">Next: Integrations</a>
-        </div>
-    </main>
-
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>

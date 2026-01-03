@@ -1,439 +1,551 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Achievements - PocketDemon Manual</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/icon.png">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Achievements - PocketDemon Manual</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/png" href="images/icon.png" />
+    </head>
+    <body>
         <nav class="sidebar">
-        <div class="logo">
-            <img src="images/DemonLogoBlack.png" alt="PocketDemon Logo" class="logo-image" width="44" height="44">
-            <div class="logo-text">
-                <h1>PocketDemon</h1>
-                <p class="tagline">Concert Tracker</p>
+            <div class="logo">
+                <img
+                    src="images/DemonLogoBlack.png"
+                    alt="PocketDemon Logo"
+                    class="logo-image"
+                    width="44"
+                    height="44"
+                />
+                <div class="logo-text">
+                    <h1>PocketDemon</h1>
+                    <p class="tagline">Concert Tracker</p>
+                </div>
             </div>
-        </div>
 
-        <div class="sidebar-search">
-            <div class="search-container">
-                <span class="search-icon">🔍</span>
-                <input type="text" class="search-input" placeholder="Search docs... (/)">
-                <div class="search-results"></div>
+            <div class="sidebar-search">
+                <div class="search-container">
+                    <span class="search-icon">🔍</span>
+                    <input
+                        type="text"
+                        class="search-input"
+                        placeholder="Search docs... (/)"
+                    />
+                    <div class="search-results"></div>
+                </div>
             </div>
-        </div>
 
-        <ul class="nav-links">
-            <li><a href="index.html"><span class="nav-icon">🏠</span> Home</a></li>
-            <li><a href="getting-started.html"><span class="nav-icon">🚀</span> Getting Started</a></li>
-            
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Core Features</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="bands.html"><span class="nav-icon">🎸</span> Bands</a></li>
-                    <li><a href="events.html"><span class="nav-icon">🎫</span> Events & Concerts</a></li>
-                    <li><a href="venues.html"><span class="nav-icon">🏟️</span> Venues</a></li>
-                    <li><a href="statistics.html"><span class="nav-icon">📊</span> Statistics</a></li>
-                    <li><a href="maps.html"><span class="nav-icon">🗺️</span> Maps</a></li>
-                </ul>
-            </li>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html"
+                        ><span class="nav-icon">🏠</span> Home</a
+                    >
+                </li>
+                <li>
+                    <a href="getting-started.html"
+                        ><span class="nav-icon">🚀</span> Getting Started</a
+                    >
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Social</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="buddies.html"><span class="nav-icon">👥</span> Concert Buddies</a></li>
-                    <li><a href="sharing.html"><span class="nav-icon">📤</span> Sharing</a></li>
-                </ul>
-            </li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Core Features</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="bands.html"
+                                ><span class="nav-icon">🎸</span> Bands</a
+                            >
+                        </li>
+                        <li>
+                            <a href="events.html"
+                                ><span class="nav-icon">🎫</span> Events &
+                                Concerts</a
+                            >
+                        </li>
+                        <li>
+                            <a href="venues.html"
+                                ><span class="nav-icon">🏟️</span> Venues</a
+                            >
+                        </li>
+                        <li>
+                            <a href="statistics.html"
+                                ><span class="nav-icon">📊</span> Statistics</a
+                            >
+                        </li>
+                        <li>
+                            <a href="maps.html"
+                                ><span class="nav-icon">🗺️</span> Maps</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Collections</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="wishlist.html"><span class="nav-icon">⭐</span> Wishlist</a></li>
-                    <li><a href="gallery.html"><span class="nav-icon">📷</span> Photo Gallery</a></li>
-                    <li><a href="collection.html"><span class="nav-icon">💿</span> Media Collection</a></li>
-                    <li><a href="merch.html"><span class="nav-icon">👕</span> Merchandise</a></li>
-                </ul>
-            </li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Social</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="buddies.html"
+                                ><span class="nav-icon">👥</span> Concert
+                                Buddies</a
+                            >
+                        </li>
+                        <li>
+                            <a href="sharing.html"
+                                ><span class="nav-icon">📤</span> Sharing</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Data</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="backup.html"><span class="nav-icon">☁️</span> Backup & Sync</a></li>
-                    <li><a href="import.html"><span class="nav-icon">📥</span> Import Data</a></li>
-                    <li><a href="integrations.html"><span class="nav-icon">🔗</span> Integrations</a></li>
-                </ul>
-            </li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Collections</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="wishlist.html"
+                                ><span class="nav-icon">⭐</span> Wishlist</a
+                            >
+                        </li>
+                        <li>
+                            <a href="gallery.html"
+                                ><span class="nav-icon">📷</span> Photo
+                                Gallery</a
+                            >
+                        </li>
+                        <li>
+                            <a href="collection.html"
+                                ><span class="nav-icon">💿</span> Media
+                                Collection</a
+                            >
+                        </li>
+                        <li>
+                            <a href="merch.html"
+                                ><span class="nav-icon">👕</span> Merchandise</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">More</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="achievements.html" class="active"><span class="nav-icon">🏆</span> Achievements</a></li>
-                    <li><a href="spending.html"><span class="nav-icon">💰</span> Spending Tracker</a></li>
-                    <li><a href="year-in-review.html"><span class="nav-icon">📅</span> Year in Review</a></li>
-                    <li><a href="settings.html"><span class="nav-icon">⚙️</span> Settings</a></li>
-                    <li><a href="faq.html"><span class="nav-icon">❓</span> FAQ</a></li>
-                </ul>
-            </li>
-        </ul>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Data</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="backup.html"
+                                ><span class="nav-icon">☁️</span> Backup &
+                                Sync</a
+                            >
+                        </li>
+                        <li>
+                            <a href="import.html"
+                                ><span class="nav-icon">📥</span> Import Data</a
+                            >
+                        </li>
+                        <li>
+                            <a href="integrations.html"
+                                ><span class="nav-icon">🔗</span>
+                                Integrations</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-        <div class="sidebar-footer">
-            <button class="theme-toggle" aria-label="Toggle theme">
-                <span class="theme-toggle-icon">☀️</span>
-                <span class="theme-toggle-label">Light</span>
-            </button>
-            <span class="version">v1.0.22</span>
-        </div>
-    </nav>
-
-    <main class="content">
-        <header>
-            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-            <h1>Achievements</h1>
-        </header>
-
-        <section class="page-content">
-            <h2>Earn Badges for Your Concert Journey</h2>
-            <p>PocketDemon includes 32 badges across 7 categories. Badges are automatically awarded when you reach milestones.</p>
-
-            <h2>Viewing Achievements</h2>
-            <ol>
-                <li>Go to <strong>More</strong> &rarr; <strong>Achievements</strong></li>
-                <li>Or use the quick action from the Home screen</li>
-                <li>Browse by category (collapsible sections)</li>
-                <li>See progress toward locked badges</li>
-            </ol>
-
-            <h2>Concert Milestones</h2>
-            <table>
-                <tr>
-                    <th>Badge</th>
-                    <th>Requirement</th>
-                </tr>
-                <tr>
-                    <td>First Steps</td>
-                    <td>Attend 10 concerts</td>
-                </tr>
-                <tr>
-                    <td>Getting Started</td>
-                    <td>Attend 25 concerts</td>
-                </tr>
-                <tr>
-                    <td>Concert Regular</td>
-                    <td>Attend 50 concerts</td>
-                </tr>
-                <tr>
-                    <td>Century Club</td>
-                    <td>Attend 100 concerts</td>
-                </tr>
-                <tr>
-                    <td>Concert Veteran</td>
-                    <td>Attend 250 concerts</td>
-                </tr>
-                <tr>
-                    <td>Live Music Legend</td>
-                    <td>Attend 500 concerts</td>
-                </tr>
-                <tr>
-                    <td>Concert God</td>
-                    <td>Attend 1000 concerts</td>
-                </tr>
-            </table>
-
-            <h2>Unique Bands</h2>
-            <table>
-                <tr>
-                    <th>Badge</th>
-                    <th>Requirement</th>
-                </tr>
-                <tr>
-                    <td>Band Explorer</td>
-                    <td>See 25 different bands</td>
-                </tr>
-                <tr>
-                    <td>Music Adventurer</td>
-                    <td>See 50 different bands</td>
-                </tr>
-                <tr>
-                    <td>Band Collector</td>
-                    <td>See 100 different bands</td>
-                </tr>
-                <tr>
-                    <td>Band Connoisseur</td>
-                    <td>See 250 different bands</td>
-                </tr>
-                <tr>
-                    <td>Living Encyclopedia</td>
-                    <td>See 500 different bands</td>
-                </tr>
-                <tr>
-                    <td>Band Master</td>
-                    <td>See 1000 different bands</td>
-                </tr>
-            </table>
-
-            <h2>Geographic</h2>
-            <h3>Countries</h3>
-            <table>
-                <tr>
-                    <th>Badge</th>
-                    <th>Requirement</th>
-                </tr>
-                <tr>
-                    <td>Border Hopper</td>
-                    <td>3 countries</td>
-                </tr>
-                <tr>
-                    <td>International Fan</td>
-                    <td>5 countries</td>
-                </tr>
-                <tr>
-                    <td>Globe Trotter</td>
-                    <td>10 countries</td>
-                </tr>
-                <tr>
-                    <td>World Traveler</td>
-                    <td>25 countries</td>
-                </tr>
-                <tr>
-                    <td>Concert Nomad</td>
-                    <td>50 countries</td>
-                </tr>
-            </table>
-
-            <h3>Cities</h3>
-            <table>
-                <tr>
-                    <th>Badge</th>
-                    <th>Requirement</th>
-                </tr>
-                <tr>
-                    <td>City Explorer</td>
-                    <td>10 cities</td>
-                </tr>
-                <tr>
-                    <td>Urban Adventurer</td>
-                    <td>25 cities</td>
-                </tr>
-                <tr>
-                    <td>City Hopper</td>
-                    <td>50 cities</td>
-                </tr>
-                <tr>
-                    <td>Metropolitan Master</td>
-                    <td>100 cities</td>
-                </tr>
-            </table>
-
-            <h2>Venues</h2>
-            <h3>Unique Venues</h3>
-            <table>
-                <tr>
-                    <th>Badge</th>
-                    <th>Requirement</th>
-                </tr>
-                <tr>
-                    <td>Venue Visitor</td>
-                    <td>10 venues</td>
-                </tr>
-                <tr>
-                    <td>Venue Explorer</td>
-                    <td>25 venues</td>
-                </tr>
-                <tr>
-                    <td>Venue Hunter</td>
-                    <td>50 venues</td>
-                </tr>
-                <tr>
-                    <td>Venue Collector</td>
-                    <td>100 venues</td>
-                </tr>
-                <tr>
-                    <td>Venue Connoisseur</td>
-                    <td>250 venues</td>
-                </tr>
-            </table>
-
-            <h3>Venue Regular</h3>
-            <table>
-                <tr>
-                    <th>Badge</th>
-                    <th>Requirement</th>
-                </tr>
-                <tr>
-                    <td>Regular</td>
-                    <td>Same venue 5 times</td>
-                </tr>
-                <tr>
-                    <td>Local Hero</td>
-                    <td>Same venue 10 times</td>
-                </tr>
-                <tr>
-                    <td>Home Turf</td>
-                    <td>Same venue 25 times</td>
-                </tr>
-                <tr>
-                    <td>Resident</td>
-                    <td>Same venue 50 times</td>
-                </tr>
-            </table>
-
-            <h2>Loyalty</h2>
-            <table>
-                <tr>
-                    <th>Badge</th>
-                    <th>Requirement</th>
-                </tr>
-                <tr>
-                    <td>Repeat Customer</td>
-                    <td>Same band 3 times</td>
-                </tr>
-                <tr>
-                    <td>True Fan</td>
-                    <td>Same band 5 times</td>
-                </tr>
-                <tr>
-                    <td>Devoted Follower</td>
-                    <td>Same band 10 times</td>
-                </tr>
-                <tr>
-                    <td>Super Fan</td>
-                    <td>Same band 25 times</td>
-                </tr>
-                <tr>
-                    <td>Ultimate Devotee</td>
-                    <td>Same band 50 times</td>
-                </tr>
-            </table>
-
-            <h2>Festivals</h2>
-            <table>
-                <tr>
-                    <th>Badge</th>
-                    <th>Requirement</th>
-                </tr>
-                <tr>
-                    <td>Festival Newbie</td>
-                    <td>1 festival</td>
-                </tr>
-                <tr>
-                    <td>Festival Fan</td>
-                    <td>5 festivals</td>
-                </tr>
-                <tr>
-                    <td>Festival Regular</td>
-                    <td>10 festivals</td>
-                </tr>
-                <tr>
-                    <td>Festival Veteran</td>
-                    <td>25 festivals</td>
-                </tr>
-                <tr>
-                    <td>Festival Legend</td>
-                    <td>50 festivals</td>
-                </tr>
-            </table>
-
-            <h3>Festival Repeats</h3>
-            <table>
-                <tr>
-                    <th>Badge</th>
-                    <th>Requirement</th>
-                </tr>
-                <tr>
-                    <td>Return Visitor</td>
-                    <td>Same festival 2 years</td>
-                </tr>
-                <tr>
-                    <td>Festival Faithful</td>
-                    <td>Same festival 5 years</td>
-                </tr>
-                <tr>
-                    <td>Decade of Dedication</td>
-                    <td>Same festival 10 years</td>
-                </tr>
-            </table>
-
-            <h2>Genres</h2>
-            <table>
-                <tr>
-                    <th>Badge</th>
-                    <th>Requirement</th>
-                </tr>
-                <tr>
-                    <td>Genre Curious</td>
-                    <td>20 different genres</td>
-                </tr>
-                <tr>
-                    <td>Genre Explorer</td>
-                    <td>50 different genres</td>
-                </tr>
-                <tr>
-                    <td>Musical Omnivore</td>
-                    <td>100 different genres</td>
-                </tr>
-            </table>
-
-            <h3>Genre Depth</h3>
-            <table>
-                <tr>
-                    <th>Badge</th>
-                    <th>Requirement</th>
-                </tr>
-                <tr>
-                    <td>Genre Enthusiast</td>
-                    <td>25 bands of one genre</td>
-                </tr>
-                <tr>
-                    <td>Genre Specialist</td>
-                    <td>50 bands of one genre</td>
-                </tr>
-                <tr>
-                    <td>Genre Master</td>
-                    <td>100 bands of one genre</td>
-                </tr>
-                <tr>
-                    <td>Genre God</td>
-                    <td>250 bands of one genre</td>
-                </tr>
-            </table>
-
-            <h2>How Badges Work</h2>
-            <ul>
-                <li>Badges are checked automatically when data changes</li>
-                <li>Once earned, badges cannot be lost</li>
-                <li>Progress is shown for locked badges</li>
-                <li>Unlock dates are recorded</li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">More</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="achievements.html" class="active"
+                                ><span class="nav-icon">🏆</span>
+                                Achievements</a
+                            >
+                        </li>
+                        <li>
+                            <a href="spending.html"
+                                ><span class="nav-icon">💰</span> Spending
+                                Tracker</a
+                            >
+                        </li>
+                        <li>
+                            <a href="year-in-review.html"
+                                ><span class="nav-icon">📅</span> Year in
+                                Review</a
+                            >
+                        </li>
+                        <li>
+                            <a href="settings.html"
+                                ><span class="nav-icon">⚙️</span> Settings</a
+                            >
+                        </li>
+                        <li>
+                            <a href="faq.html"
+                                ><span class="nav-icon">❓</span> FAQ</a
+                            >
+                        </li>
+                    </ul>
+                </li>
             </ul>
 
-            <div class="info-box tip">
-                <h4>Tip</h4>
-                <p>Check the Achievements screen after importing data - you may unlock several badges at once!</p>
+            <div class="sidebar-footer">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-toggle-icon">☀️</span>
+                    <span class="theme-toggle-label">Light</span>
+                </button>
+                <span class="version">v1.0.23</span>
             </div>
-        </section>
+        </nav>
 
-        <footer>
-            <p>&copy; 2024-2025 Technodystopia. All rights reserved.</p>
-        </footer>
-    </main>
+        <main class="content">
+            <header>
+                <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+                <h1>Achievements</h1>
+            </header>
 
-    <script src="script.js"></script>
-</body>
+            <section class="page-content">
+                <h2>Earn Badges for Your Concert Journey</h2>
+                <p>
+                    PocketDemon includes 53 badges across 7 categories. Badges
+                    are automatically awarded when you reach milestones.
+                </p>
+
+                <h2>Viewing Achievements</h2>
+                <ol>
+                    <li>
+                        Go to <strong>More</strong> &rarr;
+                        <strong>Achievements</strong>
+                    </li>
+                    <li>Or use the quick action from the Home screen</li>
+                    <li>Browse by category (collapsible sections)</li>
+                    <li>See progress toward locked badges</li>
+                </ol>
+
+                <h2>Concert Milestones</h2>
+                <table>
+                    <tr>
+                        <th>Badge</th>
+                        <th>Requirement</th>
+                    </tr>
+                    <tr>
+                        <td>First Steps</td>
+                        <td>Attend 10 concerts</td>
+                    </tr>
+                    <tr>
+                        <td>Getting Started</td>
+                        <td>Attend 25 concerts</td>
+                    </tr>
+                    <tr>
+                        <td>Concert Regular</td>
+                        <td>Attend 50 concerts</td>
+                    </tr>
+                    <tr>
+                        <td>Century Club</td>
+                        <td>Attend 100 concerts</td>
+                    </tr>
+                    <tr>
+                        <td>Concert Veteran</td>
+                        <td>Attend 250 concerts</td>
+                    </tr>
+                    <tr>
+                        <td>Live Music Legend</td>
+                        <td>Attend 500 concerts</td>
+                    </tr>
+                    <tr>
+                        <td>Concert God</td>
+                        <td>Attend 1000 concerts</td>
+                    </tr>
+                </table>
+
+                <h2>Unique Bands</h2>
+                <table>
+                    <tr>
+                        <th>Badge</th>
+                        <th>Requirement</th>
+                    </tr>
+                    <tr>
+                        <td>Band Explorer</td>
+                        <td>See 25 different bands</td>
+                    </tr>
+                    <tr>
+                        <td>Music Adventurer</td>
+                        <td>See 50 different bands</td>
+                    </tr>
+                    <tr>
+                        <td>Band Collector</td>
+                        <td>See 100 different bands</td>
+                    </tr>
+                    <tr>
+                        <td>Band Connoisseur</td>
+                        <td>See 250 different bands</td>
+                    </tr>
+                    <tr>
+                        <td>Living Encyclopedia</td>
+                        <td>See 500 different bands</td>
+                    </tr>
+                    <tr>
+                        <td>Band Master</td>
+                        <td>See 1000 different bands</td>
+                    </tr>
+                </table>
+
+                <h2>Geographic</h2>
+                <h3>Countries</h3>
+                <table>
+                    <tr>
+                        <th>Badge</th>
+                        <th>Requirement</th>
+                    </tr>
+                    <tr>
+                        <td>Border Hopper</td>
+                        <td>3 countries</td>
+                    </tr>
+                    <tr>
+                        <td>International Fan</td>
+                        <td>5 countries</td>
+                    </tr>
+                    <tr>
+                        <td>Globe Trotter</td>
+                        <td>10 countries</td>
+                    </tr>
+                    <tr>
+                        <td>World Traveler</td>
+                        <td>25 countries</td>
+                    </tr>
+                    <tr>
+                        <td>Concert Nomad</td>
+                        <td>50 countries</td>
+                    </tr>
+                </table>
+
+                <h3>Cities</h3>
+                <table>
+                    <tr>
+                        <th>Badge</th>
+                        <th>Requirement</th>
+                    </tr>
+                    <tr>
+                        <td>City Explorer</td>
+                        <td>10 cities</td>
+                    </tr>
+                    <tr>
+                        <td>Urban Adventurer</td>
+                        <td>25 cities</td>
+                    </tr>
+                    <tr>
+                        <td>City Hopper</td>
+                        <td>50 cities</td>
+                    </tr>
+                    <tr>
+                        <td>Metropolitan Master</td>
+                        <td>100 cities</td>
+                    </tr>
+                </table>
+
+                <h2>Venues</h2>
+                <h3>Unique Venues</h3>
+                <table>
+                    <tr>
+                        <th>Badge</th>
+                        <th>Requirement</th>
+                    </tr>
+                    <tr>
+                        <td>Venue Visitor</td>
+                        <td>10 venues</td>
+                    </tr>
+                    <tr>
+                        <td>Venue Explorer</td>
+                        <td>25 venues</td>
+                    </tr>
+                    <tr>
+                        <td>Venue Hunter</td>
+                        <td>50 venues</td>
+                    </tr>
+                    <tr>
+                        <td>Venue Collector</td>
+                        <td>100 venues</td>
+                    </tr>
+                    <tr>
+                        <td>Venue Connoisseur</td>
+                        <td>250 venues</td>
+                    </tr>
+                </table>
+
+                <h3>Venue Regular</h3>
+                <table>
+                    <tr>
+                        <th>Badge</th>
+                        <th>Requirement</th>
+                    </tr>
+                    <tr>
+                        <td>Regular</td>
+                        <td>Same venue 5 times</td>
+                    </tr>
+                    <tr>
+                        <td>Local Hero</td>
+                        <td>Same venue 10 times</td>
+                    </tr>
+                    <tr>
+                        <td>Home Turf</td>
+                        <td>Same venue 25 times</td>
+                    </tr>
+                    <tr>
+                        <td>Resident</td>
+                        <td>Same venue 50 times</td>
+                    </tr>
+                </table>
+
+                <h2>Loyalty</h2>
+                <table>
+                    <tr>
+                        <th>Badge</th>
+                        <th>Requirement</th>
+                    </tr>
+                    <tr>
+                        <td>Repeat Customer</td>
+                        <td>Same band 3 times</td>
+                    </tr>
+                    <tr>
+                        <td>True Fan</td>
+                        <td>Same band 5 times</td>
+                    </tr>
+                    <tr>
+                        <td>Devoted Follower</td>
+                        <td>Same band 10 times</td>
+                    </tr>
+                    <tr>
+                        <td>Super Fan</td>
+                        <td>Same band 25 times</td>
+                    </tr>
+                    <tr>
+                        <td>Ultimate Devotee</td>
+                        <td>Same band 50 times</td>
+                    </tr>
+                </table>
+
+                <h2>Festivals</h2>
+                <table>
+                    <tr>
+                        <th>Badge</th>
+                        <th>Requirement</th>
+                    </tr>
+                    <tr>
+                        <td>Festival Newbie</td>
+                        <td>1 festival</td>
+                    </tr>
+                    <tr>
+                        <td>Festival Fan</td>
+                        <td>5 festivals</td>
+                    </tr>
+                    <tr>
+                        <td>Festival Regular</td>
+                        <td>10 festivals</td>
+                    </tr>
+                    <tr>
+                        <td>Festival Veteran</td>
+                        <td>25 festivals</td>
+                    </tr>
+                    <tr>
+                        <td>Festival Legend</td>
+                        <td>50 festivals</td>
+                    </tr>
+                </table>
+
+                <h3>Festival Repeats</h3>
+                <table>
+                    <tr>
+                        <th>Badge</th>
+                        <th>Requirement</th>
+                    </tr>
+                    <tr>
+                        <td>Return Visitor</td>
+                        <td>Same festival 2 years</td>
+                    </tr>
+                    <tr>
+                        <td>Festival Faithful</td>
+                        <td>Same festival 5 years</td>
+                    </tr>
+                    <tr>
+                        <td>Decade of Dedication</td>
+                        <td>Same festival 10 years</td>
+                    </tr>
+                </table>
+
+                <h2>Genres</h2>
+                <table>
+                    <tr>
+                        <th>Badge</th>
+                        <th>Requirement</th>
+                    </tr>
+                    <tr>
+                        <td>Genre Curious</td>
+                        <td>20 different genres</td>
+                    </tr>
+                    <tr>
+                        <td>Genre Explorer</td>
+                        <td>50 different genres</td>
+                    </tr>
+                    <tr>
+                        <td>Musical Omnivore</td>
+                        <td>100 different genres</td>
+                    </tr>
+                </table>
+
+                <h3>Genre Depth</h3>
+                <table>
+                    <tr>
+                        <th>Badge</th>
+                        <th>Requirement</th>
+                    </tr>
+                    <tr>
+                        <td>Genre Enthusiast</td>
+                        <td>25 bands of one genre</td>
+                    </tr>
+                    <tr>
+                        <td>Genre Specialist</td>
+                        <td>50 bands of one genre</td>
+                    </tr>
+                    <tr>
+                        <td>Genre Master</td>
+                        <td>100 bands of one genre</td>
+                    </tr>
+                    <tr>
+                        <td>Genre God</td>
+                        <td>250 bands of one genre</td>
+                    </tr>
+                </table>
+
+                <h2>How Badges Work</h2>
+                <ul>
+                    <li>Badges are checked automatically when data changes</li>
+                    <li>Once earned, badges cannot be lost</li>
+                    <li>Progress is shown for locked badges</li>
+                    <li>Unlock dates are recorded</li>
+                </ul>
+
+                <div class="info-box tip">
+                    <h4>Tip</h4>
+                    <p>
+                        Check the Achievements screen after importing data - you
+                        may unlock several badges at once!
+                    </p>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2024-2025 Technodystopia. All rights reserved.</p>
+            </footer>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
 </html>

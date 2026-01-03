@@ -1,340 +1,639 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Integrations - PocketDemon Manual</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/icon.png">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Integrations - PocketDemon Manual</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/png" href="images/icon.png" />
+    </head>
+    <body>
         <nav class="sidebar">
-        <div class="logo">
-            <img src="images/DemonLogoBlack.png" alt="PocketDemon Logo" class="logo-image" width="44" height="44">
-            <div class="logo-text">
-                <h1>PocketDemon</h1>
-                <p class="tagline">Concert Tracker</p>
+            <div class="logo">
+                <img
+                    src="images/DemonLogoBlack.png"
+                    alt="PocketDemon Logo"
+                    class="logo-image"
+                    width="44"
+                    height="44"
+                />
+                <div class="logo-text">
+                    <h1>PocketDemon</h1>
+                    <p class="tagline">Concert Tracker</p>
+                </div>
             </div>
-        </div>
 
-        <div class="sidebar-search">
-            <div class="search-container">
-                <span class="search-icon">🔍</span>
-                <input type="text" class="search-input" placeholder="Search docs... (/)">
-                <div class="search-results"></div>
+            <div class="sidebar-search">
+                <div class="search-container">
+                    <span class="search-icon">🔍</span>
+                    <input
+                        type="text"
+                        class="search-input"
+                        placeholder="Search docs... (/)"
+                    />
+                    <div class="search-results"></div>
+                </div>
             </div>
-        </div>
 
-        <ul class="nav-links">
-            <li><a href="index.html"><span class="nav-icon">🏠</span> Home</a></li>
-            <li><a href="getting-started.html"><span class="nav-icon">🚀</span> Getting Started</a></li>
-            
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Core Features</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="bands.html"><span class="nav-icon">🎸</span> Bands</a></li>
-                    <li><a href="events.html"><span class="nav-icon">🎫</span> Events & Concerts</a></li>
-                    <li><a href="venues.html"><span class="nav-icon">🏟️</span> Venues</a></li>
-                    <li><a href="statistics.html"><span class="nav-icon">📊</span> Statistics</a></li>
-                    <li><a href="maps.html"><span class="nav-icon">🗺️</span> Maps</a></li>
-                </ul>
-            </li>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html"
+                        ><span class="nav-icon">🏠</span> Home</a
+                    >
+                </li>
+                <li>
+                    <a href="getting-started.html"
+                        ><span class="nav-icon">🚀</span> Getting Started</a
+                    >
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Social</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="buddies.html"><span class="nav-icon">👥</span> Concert Buddies</a></li>
-                    <li><a href="sharing.html"><span class="nav-icon">📤</span> Sharing</a></li>
-                </ul>
-            </li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Core Features</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="bands.html"
+                                ><span class="nav-icon">🎸</span> Bands</a
+                            >
+                        </li>
+                        <li>
+                            <a href="events.html"
+                                ><span class="nav-icon">🎫</span> Events &
+                                Concerts</a
+                            >
+                        </li>
+                        <li>
+                            <a href="venues.html"
+                                ><span class="nav-icon">🏟️</span> Venues</a
+                            >
+                        </li>
+                        <li>
+                            <a href="statistics.html"
+                                ><span class="nav-icon">📊</span> Statistics</a
+                            >
+                        </li>
+                        <li>
+                            <a href="maps.html"
+                                ><span class="nav-icon">🗺️</span> Maps</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Collections</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="wishlist.html"><span class="nav-icon">⭐</span> Wishlist</a></li>
-                    <li><a href="gallery.html"><span class="nav-icon">📷</span> Photo Gallery</a></li>
-                    <li><a href="collection.html"><span class="nav-icon">💿</span> Media Collection</a></li>
-                    <li><a href="merch.html"><span class="nav-icon">👕</span> Merchandise</a></li>
-                </ul>
-            </li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Social</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="buddies.html"
+                                ><span class="nav-icon">👥</span> Concert
+                                Buddies</a
+                            >
+                        </li>
+                        <li>
+                            <a href="sharing.html"
+                                ><span class="nav-icon">📤</span> Sharing</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Data</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="backup.html"><span class="nav-icon">☁️</span> Backup & Sync</a></li>
-                    <li><a href="import.html"><span class="nav-icon">📥</span> Import Data</a></li>
-                    <li><a href="integrations.html" class="active"><span class="nav-icon">🔗</span> Integrations</a></li>
-                </ul>
-            </li>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Collections</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="wishlist.html"
+                                ><span class="nav-icon">⭐</span> Wishlist</a
+                            >
+                        </li>
+                        <li>
+                            <a href="gallery.html"
+                                ><span class="nav-icon">📷</span> Photo
+                                Gallery</a
+                            >
+                        </li>
+                        <li>
+                            <a href="collection.html"
+                                ><span class="nav-icon">💿</span> Media
+                                Collection</a
+                            >
+                        </li>
+                        <li>
+                            <a href="merch.html"
+                                ><span class="nav-icon">👕</span> Merchandise</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">More</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="achievements.html"><span class="nav-icon">🏆</span> Achievements</a></li>
-                    <li><a href="spending.html"><span class="nav-icon">💰</span> Spending Tracker</a></li>
-                    <li><a href="year-in-review.html"><span class="nav-icon">📅</span> Year in Review</a></li>
-                    <li><a href="settings.html"><span class="nav-icon">⚙️</span> Settings</a></li>
-                    <li><a href="faq.html"><span class="nav-icon">❓</span> FAQ</a></li>
-                </ul>
-            </li>
-        </ul>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Data</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="backup.html"
+                                ><span class="nav-icon">☁️</span> Backup &
+                                Sync</a
+                            >
+                        </li>
+                        <li>
+                            <a href="import.html"
+                                ><span class="nav-icon">📥</span> Import Data</a
+                            >
+                        </li>
+                        <li>
+                            <a href="integrations.html" class="active"
+                                ><span class="nav-icon">🔗</span>
+                                Integrations</a
+                            >
+                        </li>
+                    </ul>
+                </li>
 
-        <div class="sidebar-footer">
-            <button class="theme-toggle" aria-label="Toggle theme">
-                <span class="theme-toggle-icon">☀️</span>
-                <span class="theme-toggle-label">Light</span>
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">More</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="achievements.html"
+                                ><span class="nav-icon">🏆</span>
+                                Achievements</a
+                            >
+                        </li>
+                        <li>
+                            <a href="spending.html"
+                                ><span class="nav-icon">💰</span> Spending
+                                Tracker</a
+                            >
+                        </li>
+                        <li>
+                            <a href="year-in-review.html"
+                                ><span class="nav-icon">📅</span> Year in
+                                Review</a
+                            >
+                        </li>
+                        <li>
+                            <a href="settings.html"
+                                ><span class="nav-icon">⚙️</span> Settings</a
+                            >
+                        </li>
+                        <li>
+                            <a href="faq.html"
+                                ><span class="nav-icon">❓</span> FAQ</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-toggle-icon">☀️</span>
+                    <span class="theme-toggle-label">Light</span>
+                </button>
+                <span class="version">v1.0.23</span>
+            </div>
+        </nav>
+
+        <main class="content">
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-            <span class="version">v1.0.22</span>
-        </div>
-    </nav>
 
-    <main class="content">
-        <button class="menu-toggle" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+            <h1>Integrations</h1>
+            <p class="subtitle">
+                Connect PocketDemon with your favorite music services
+            </p>
 
-        <h1>Integrations</h1>
-        <p class="subtitle">Connect PocketDemon with your favorite music services</p>
+            <section>
+                <h2>Available Integrations</h2>
+                <p>
+                    PocketDemon connects with various music services to enhance
+                    your experience and import data.
+                </p>
 
-        <section>
-            <h2>Available Integrations</h2>
-            <p>PocketDemon connects with various music services to enhance your experience and import data.</p>
+                <div class="screenshot-placeholder">
+                    <p>Integrations settings screen</p>
+                </div>
+            </section>
 
-            <div class="screenshot-placeholder">
-                <p>Integrations settings screen</p>
+            <section>
+                <h2>Setlist.fm</h2>
+                <p>The premier source for concert setlists worldwide.</p>
+
+                <h3>Features</h3>
+                <ul>
+                    <li>
+                        <strong>View setlists</strong> - See what songs were
+                        played at concerts you attended
+                    </li>
+                    <li>
+                        <strong>Import concerts</strong> - Pull your attended
+                        concerts from your setlist.fm profile
+                    </li>
+                    <li>
+                        <strong>Song statistics</strong> - See your most heard
+                        songs, rare songs, and covers from cached setlists
+                    </li>
+                    <li>
+                        <strong>Genius lyrics</strong> - Tap any song in a
+                        setlist to search for lyrics on Genius
+                    </li>
+                </ul>
+
+                <h3>Usage</h3>
+                <ol>
+                    <li>Open any concert in your collection</li>
+                    <li>Tap <strong>View Setlist</strong></li>
+                    <li>PocketDemon fetches the setlist from setlist.fm</li>
+                    <li>Tap any song to view lyrics on Genius</li>
+                </ol>
+
+                <h3>Import from Setlist.fm</h3>
+                <ol>
+                    <li>
+                        Go to <strong>Settings > Import > Setlist.fm</strong>
+                    </li>
+                    <li>Enter your setlist.fm username</li>
+                    <li>
+                        Tap <strong>Import</strong> to fetch your attended
+                        concerts
+                    </li>
+                </ol>
+
+                <div class="info-box note">
+                    <h4>Note</h4>
+                    <p>
+                        Setlists require an internet connection and may not be
+                        available for all concerts. Song statistics are
+                        calculated from setlists you've viewed (cached locally).
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Last.fm</h2>
+                <p>Import your listening history and top artists.</p>
+
+                <h3>Features</h3>
+                <ul>
+                    <li>
+                        <strong>Top artists</strong> - Import your most-played
+                        artists to your wishlist
+                    </li>
+                    <li>
+                        <strong>Library artists</strong> - Import all scrobbled
+                        artists with play counts
+                    </li>
+                    <li>
+                        <strong>Play counts</strong> - See how many times you've
+                        listened to each artist
+                    </li>
+                </ul>
+
+                <h3>Setup</h3>
+                <ol>
+                    <li>Go to <strong>Settings > Import > Last.fm</strong></li>
+                    <li>Enter your Last.fm username</li>
+                    <li>
+                        Tap <strong>Import Top Artists</strong> or
+                        <strong>Import Library</strong>
+                    </li>
+                </ol>
+
+                <div class="info-box note">
+                    <h4>Note</h4>
+                    <p>
+                        Last.fm import uses read-only access via username - no
+                        OAuth required. Requires a Last.fm API key configured in
+                        the app build.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Discogs</h2>
+                <p>Import your physical music collection.</p>
+
+                <h3>Features</h3>
+                <ul>
+                    <li>
+                        <strong>Collection import</strong> - Import your vinyl,
+                        CD, and cassette collection
+                    </li>
+                    <li>
+                        <strong>Release details</strong> - Artist, year, label,
+                        catalog number, format
+                    </li>
+                    <li>
+                        <strong>Band linking</strong> - Link imported releases
+                        to bands in your concert collection
+                    </li>
+                </ul>
+
+                <h3>Setup</h3>
+                <ol>
+                    <li>Go to <strong>More > Collection > Import</strong></li>
+                    <li>Enter your Discogs username</li>
+                    <li>Tap <strong>Import Collection</strong></li>
+                    <li>Review and confirm the import</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Spotify</h2>
+                <p>Artist search and band linking.</p>
+
+                <div class="info-box warning">
+                    <h4>On Hold</h4>
+                    <p>
+                        Spotify integration is currently on hold due to Spotify
+                        API access restrictions implemented in late 2024. The
+                        code is ready for when access becomes available again.
+                    </p>
+                </div>
+
+                <h3>Planned Features</h3>
+                <ul>
+                    <li>
+                        <strong>Artist search</strong> - Search and link Spotify
+                        artists to bands
+                    </li>
+                    <li>
+                        <strong>Spotify links</strong> - Open bands directly in
+                        Spotify
+                    </li>
+                    <li>
+                        <strong>Import followed artists</strong> - Add followed
+                        artists to wishlist
+                    </li>
+                    <li>
+                        <strong>Setlist playlists</strong> - Create playlists
+                        from concert setlists
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Dropbox</h2>
+                <p>
+                    Cloud storage for backups, photo sync, and buddy
+                    connections.
+                </p>
+
+                <h3>Features</h3>
+                <ul>
+                    <li>
+                        <strong>Full backup</strong> - All your data synced to
+                        the cloud
+                    </li>
+                    <li>
+                        <strong>Photo sync</strong> - Upload and restore concert
+                        photos
+                    </li>
+                    <li>
+                        <strong>Auto-sync</strong> - Battery-friendly sync on
+                        app pause (15-minute cooldown)
+                    </li>
+                    <li>
+                        <strong>Buddy connections</strong> - Stable buddy
+                        identity via Dropbox account
+                    </li>
+                    <li>
+                        <strong>Cross-device sync</strong> - Access your data on
+                        multiple devices
+                    </li>
+                </ul>
+
+                <h3>Setup</h3>
+                <ol>
+                    <li>Go to <strong>Settings > Backup > Dropbox</strong></li>
+                    <li>Tap <strong>Connect</strong></li>
+                    <li>Authorize PocketDemon in Dropbox</li>
+                    <li>
+                        Sync happens automatically when the app is backgrounded
+                    </li>
+                </ol>
+
+                <div class="info-box tip">
+                    <h4>Desktop OAuth</h4>
+                    <p>
+                        On Windows, macOS, and Linux, Dropbox OAuth uses a
+                        localhost HTTP server for the redirect. A browser window
+                        will open for authorization.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>MusicBrainz</h2>
+                <p>Open music encyclopedia for comprehensive band data.</p>
+
+                <h3>Features</h3>
+                <ul>
+                    <li>
+                        <strong>Band enrichment</strong> - Formation year,
+                        country, genres, status
+                    </li>
+                    <li>
+                        <strong>Aliases</strong> - Alternative names and
+                        spellings
+                    </li>
+                    <li>
+                        <strong>External links</strong> - Wikipedia, Discogs,
+                        AllMusic, Last.fm
+                    </li>
+                    <li>
+                        <strong>Social links</strong> - Spotify, YouTube,
+                        Facebook, Twitter, Instagram
+                    </li>
+                </ul>
+
+                <h3>Usage</h3>
+                <ol>
+                    <li>Open any band's detail page</li>
+                    <li>
+                        Tap <strong>Enrich</strong> (or menu > Enrich from
+                        MusicBrainz)
+                    </li>
+                    <li>Data is fetched automatically - no account needed</li>
+                </ol>
+
+                <div class="info-box note">
+                    <h4>Rate Limiting</h4>
+                    <p>
+                        MusicBrainz limits requests to 1 per second. Enrichment
+                        may take a moment if you're enriching multiple bands.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>TheAudioDB</h2>
+                <p>Artist photos, logos, and biographies.</p>
+
+                <h3>Features</h3>
+                <ul>
+                    <li>
+                        <strong>Artist photos</strong> - High-quality artist
+                        images
+                    </li>
+                    <li><strong>Band logos</strong> - Official logo images</li>
+                    <li><strong>Biography</strong> - Artist biography text</li>
+                    <li><strong>Style</strong> - Sub-genre classification</li>
+                </ul>
+
+                <h3>Usage</h3>
+                <p>
+                    TheAudioDB is queried automatically when enriching bands.
+                    Photos are downloaded and stored locally for offline access.
+                </p>
+            </section>
+
+            <section>
+                <h2>Ticketmaster</h2>
+                <p>Venue data and nearby concert discovery.</p>
+
+                <h3>Features</h3>
+                <ul>
+                    <li>
+                        <strong>Venue enrichment</strong> - Photos, addresses,
+                        and GPS coordinates for venues
+                    </li>
+                    <li>
+                        <strong>Event scanner</strong> - Discover nearby
+                        concerts for bands in your Wishlist or Favorites
+                    </li>
+                    <li>
+                        <strong>Radius search</strong> - Configure search radius
+                        and city
+                    </li>
+                </ul>
+
+                <h3>Event Scanner</h3>
+                <ol>
+                    <li>Go to <strong>Events > Scanner</strong></li>
+                    <li>Set your location and search radius</li>
+                    <li>Tap <strong>Scan</strong> to find upcoming concerts</li>
+                    <li>Results show bands from your Wishlist and Favorites</li>
+                </ol>
+
+                <div class="info-box note">
+                    <h4>Rate Limiting</h4>
+                    <p>
+                        Ticketmaster API has a daily rate limit of 1000
+                        requests. The scanner tracks usage to prevent exceeding
+                        this limit.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Genius</h2>
+                <p>Song lyrics via browser search.</p>
+
+                <h3>Features</h3>
+                <ul>
+                    <li>
+                        <strong>Lyrics search</strong> - Quick links to song
+                        lyrics from setlist view
+                    </li>
+                </ul>
+
+                <h3>Usage</h3>
+                <p>
+                    When viewing a setlist, tap the lyrics icon next to any
+                    song. This opens Genius search in your browser - no API key
+                    required.
+                </p>
+            </section>
+
+            <section>
+                <h2>Calendar Export (ICS)</h2>
+                <p>Export events to your calendar app.</p>
+
+                <h3>Features</h3>
+                <ul>
+                    <li>
+                        <strong>ICS export</strong> - Standard calendar format
+                        supported by all calendar apps
+                    </li>
+                    <li>
+                        <strong>Multi-day support</strong> - Festivals exported
+                        as all-day events
+                    </li>
+                    <li>
+                        <strong>Event details</strong> - Includes venue, bands,
+                        and notes
+                    </li>
+                </ul>
+
+                <h3>Usage</h3>
+                <ol>
+                    <li>Open any event</li>
+                    <li>Tap menu > <strong>Export to Calendar</strong></li>
+                    <li>An ICS file is generated and shared</li>
+                    <li>
+                        Open with iOS Calendar, Google Calendar, Outlook, etc.
+                    </li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Managing Integrations</h2>
+
+                <h3>Disconnect an Integration</h3>
+                <ol>
+                    <li>Go to <strong>Settings > Integrations</strong></li>
+                    <li>Find the connected service</li>
+                    <li>Tap <strong>Disconnect</strong></li>
+                    <li>Confirm disconnection</li>
+                </ol>
+
+                <h3>Data Privacy</h3>
+                <ul>
+                    <li>PocketDemon only requests necessary permissions</li>
+                    <li>
+                        Your credentials are never stored - only OAuth tokens
+                    </li>
+                    <li>
+                        You can revoke access anytime from the service's
+                        settings
+                    </li>
+                    <li>Disconnecting removes all stored tokens</li>
+                </ul>
+
+                <div class="warning-box">
+                    <h4>Disconnecting Services</h4>
+                    <p>
+                        Disconnecting an integration won't delete data already
+                        imported. To remove imported data, use the respective
+                        data management options.
+                    </p>
+                </div>
+            </section>
+
+            <div class="nav-footer">
+                <a href="merch.html" class="nav-prev"
+                    >Previous: Merch Tracker</a
+                >
+                <a href="spending.html" class="nav-next">Next: Spending</a>
             </div>
-        </section>
+        </main>
 
-        <section>
-            <h2>Setlist.fm</h2>
-            <p>The premier source for concert setlists worldwide.</p>
-
-            <h3>Features</h3>
-            <ul>
-                <li><strong>Import concerts</strong> - Pull your concert history from setlist.fm</li>
-                <li><strong>Setlist lookup</strong> - Find setlists for concerts you've attended</li>
-                <li><strong>Attach setlists</strong> - Link setlist.fm data to your concert entries</li>
-                <li><strong>Submit setlists</strong> - Contribute setlists back to the community</li>
-            </ul>
-
-            <h3>Setup</h3>
-            <ol>
-                <li>Go to <strong>Settings > Integrations > Setlist.fm</strong></li>
-                <li>Enter your setlist.fm username</li>
-                <li>Optionally connect your API key for enhanced features</li>
-            </ol>
-
-            <div class="info-box">
-                <h4>API Key</h4>
-                <p>For full integration features, you can get a free API key at <a href="https://www.setlist.fm/settings/api" target="_blank">setlist.fm/settings/api</a></p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Last.fm</h2>
-            <p>Connect your scrobbling history for automatic concert matching.</p>
-
-            <h3>Features</h3>
-            <ul>
-                <li><strong>Listening history</strong> - See what you listened to before/after shows</li>
-                <li><strong>Band discovery</strong> - Find bands you listen to but haven't seen live</li>
-                <li><strong>Scrobble data</strong> - Import listening stats for bands</li>
-                <li><strong>Concert suggestions</strong> - Get recommendations based on listening habits</li>
-            </ul>
-
-            <h3>Setup</h3>
-            <ol>
-                <li>Go to <strong>Settings > Integrations > Last.fm</strong></li>
-                <li>Tap <strong>Connect Account</strong></li>
-                <li>Authorize PocketDemon in the Last.fm popup</li>
-                <li>Your accounts are now linked</li>
-            </ol>
-
-            <h3>Import Options</h3>
-            <ul>
-                <li><strong>Concert history</strong> - Events marked as attended</li>
-                <li><strong>Top artists</strong> - Your most-played bands</li>
-                <li><strong>Recent plays</strong> - What you've been listening to</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Discogs</h2>
-            <p>For physical music collectors.</p>
-
-            <h3>Features</h3>
-            <ul>
-                <li><strong>Collection sync</strong> - Import/export your vinyl and CD collection</li>
-                <li><strong>Wantlist sync</strong> - Keep your wishlist in sync</li>
-                <li><strong>Barcode lookup</strong> - Identify releases by scanning</li>
-                <li><strong>Value tracking</strong> - Current market values for your collection</li>
-            </ul>
-
-            <h3>Setup</h3>
-            <ol>
-                <li>Go to <strong>Settings > Integrations > Discogs</strong></li>
-                <li>Tap <strong>Connect Account</strong></li>
-                <li>Log in to Discogs and authorize PocketDemon</li>
-                <li>Choose sync preferences:
-                    <ul>
-                        <li>One-time import</li>
-                        <li>Continuous sync (both directions)</li>
-                        <li>PocketDemon as primary (push only)</li>
-                    </ul>
-                </li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>Spotify</h2>
-            <p>Connect with the world's most popular streaming service.</p>
-
-            <h3>Features</h3>
-            <ul>
-                <li><strong>Pre-show playlists</strong> - Auto-generate playlists for upcoming concerts</li>
-                <li><strong>Band lookup</strong> - Enrich band data with Spotify info</li>
-                <li><strong>Popularity data</strong> - See how popular bands are</li>
-                <li><strong>Direct playback</strong> - Open bands directly in Spotify</li>
-            </ul>
-
-            <h3>Setup</h3>
-            <ol>
-                <li>Go to <strong>Settings > Integrations > Spotify</strong></li>
-                <li>Tap <strong>Connect Account</strong></li>
-                <li>Log in to Spotify and authorize PocketDemon</li>
-            </ol>
-
-            <div class="tip-box">
-                <h4>Pre-Show Prep</h4>
-                <p>Before a concert, use the "Create Playlist" feature to make a Spotify playlist of the expected setlist based on recent shows!</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Dropbox</h2>
-            <p>Cloud storage for backups and photo sync.</p>
-
-            <h3>Features</h3>
-            <ul>
-                <li><strong>Automatic backups</strong> - Your data saved to the cloud</li>
-                <li><strong>Photo backup</strong> - Concert photos stored safely</li>
-                <li><strong>Cross-device sync</strong> - Access your data on multiple devices</li>
-                <li><strong>Version history</strong> - Restore previous backup versions</li>
-            </ul>
-
-            <h3>Setup</h3>
-            <ol>
-                <li>Go to <strong>Settings > Integrations > Dropbox</strong></li>
-                <li>Tap <strong>Connect Account</strong></li>
-                <li>Authorize PocketDemon in Dropbox</li>
-                <li>Configure backup frequency:
-                    <ul>
-                        <li>Real-time</li>
-                        <li>Daily</li>
-                        <li>Weekly</li>
-                        <li>Manual only</li>
-                    </ul>
-                </li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>MusicBrainz</h2>
-            <p>Open music encyclopedia for comprehensive band data.</p>
-
-            <h3>Features</h3>
-            <ul>
-                <li><strong>Band enrichment</strong> - Detailed band information</li>
-                <li><strong>Discography data</strong> - Complete release histories</li>
-                <li><strong>Band relationships</strong> - Members, side projects</li>
-                <li><strong>Genre classification</strong> - Accurate genre tags</li>
-            </ul>
-
-            <h3>Usage</h3>
-            <p>MusicBrainz integration is automatic - no account needed. PocketDemon queries MusicBrainz when enriching band data.</p>
-        </section>
-
-        <section>
-            <h2>Bandcamp</h2>
-            <p>Support artists directly with Bandcamp integration.</p>
-
-            <h3>Features</h3>
-            <ul>
-                <li><strong>Purchase history</strong> - Import your Bandcamp purchases</li>
-                <li><strong>Collection sync</strong> - Add Bandcamp purchases to your collection</li>
-                <li><strong>Direct links</strong> - Open bands on Bandcamp to support them</li>
-                <li><strong>Wishlist</strong> - Sync your Bandcamp wishlist</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Calendar Integration</h2>
-            <p>Keep your concerts in your calendar app.</p>
-
-            <h3>Features</h3>
-            <ul>
-                <li><strong>Export to calendar</strong> - Add concerts as calendar events</li>
-                <li><strong>Automatic updates</strong> - Changes sync to your calendar</li>
-                <li><strong>Reminders</strong> - Get notified before shows</li>
-            </ul>
-
-            <h3>Supported Calendars</h3>
-            <ul>
-                <li>Google Calendar</li>
-                <li>Apple Calendar (iOS)</li>
-                <li>Outlook Calendar</li>
-                <li>Any CalDAV-compatible calendar</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Managing Integrations</h2>
-
-            <h3>Disconnect an Integration</h3>
-            <ol>
-                <li>Go to <strong>Settings > Integrations</strong></li>
-                <li>Find the connected service</li>
-                <li>Tap <strong>Disconnect</strong></li>
-                <li>Confirm disconnection</li>
-            </ol>
-
-            <h3>Data Privacy</h3>
-            <ul>
-                <li>PocketDemon only requests necessary permissions</li>
-                <li>Your credentials are never stored - only OAuth tokens</li>
-                <li>You can revoke access anytime from the service's settings</li>
-                <li>Disconnecting removes all stored tokens</li>
-            </ul>
-
-            <div class="warning-box">
-                <h4>Disconnecting Services</h4>
-                <p>Disconnecting an integration won't delete data already imported. To remove imported data, use the respective data management options.</p>
-            </div>
-        </section>
-
-        <div class="nav-footer">
-            <a href="merch.html" class="nav-prev">Previous: Merch Tracker</a>
-            <a href="spending.html" class="nav-next">Next: Spending</a>
-        </div>
-    </main>
-
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>

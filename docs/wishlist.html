@@ -1,229 +1,349 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wishlist - PocketDemon Manual</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/icon.png">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Wishlist - PocketDemon Manual</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/png" href="images/icon.png" />
+    </head>
+    <body>
         <nav class="sidebar">
-        <div class="logo">
-            <img src="images/DemonLogoBlack.png" alt="PocketDemon Logo" class="logo-image" width="44" height="44">
-            <div class="logo-text">
-                <h1>PocketDemon</h1>
-                <p class="tagline">Concert Tracker</p>
-            </div>
-        </div>
-
-        <div class="sidebar-search">
-            <div class="search-container">
-                <span class="search-icon">🔍</span>
-                <input type="text" class="search-input" placeholder="Search docs... (/)">
-                <div class="search-results"></div>
-            </div>
-        </div>
-
-        <ul class="nav-links">
-            <li><a href="index.html"><span class="nav-icon">🏠</span> Home</a></li>
-            <li><a href="getting-started.html"><span class="nav-icon">🚀</span> Getting Started</a></li>
-            
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Core Features</span>
-                    <span class="nav-section-toggle">▼</span>
+            <div class="logo">
+                <img
+                    src="images/DemonLogoBlack.png"
+                    alt="PocketDemon Logo"
+                    class="logo-image"
+                    width="44"
+                    height="44"
+                />
+                <div class="logo-text">
+                    <h1>PocketDemon</h1>
+                    <p class="tagline">Concert Tracker</p>
                 </div>
-                <ul class="nav-section-items">
-                    <li><a href="bands.html"><span class="nav-icon">🎸</span> Bands</a></li>
-                    <li><a href="events.html"><span class="nav-icon">🎫</span> Events & Concerts</a></li>
-                    <li><a href="venues.html"><span class="nav-icon">🏟️</span> Venues</a></li>
-                    <li><a href="statistics.html"><span class="nav-icon">📊</span> Statistics</a></li>
-                    <li><a href="maps.html"><span class="nav-icon">🗺️</span> Maps</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Social</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="buddies.html"><span class="nav-icon">👥</span> Concert Buddies</a></li>
-                    <li><a href="sharing.html"><span class="nav-icon">📤</span> Sharing</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Collections</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="wishlist.html" class="active"><span class="nav-icon">⭐</span> Wishlist</a></li>
-                    <li><a href="gallery.html"><span class="nav-icon">📷</span> Photo Gallery</a></li>
-                    <li><a href="collection.html"><span class="nav-icon">💿</span> Media Collection</a></li>
-                    <li><a href="merch.html"><span class="nav-icon">👕</span> Merchandise</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Data</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="backup.html"><span class="nav-icon">☁️</span> Backup & Sync</a></li>
-                    <li><a href="import.html"><span class="nav-icon">📥</span> Import Data</a></li>
-                    <li><a href="integrations.html"><span class="nav-icon">🔗</span> Integrations</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">More</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="achievements.html"><span class="nav-icon">🏆</span> Achievements</a></li>
-                    <li><a href="spending.html"><span class="nav-icon">💰</span> Spending Tracker</a></li>
-                    <li><a href="year-in-review.html"><span class="nav-icon">📅</span> Year in Review</a></li>
-                    <li><a href="settings.html"><span class="nav-icon">⚙️</span> Settings</a></li>
-                    <li><a href="faq.html"><span class="nav-icon">❓</span> FAQ</a></li>
-                </ul>
-            </li>
-        </ul>
-
-        <div class="sidebar-footer">
-            <button class="theme-toggle" aria-label="Toggle theme">
-                <span class="theme-toggle-icon">☀️</span>
-                <span class="theme-toggle-label">Light</span>
-            </button>
-            <span class="version">v1.0.22</span>
-        </div>
-    </nav>
-
-    <main class="content">
-        <header>
-            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-            <h1>Wishlist</h1>
-        </header>
-
-        <section class="page-content">
-            <h2>Track Bands You Want to See</h2>
-            <p>The Wishlist helps you keep track of bands you haven't seen yet but want to.</p>
-
-            <h2>Adding to Wishlist</h2>
-            <h3>From Band Detail</h3>
-            <ol>
-                <li>Open any band</li>
-                <li>Tap the <strong>Wishlist</strong> button (star icon)</li>
-                <li>Band is now on your wishlist</li>
-            </ol>
-
-            <h3>Quick Add</h3>
-            <ol>
-                <li>Go to <strong>More</strong> &rarr; <strong>Wishlist</strong></li>
-                <li>Tap the <strong>+</strong> button</li>
-                <li>Enter band name</li>
-                <li>Optionally set genre and country</li>
-                <li>Tap <strong>Add</strong></li>
-            </ol>
-
-            <h3>From Lineup Checker</h3>
-            <ol>
-                <li>Paste a festival lineup</li>
-                <li>Check the lineup</li>
-                <li>Select "New" bands</li>
-                <li>Tap <strong>Add to Wishlist</strong></li>
-            </ol>
-
-            <h3>From Band Origins Missing</h3>
-            <ol>
-                <li>Go to <strong>Maps</strong> &rarr; <strong>Band Origins</strong></li>
-                <li>Select <strong>Missing</strong> tab</li>
-                <li>Tap a country for suggestions</li>
-                <li>Tap <strong>+</strong> to add bands to wishlist</li>
-            </ol>
-
-            <h2>Wishlist Views</h2>
-            <p>The wishlist screen has multiple tabs:</p>
-
-            <h3>Bands Tab</h3>
-            <ul>
-                <li>All wishlist bands</li>
-                <li>Shows if band exists in your collection</li>
-                <li>Smart matching links wishlist to seen bands</li>
-            </ul>
-
-            <h3>Events Tab</h3>
-            <ul>
-                <li>Events featuring wishlist bands</li>
-                <li>Useful for planning what shows to attend</li>
-            </ul>
-
-            <h3>Venues Tab</h3>
-            <ul>
-                <li>Venues where wishlist bands have played</li>
-                <li>Helps discover new venues</li>
-            </ul>
-
-            <h2>Smart Matching</h2>
-            <p>When you see a wishlist band live:</p>
-            <ol>
-                <li>Add the band to an event</li>
-                <li>PocketDemon detects the match</li>
-                <li>Wishlist entry can be automatically removed</li>
-                <li>Or keep it for "want to see again"</li>
-            </ol>
-
-            <h2>MusicBrainz Enrichment</h2>
-            <p>Create full band records from wishlist entries:</p>
-            <ol>
-                <li>Open a wishlist band</li>
-                <li>Tap <strong>Create Band</strong></li>
-                <li>PocketDemon searches MusicBrainz</li>
-                <li>Select the correct match</li>
-                <li>Band is created with full metadata</li>
-            </ol>
-
-            <h2>Ticketmaster Scanner</h2>
-            <p>Find concerts for wishlist bands:</p>
-            <ol>
-                <li>Go to <strong>More</strong> &rarr; <strong>Event Scanner</strong></li>
-                <li>Select <strong>Wishlist</strong> as source</li>
-                <li>Set search radius and location</li>
-                <li>Tap <strong>Scan</strong></li>
-                <li>See upcoming shows for your wishlist bands</li>
-            </ol>
-
-            <div class="info-box note">
-                <h4>Note</h4>
-                <p>Ticketmaster scanner has a daily rate limit of 1000 requests. Use wisely!</p>
             </div>
 
-            <h2>Removing from Wishlist</h2>
-            <ol>
-                <li>Open the wishlist band</li>
-                <li>Tap the <strong>Wishlist</strong> button again</li>
-                <li>Or swipe to delete in the list</li>
-            </ol>
+            <div class="sidebar-search">
+                <div class="search-container">
+                    <span class="search-icon">🔍</span>
+                    <input
+                        type="text"
+                        class="search-input"
+                        placeholder="Search docs... (/)"
+                    />
+                    <div class="search-results"></div>
+                </div>
+            </div>
 
-            <h2>Wishlist Statistics</h2>
-            <p>Track your wishlist progress:</p>
-            <ul>
-                <li>Total wishlist bands</li>
-                <li>Completed (bands now seen)</li>
-                <li>Completion rate</li>
-                <li>Time to see (average wait)</li>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html"
+                        ><span class="nav-icon">🏠</span> Home</a
+                    >
+                </li>
+                <li>
+                    <a href="getting-started.html"
+                        ><span class="nav-icon">🚀</span> Getting Started</a
+                    >
+                </li>
+
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Core Features</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="bands.html"
+                                ><span class="nav-icon">🎸</span> Bands</a
+                            >
+                        </li>
+                        <li>
+                            <a href="events.html"
+                                ><span class="nav-icon">🎫</span> Events &
+                                Concerts</a
+                            >
+                        </li>
+                        <li>
+                            <a href="venues.html"
+                                ><span class="nav-icon">🏟️</span> Venues</a
+                            >
+                        </li>
+                        <li>
+                            <a href="statistics.html"
+                                ><span class="nav-icon">📊</span> Statistics</a
+                            >
+                        </li>
+                        <li>
+                            <a href="maps.html"
+                                ><span class="nav-icon">🗺️</span> Maps</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Social</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="buddies.html"
+                                ><span class="nav-icon">👥</span> Concert
+                                Buddies</a
+                            >
+                        </li>
+                        <li>
+                            <a href="sharing.html"
+                                ><span class="nav-icon">📤</span> Sharing</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Collections</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="wishlist.html" class="active"
+                                ><span class="nav-icon">⭐</span> Wishlist</a
+                            >
+                        </li>
+                        <li>
+                            <a href="gallery.html"
+                                ><span class="nav-icon">📷</span> Photo
+                                Gallery</a
+                            >
+                        </li>
+                        <li>
+                            <a href="collection.html"
+                                ><span class="nav-icon">💿</span> Media
+                                Collection</a
+                            >
+                        </li>
+                        <li>
+                            <a href="merch.html"
+                                ><span class="nav-icon">👕</span> Merchandise</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Data</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="backup.html"
+                                ><span class="nav-icon">☁️</span> Backup &
+                                Sync</a
+                            >
+                        </li>
+                        <li>
+                            <a href="import.html"
+                                ><span class="nav-icon">📥</span> Import Data</a
+                            >
+                        </li>
+                        <li>
+                            <a href="integrations.html"
+                                ><span class="nav-icon">🔗</span>
+                                Integrations</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">More</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="achievements.html"
+                                ><span class="nav-icon">🏆</span>
+                                Achievements</a
+                            >
+                        </li>
+                        <li>
+                            <a href="spending.html"
+                                ><span class="nav-icon">💰</span> Spending
+                                Tracker</a
+                            >
+                        </li>
+                        <li>
+                            <a href="year-in-review.html"
+                                ><span class="nav-icon">📅</span> Year in
+                                Review</a
+                            >
+                        </li>
+                        <li>
+                            <a href="settings.html"
+                                ><span class="nav-icon">⚙️</span> Settings</a
+                            >
+                        </li>
+                        <li>
+                            <a href="faq.html"
+                                ><span class="nav-icon">❓</span> FAQ</a
+                            >
+                        </li>
+                    </ul>
+                </li>
             </ul>
-        </section>
 
-        <footer>
-            <p>&copy; 2024-2025 Technodystopia. All rights reserved.</p>
-        </footer>
-    </main>
+            <div class="sidebar-footer">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-toggle-icon">☀️</span>
+                    <span class="theme-toggle-label">Light</span>
+                </button>
+                <span class="version">v1.0.23</span>
+            </div>
+        </nav>
 
-    <script src="script.js"></script>
-</body>
+        <main class="content">
+            <header>
+                <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+                <h1>Wishlist</h1>
+            </header>
+
+            <section class="page-content">
+                <h2>Track Bands You Want to See</h2>
+                <p>
+                    The Wishlist helps you keep track of bands you haven't seen
+                    yet but want to.
+                </p>
+
+                <h2>Adding to Wishlist</h2>
+                <h3>From Band Detail</h3>
+                <ol>
+                    <li>Open any band</li>
+                    <li>
+                        Tap the <strong>Wishlist</strong> button (star icon)
+                    </li>
+                    <li>Band is now on your wishlist</li>
+                </ol>
+
+                <h3>Quick Add</h3>
+                <ol>
+                    <li>
+                        Go to <strong>More</strong> &rarr;
+                        <strong>Wishlist</strong>
+                    </li>
+                    <li>Tap the <strong>+</strong> button</li>
+                    <li>Enter band name</li>
+                    <li>Optionally set genre and country</li>
+                    <li>Tap <strong>Add</strong></li>
+                </ol>
+
+                <h3>From Lineup Checker</h3>
+                <ol>
+                    <li>Paste a festival lineup</li>
+                    <li>Check the lineup</li>
+                    <li>Select "New" bands</li>
+                    <li>Tap <strong>Add to Wishlist</strong></li>
+                </ol>
+
+                <h3>From Band Origins Missing</h3>
+                <ol>
+                    <li>
+                        Go to <strong>Maps</strong> &rarr;
+                        <strong>Band Origins</strong>
+                    </li>
+                    <li>Select <strong>Missing</strong> tab</li>
+                    <li>Tap a country for suggestions</li>
+                    <li>Tap <strong>+</strong> to add bands to wishlist</li>
+                </ol>
+
+                <h2>Wishlist Views</h2>
+                <p>The wishlist screen has multiple tabs:</p>
+
+                <h3>Bands Tab</h3>
+                <ul>
+                    <li>All wishlist bands</li>
+                    <li>Shows if band exists in your collection</li>
+                    <li>Smart matching links wishlist to seen bands</li>
+                </ul>
+
+                <h3>Events Tab</h3>
+                <ul>
+                    <li>Events featuring wishlist bands</li>
+                    <li>Useful for planning what shows to attend</li>
+                </ul>
+
+                <h3>Venues Tab</h3>
+                <ul>
+                    <li>Venues where wishlist bands have played</li>
+                    <li>Helps discover new venues</li>
+                </ul>
+
+                <h2>Smart Matching</h2>
+                <p>When you see a wishlist band live:</p>
+                <ol>
+                    <li>Add the band to an event</li>
+                    <li>PocketDemon detects the match</li>
+                    <li>Wishlist entry can be automatically removed</li>
+                    <li>Or keep it for "want to see again"</li>
+                </ol>
+
+                <h2>MusicBrainz Enrichment</h2>
+                <p>Create full band records from wishlist entries:</p>
+                <ol>
+                    <li>Open a wishlist band</li>
+                    <li>Tap <strong>Create Band</strong></li>
+                    <li>PocketDemon searches MusicBrainz</li>
+                    <li>Select the correct match</li>
+                    <li>Band is created with full metadata</li>
+                </ol>
+
+                <h2>Ticketmaster Scanner</h2>
+                <p>Find concerts for wishlist bands:</p>
+                <ol>
+                    <li>
+                        Go to <strong>More</strong> &rarr;
+                        <strong>Event Scanner</strong>
+                    </li>
+                    <li>Select <strong>Wishlist</strong> as source</li>
+                    <li>Set search radius and location</li>
+                    <li>Tap <strong>Scan</strong></li>
+                    <li>See upcoming shows for your wishlist bands</li>
+                </ol>
+
+                <div class="info-box note">
+                    <h4>Note</h4>
+                    <p>
+                        Ticketmaster scanner has a daily rate limit of 1000
+                        requests. Use wisely!
+                    </p>
+                </div>
+
+                <h2>Removing from Wishlist</h2>
+                <ol>
+                    <li>Open the wishlist band</li>
+                    <li>Tap the <strong>Wishlist</strong> button again</li>
+                    <li>Or swipe to delete in the list</li>
+                </ol>
+
+                <h2>Wishlist Statistics</h2>
+                <p>Track your wishlist progress:</p>
+                <ul>
+                    <li>Total wishlist bands</li>
+                    <li>Completed (bands now seen)</li>
+                    <li>Completion rate</li>
+                    <li>Time to see (average wait)</li>
+                </ul>
+            </section>
+
+            <footer>
+                <p>&copy; 2024-2025 Technodystopia. All rights reserved.</p>
+            </footer>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
 </html>

@@ -1,269 +1,433 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bands - PocketDemon Manual</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/icon.png">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bands - PocketDemon Manual</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/png" href="images/icon.png" />
+    </head>
+    <body>
         <nav class="sidebar">
-        <div class="logo">
-            <img src="images/DemonLogoBlack.png" alt="PocketDemon Logo" class="logo-image" width="44" height="44">
-            <div class="logo-text">
-                <h1>PocketDemon</h1>
-                <p class="tagline">Concert Tracker</p>
-            </div>
-        </div>
-
-        <div class="sidebar-search">
-            <div class="search-container">
-                <span class="search-icon">🔍</span>
-                <input type="text" class="search-input" placeholder="Search docs... (/)">
-                <div class="search-results"></div>
-            </div>
-        </div>
-
-        <ul class="nav-links">
-            <li><a href="index.html"><span class="nav-icon">🏠</span> Home</a></li>
-            <li><a href="getting-started.html"><span class="nav-icon">🚀</span> Getting Started</a></li>
-            
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Core Features</span>
-                    <span class="nav-section-toggle">▼</span>
+            <div class="logo">
+                <img
+                    src="images/DemonLogoBlack.png"
+                    alt="PocketDemon Logo"
+                    class="logo-image"
+                    width="44"
+                    height="44"
+                />
+                <div class="logo-text">
+                    <h1>PocketDemon</h1>
+                    <p class="tagline">Concert Tracker</p>
                 </div>
-                <ul class="nav-section-items">
-                    <li><a href="bands.html" class="active"><span class="nav-icon">🎸</span> Bands</a></li>
-                    <li><a href="events.html"><span class="nav-icon">🎫</span> Events & Concerts</a></li>
-                    <li><a href="venues.html"><span class="nav-icon">🏟️</span> Venues</a></li>
-                    <li><a href="statistics.html"><span class="nav-icon">📊</span> Statistics</a></li>
-                    <li><a href="maps.html"><span class="nav-icon">🗺️</span> Maps</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Social</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="buddies.html"><span class="nav-icon">👥</span> Concert Buddies</a></li>
-                    <li><a href="sharing.html"><span class="nav-icon">📤</span> Sharing</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Collections</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="wishlist.html"><span class="nav-icon">⭐</span> Wishlist</a></li>
-                    <li><a href="gallery.html"><span class="nav-icon">📷</span> Photo Gallery</a></li>
-                    <li><a href="collection.html"><span class="nav-icon">💿</span> Media Collection</a></li>
-                    <li><a href="merch.html"><span class="nav-icon">👕</span> Merchandise</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">Data</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="backup.html"><span class="nav-icon">☁️</span> Backup & Sync</a></li>
-                    <li><a href="import.html"><span class="nav-icon">📥</span> Import Data</a></li>
-                    <li><a href="integrations.html"><span class="nav-icon">🔗</span> Integrations</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-section">
-                <div class="nav-section-header">
-                    <span class="nav-section-title">More</span>
-                    <span class="nav-section-toggle">▼</span>
-                </div>
-                <ul class="nav-section-items">
-                    <li><a href="achievements.html"><span class="nav-icon">🏆</span> Achievements</a></li>
-                    <li><a href="spending.html"><span class="nav-icon">💰</span> Spending Tracker</a></li>
-                    <li><a href="year-in-review.html"><span class="nav-icon">📅</span> Year in Review</a></li>
-                    <li><a href="settings.html"><span class="nav-icon">⚙️</span> Settings</a></li>
-                    <li><a href="faq.html"><span class="nav-icon">❓</span> FAQ</a></li>
-                </ul>
-            </li>
-        </ul>
-
-        <div class="sidebar-footer">
-            <button class="theme-toggle" aria-label="Toggle theme">
-                <span class="theme-toggle-icon">☀️</span>
-                <span class="theme-toggle-label">Light</span>
-            </button>
-            <span class="version">v1.0.22</span>
-        </div>
-    </nav>
-
-    <main class="content">
-        <header>
-            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-            <h1>Bands</h1>
-        </header>
-
-        <section class="page-content">
-            <h2>Managing Your Band Collection</h2>
-            <p>The Bands tab shows all bands in your collection - every band you've seen live or added to your wishlist.</p>
-
-            <h3>Adding a New Band</h3>
-            <ol>
-                <li>Go to the <strong>Bands</strong> tab</li>
-                <li>Tap the <strong>+</strong> button</li>
-                <li>Enter the band name</li>
-                <li>Optionally set country of origin and genres</li>
-                <li>Tap <strong>Save</strong></li>
-            </ol>
-
-            <div class="info-box tip">
-                <h4>Tip</h4>
-                <p>Bands are usually created automatically when you add them to an event. You rarely need to create bands manually.</p>
             </div>
 
-            <h2>Band Details</h2>
-            <p>Tap any band to see their detail page with:</p>
-            <ul>
-                <li><strong>Photo & Logo</strong> - Artist image and band logo (from TheAudioDB)</li>
-                <li><strong>Basic Info</strong> - Country, formation year, genres, status</li>
-                <li><strong>Concert History</strong> - All times you've seen this band</li>
-                <li><strong>Statistics</strong> - Times seen, average rating, first/last seen</li>
-                <li><strong>External Links</strong> - Wikipedia, Discogs, Spotify, etc.</li>
-                <li><strong>Notes</strong> - Your personal notes about this band</li>
-                <li><strong>Gallery</strong> - Photos from events featuring this band</li>
-            </ul>
-
-            <h2>Enriching Band Data</h2>
-            <p>PocketDemon can fetch additional information from online databases:</p>
-
-            <h3>MusicBrainz</h3>
-            <p>Provides structured metadata:</p>
-            <ul>
-                <li>Official formation and disbandment years</li>
-                <li>Country and area of origin</li>
-                <li>Official genres and aliases</li>
-                <li>External links (Wikipedia, Discogs, AllMusic, Last.fm)</li>
-                <li>Social links (Spotify, YouTube, Facebook, etc.)</li>
-            </ul>
-
-            <h3>TheAudioDB</h3>
-            <p>Provides visual assets:</p>
-            <ul>
-                <li>Artist photos</li>
-                <li>Band logos</li>
-                <li>Biography text</li>
-                <li>Style/sub-genre information</li>
-            </ul>
-
-            <p>To enrich a band:</p>
-            <ol>
-                <li>Open the band's detail page</li>
-                <li>Tap the <strong>Enrich</strong> button (or menu &rarr; Enrich)</li>
-                <li>Wait for the data to be fetched</li>
-                <li>Review and confirm the updates</li>
-            </ol>
-
-            <h2>Band Status Icons</h2>
-            <p>Bands can have special status indicators:</p>
-
-            <table>
-                <tr>
-                    <th>Icon</th>
-                    <th>Status</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td>&#10084;</td>
-                    <td>Favorite</td>
-                    <td>Your favorite bands - appears in Ticketmaster scanner</td>
-                </tr>
-                <tr>
-                    <td>&#9733;</td>
-                    <td>Wishlist</td>
-                    <td>Bands you want to see live</td>
-                </tr>
-                <tr>
-                    <td>&#128683;</td>
-                    <td>Ignored</td>
-                    <td>Hidden from suggestions and imports</td>
-                </tr>
-                <tr>
-                    <td>&#9873;</td>
-                    <td>Flagged</td>
-                    <td>Marked for review or attention</td>
-                </tr>
-            </table>
-
-            <h2>Band Notes</h2>
-            <p>Add personal notes to any band:</p>
-            <ol>
-                <li>Open the band's detail page</li>
-                <li>Scroll to the <strong>Notes</strong> section</li>
-                <li>Tap to edit</li>
-                <li>Enter your notes (favorite songs, memories, etc.)</li>
-                <li>Tap <strong>Save</strong></li>
-            </ol>
-
-            <h2>Searching & Filtering</h2>
-            <p>Use the search bar to find bands by:</p>
-            <ul>
-                <li>Band name (partial matches work)</li>
-                <li>Country of origin</li>
-                <li>Genre</li>
-            </ul>
-
-            <p>Filter options include:</p>
-            <ul>
-                <li><strong>All Bands</strong> - Everything in your collection</li>
-                <li><strong>Favorites</strong> - Only favorite bands</li>
-                <li><strong>Wishlist</strong> - Bands you want to see</li>
-                <li><strong>Most Seen</strong> - Sorted by concert count</li>
-            </ul>
-
-            <h2>Band Actions</h2>
-            <p>From the band detail page, you can:</p>
-            <ul>
-                <li><strong>Add to Event</strong> - Log a new concert for this band</li>
-                <li><strong>Add to Wishlist</strong> - Mark as want-to-see</li>
-                <li><strong>Toggle Favorite</strong> - Mark as a favorite</li>
-                <li><strong>Edit</strong> - Update band information</li>
-                <li><strong>Share</strong> - Share with buddies</li>
-                <li><strong>Delete</strong> - Remove from collection (if no concerts)</li>
-            </ul>
-
-            <div class="info-box warning">
-                <h4>Warning</h4>
-                <p>You cannot delete a band that has concert records. Delete the concerts first, or the band will remain in your collection.</p>
+            <div class="sidebar-search">
+                <div class="search-container">
+                    <span class="search-icon">🔍</span>
+                    <input
+                        type="text"
+                        class="search-input"
+                        placeholder="Search docs... (/)"
+                    />
+                    <div class="search-results"></div>
+                </div>
             </div>
 
-            <h2>Genre Management</h2>
-            <p>Genres are stored as a comma-separated list. Common examples:</p>
-            <ul>
-                <li>Heavy Metal, Thrash Metal</li>
-                <li>Rock, Alternative Rock</li>
-                <li>Electronic, Industrial</li>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html"
+                        ><span class="nav-icon">🏠</span> Home</a
+                    >
+                </li>
+                <li>
+                    <a href="getting-started.html"
+                        ><span class="nav-icon">🚀</span> Getting Started</a
+                    >
+                </li>
+
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Core Features</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="bands.html" class="active"
+                                ><span class="nav-icon">🎸</span> Bands</a
+                            >
+                        </li>
+                        <li>
+                            <a href="events.html"
+                                ><span class="nav-icon">🎫</span> Events &
+                                Concerts</a
+                            >
+                        </li>
+                        <li>
+                            <a href="venues.html"
+                                ><span class="nav-icon">🏟️</span> Venues</a
+                            >
+                        </li>
+                        <li>
+                            <a href="statistics.html"
+                                ><span class="nav-icon">📊</span> Statistics</a
+                            >
+                        </li>
+                        <li>
+                            <a href="maps.html"
+                                ><span class="nav-icon">🗺️</span> Maps</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Social</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="buddies.html"
+                                ><span class="nav-icon">👥</span> Concert
+                                Buddies</a
+                            >
+                        </li>
+                        <li>
+                            <a href="sharing.html"
+                                ><span class="nav-icon">📤</span> Sharing</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Collections</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="wishlist.html"
+                                ><span class="nav-icon">⭐</span> Wishlist</a
+                            >
+                        </li>
+                        <li>
+                            <a href="gallery.html"
+                                ><span class="nav-icon">📷</span> Photo
+                                Gallery</a
+                            >
+                        </li>
+                        <li>
+                            <a href="collection.html"
+                                ><span class="nav-icon">💿</span> Media
+                                Collection</a
+                            >
+                        </li>
+                        <li>
+                            <a href="merch.html"
+                                ><span class="nav-icon">👕</span> Merchandise</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Data</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="backup.html"
+                                ><span class="nav-icon">☁️</span> Backup &
+                                Sync</a
+                            >
+                        </li>
+                        <li>
+                            <a href="import.html"
+                                ><span class="nav-icon">📥</span> Import Data</a
+                            >
+                        </li>
+                        <li>
+                            <a href="integrations.html"
+                                ><span class="nav-icon">🔗</span>
+                                Integrations</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">More</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="achievements.html"
+                                ><span class="nav-icon">🏆</span>
+                                Achievements</a
+                            >
+                        </li>
+                        <li>
+                            <a href="spending.html"
+                                ><span class="nav-icon">💰</span> Spending
+                                Tracker</a
+                            >
+                        </li>
+                        <li>
+                            <a href="year-in-review.html"
+                                ><span class="nav-icon">📅</span> Year in
+                                Review</a
+                            >
+                        </li>
+                        <li>
+                            <a href="settings.html"
+                                ><span class="nav-icon">⚙️</span> Settings</a
+                            >
+                        </li>
+                        <li>
+                            <a href="faq.html"
+                                ><span class="nav-icon">❓</span> FAQ</a
+                            >
+                        </li>
+                    </ul>
+                </li>
             </ul>
 
-            <p>Genres are used for:</p>
-            <ul>
-                <li>Statistics and charts (genre diversity, evolution)</li>
-                <li>Band Origins map filtering</li>
-                <li>Year in Review breakdowns</li>
-                <li>Spending by genre analysis</li>
-            </ul>
-        </section>
+            <div class="sidebar-footer">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-toggle-icon">☀️</span>
+                    <span class="theme-toggle-label">Light</span>
+                </button>
+                <span class="version">v1.0.23</span>
+            </div>
+        </nav>
 
-        <footer>
-            <p>&copy; 2024-2025 Technodystopia. All rights reserved.</p>
-        </footer>
-    </main>
+        <main class="content">
+            <header>
+                <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+                <h1>Bands</h1>
+            </header>
 
-    <script src="script.js"></script>
-</body>
+            <section class="page-content">
+                <h2>Managing Your Band Collection</h2>
+                <p>
+                    The Bands tab shows all bands in your collection - every
+                    band you've seen live or added to your wishlist.
+                </p>
+
+                <h3>Adding a New Band</h3>
+                <ol>
+                    <li>Go to the <strong>Bands</strong> tab</li>
+                    <li>Tap the <strong>+</strong> button</li>
+                    <li>Enter the band name</li>
+                    <li>Optionally set country of origin and genres</li>
+                    <li>Tap <strong>Save</strong></li>
+                </ol>
+
+                <div class="info-box tip">
+                    <h4>Tip</h4>
+                    <p>
+                        Bands are usually created automatically when you add
+                        them to an event. You rarely need to create bands
+                        manually.
+                    </p>
+                </div>
+
+                <h2>Band Details</h2>
+                <p>Tap any band to see their detail page with:</p>
+                <ul>
+                    <li>
+                        <strong>Photo & Logo</strong> - Artist image and band
+                        logo (from TheAudioDB)
+                    </li>
+                    <li>
+                        <strong>Basic Info</strong> - Country, formation year,
+                        genres, status
+                    </li>
+                    <li>
+                        <strong>Concert History</strong> - All times you've seen
+                        this band
+                    </li>
+                    <li>
+                        <strong>Statistics</strong> - Times seen, average
+                        rating, first/last seen
+                    </li>
+                    <li>
+                        <strong>External Links</strong> - Wikipedia, Discogs,
+                        Spotify, etc.
+                    </li>
+                    <li>
+                        <strong>Notes</strong> - Your personal notes about this
+                        band
+                    </li>
+                    <li>
+                        <strong>Gallery</strong> - Photos from events featuring
+                        this band
+                    </li>
+                </ul>
+
+                <h2>Enriching Band Data</h2>
+                <p>
+                    PocketDemon can fetch additional information from online
+                    databases:
+                </p>
+
+                <h3>MusicBrainz</h3>
+                <p>Provides structured metadata:</p>
+                <ul>
+                    <li>Official formation and disbandment years</li>
+                    <li>Country and area of origin</li>
+                    <li>Official genres and aliases</li>
+                    <li>
+                        External links (Wikipedia, Discogs, AllMusic, Last.fm)
+                    </li>
+                    <li>Social links (Spotify, YouTube, Facebook, etc.)</li>
+                </ul>
+
+                <h3>TheAudioDB</h3>
+                <p>Provides visual assets:</p>
+                <ul>
+                    <li>Artist photos</li>
+                    <li>Band logos</li>
+                    <li>Biography text</li>
+                    <li>Style/sub-genre information</li>
+                </ul>
+
+                <p>To enrich a band:</p>
+                <ol>
+                    <li>Open the band's detail page</li>
+                    <li>
+                        Tap the <strong>Enrich</strong> button (or menu &rarr;
+                        Enrich)
+                    </li>
+                    <li>Wait for the data to be fetched</li>
+                    <li>Review and confirm the updates</li>
+                </ol>
+
+                <h2>Band Status Icons</h2>
+                <p>Bands can have special status indicators:</p>
+
+                <table>
+                    <tr>
+                        <th>Icon</th>
+                        <th>Status</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>&#10084;</td>
+                        <td>Favorite</td>
+                        <td>
+                            Your favorite bands - appears in Ticketmaster
+                            scanner
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&#9733;</td>
+                        <td>Wishlist</td>
+                        <td>Bands you want to see live</td>
+                    </tr>
+                    <tr>
+                        <td>&#128683;</td>
+                        <td>Ignored</td>
+                        <td>Hidden from suggestions and imports</td>
+                    </tr>
+                    <tr>
+                        <td>&#9873;</td>
+                        <td>Flagged</td>
+                        <td>Marked for review or attention</td>
+                    </tr>
+                </table>
+
+                <h2>Band Notes</h2>
+                <p>Add personal notes to any band:</p>
+                <ol>
+                    <li>Open the band's detail page</li>
+                    <li>Scroll to the <strong>Notes</strong> section</li>
+                    <li>Tap to edit</li>
+                    <li>Enter your notes (favorite songs, memories, etc.)</li>
+                    <li>Tap <strong>Save</strong></li>
+                </ol>
+
+                <h2>Searching & Filtering</h2>
+                <p>Use the search bar to find bands by:</p>
+                <ul>
+                    <li>Band name (partial matches work)</li>
+                    <li>Country of origin</li>
+                    <li>Genre</li>
+                </ul>
+
+                <p>Filter options include:</p>
+                <ul>
+                    <li>
+                        <strong>All Bands</strong> - Everything in your
+                        collection
+                    </li>
+                    <li><strong>Favorites</strong> - Only favorite bands</li>
+                    <li><strong>Wishlist</strong> - Bands you want to see</li>
+                    <li>
+                        <strong>Most Seen</strong> - Sorted by concert count
+                    </li>
+                </ul>
+
+                <h2>Band Actions</h2>
+                <p>From the band detail page, you can:</p>
+                <ul>
+                    <li>
+                        <strong>Add to Event</strong> - Log a new concert for
+                        this band
+                    </li>
+                    <li>
+                        <strong>Add to Wishlist</strong> - Mark as want-to-see
+                    </li>
+                    <li>
+                        <strong>Toggle Favorite</strong> - Mark as a favorite
+                    </li>
+                    <li><strong>Edit</strong> - Update band information</li>
+                    <li><strong>Share</strong> - Share with buddies</li>
+                    <li>
+                        <strong>Delete</strong> - Remove from collection (if no
+                        concerts)
+                    </li>
+                </ul>
+
+                <div class="info-box warning">
+                    <h4>Warning</h4>
+                    <p>
+                        You cannot delete a band that has concert records.
+                        Delete the concerts first, or the band will remain in
+                        your collection.
+                    </p>
+                </div>
+
+                <h2>Genre Management</h2>
+                <p>
+                    Genres are stored as a comma-separated list. Common
+                    examples:
+                </p>
+                <ul>
+                    <li>Heavy Metal, Thrash Metal</li>
+                    <li>Rock, Alternative Rock</li>
+                    <li>Electronic, Industrial</li>
+                </ul>
+
+                <p>Genres are used for:</p>
+                <ul>
+                    <li>Statistics and charts (genre diversity, evolution)</li>
+                    <li>Band Origins map filtering</li>
+                    <li>Year in Review breakdowns</li>
+                    <li>Spending by genre analysis</li>
+                </ul>
+            </section>
+
+            <footer>
+                <p>&copy; 2024-2025 Technodystopia. All rights reserved.</p>
+            </footer>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
 </html>
