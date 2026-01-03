@@ -1,189 +1,394 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PocketDemon - Concert Tracker Manual</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/icon.png">
-</head>
-<body>
-    <nav class="sidebar">
-        <div class="logo">
-            <h1>PocketDemon</h1>
-            <p class="tagline">Concert Tracker</p>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="getting-started.html">Getting Started</a></li>
-            <li class="nav-section">Core Features</li>
-            <li><a href="bands.html">Bands</a></li>
-            <li><a href="events.html">Events & Concerts</a></li>
-            <li><a href="venues.html">Venues</a></li>
-            <li><a href="statistics.html">Statistics</a></li>
-            <li><a href="maps.html">Maps</a></li>
-            <li class="nav-section">Social</li>
-            <li><a href="buddies.html">Concert Buddies</a></li>
-            <li><a href="sharing.html">Sharing</a></li>
-            <li class="nav-section">Collections</li>
-            <li><a href="wishlist.html">Wishlist</a></li>
-            <li><a href="gallery.html">Photo Gallery</a></li>
-            <li><a href="collection.html">Media Collection</a></li>
-            <li><a href="merch.html">Merchandise</a></li>
-            <li class="nav-section">Data</li>
-            <li><a href="backup.html">Backup & Sync</a></li>
-            <li><a href="import.html">Import Data</a></li>
-            <li><a href="integrations.html">Integrations</a></li>
-            <li class="nav-section">More</li>
-            <li><a href="achievements.html">Achievements</a></li>
-            <li><a href="spending.html">Spending Tracker</a></li>
-            <li><a href="year-in-review.html">Year in Review</a></li>
-            <li><a href="settings.html">Settings</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-        </ul>
-        <div class="version">v1.0.22</div>
-    </nav>
-
-    <main class="content">
-        <header>
-            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
-            <h1>Welcome to PocketDemon</h1>
-        </header>
-
-        <section class="hero">
-            <div class="hero-text">
-                <h2>Your Personal Concert Diary</h2>
-                <p>Track every band you've seen live, build your concert history, and discover insights about your music journey.</p>
-                <div class="hero-badges">
-                    <span class="badge">100% Offline</span>
-                    <span class="badge">No Subscription</span>
-                    <span class="badge">Your Data, Your Device</span>
+<!doctype html>
+<html lang="en" data-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PocketDemon - Concert Tracker Manual</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/png" href="images/icon.png" />
+    </head>
+    <body>
+        <nav class="sidebar">
+            <div class="logo">
+                <img
+                    src="images/DemonLogoWhite.png"
+                    alt="PocketDemon Logo"
+                    class="logo-image"
+                />
+                <div class="logo-text">
+                    <h1>PocketDemon</h1>
+                    <p class="tagline">Concert Tracker</p>
                 </div>
             </div>
-            <div class="hero-image">
-                <!-- Add screenshot here -->
-                <div class="placeholder-image">Screenshot</div>
-            </div>
-        </section>
 
-        <section class="features-overview">
-            <h2>What Can You Do?</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">&#127926;</div>
-                    <h3>Log Concerts</h3>
-                    <p>Record every band, event, and venue. Add ratings, notes, photos, and ticket prices.</p>
-                    <a href="events.html">Learn more &rarr;</a>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">&#128202;</div>
-                    <h3>View Statistics</h3>
-                    <p>See your most-seen bands, top venues, genre diversity, distance traveled, and more.</p>
-                    <a href="statistics.html">Learn more &rarr;</a>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">&#127758;</div>
-                    <h3>Explore Maps</h3>
-                    <p>Visualize your concerts on a world map. See band origins and venue locations.</p>
-                    <a href="maps.html">Learn more &rarr;</a>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">&#129309;</div>
-                    <h3>Connect with Buddies</h3>
-                    <p>Track who you went to concerts with. Share stats and find your concert twin.</p>
-                    <a href="buddies.html">Learn more &rarr;</a>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">&#127942;</div>
-                    <h3>Earn Achievements</h3>
-                    <p>Unlock 32 badges across 7 categories as you grow your concert history.</p>
-                    <a href="achievements.html">Learn more &rarr;</a>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">&#128247;</div>
-                    <h3>Build Your Gallery</h3>
-                    <p>Add photos to events and share them as polaroid-style cards.</p>
-                    <a href="gallery.html">Learn more &rarr;</a>
+            <div class="sidebar-search">
+                <div class="search-container">
+                    <span class="search-icon">🔍</span>
+                    <input
+                        type="text"
+                        class="search-input"
+                        placeholder="Search docs... (/)"
+                    />
+                    <div class="search-results"></div>
                 </div>
             </div>
-        </section>
 
-        <section class="quick-start">
-            <h2>Quick Start</h2>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Create Account</h3>
-                    <p>Set up a local account with a nickname and password. No email required.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Add Your First Concert</h3>
-                    <p>Tap the + button to add an event, then add the bands you saw.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Explore Your Stats</h3>
-                    <p>Visit the Statistics tab to see insights about your concert history.</p>
-                </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html" class="active"
+                        ><span class="nav-icon">🏠</span> Home</a
+                    >
+                </li>
+                <li>
+                    <a href="getting-started.html"
+                        ><span class="nav-icon">🚀</span> Getting Started</a
+                    >
+                </li>
+
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Core Features</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="bands.html"
+                                ><span class="nav-icon">🎸</span> Bands</a
+                            >
+                        </li>
+                        <li>
+                            <a href="events.html"
+                                ><span class="nav-icon">🎫</span> Events &
+                                Concerts</a
+                            >
+                        </li>
+                        <li>
+                            <a href="venues.html"
+                                ><span class="nav-icon">🏟️</span> Venues</a
+                            >
+                        </li>
+                        <li>
+                            <a href="statistics.html"
+                                ><span class="nav-icon">📊</span> Statistics</a
+                            >
+                        </li>
+                        <li>
+                            <a href="maps.html"
+                                ><span class="nav-icon">🗺️</span> Maps</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Social</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="buddies.html"
+                                ><span class="nav-icon">👥</span> Concert
+                                Buddies</a
+                            >
+                        </li>
+                        <li>
+                            <a href="sharing.html"
+                                ><span class="nav-icon">📤</span> Sharing</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Collections</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="wishlist.html"
+                                ><span class="nav-icon">⭐</span> Wishlist</a
+                            >
+                        </li>
+                        <li>
+                            <a href="gallery.html"
+                                ><span class="nav-icon">📷</span> Photo
+                                Gallery</a
+                            >
+                        </li>
+                        <li>
+                            <a href="collection.html"
+                                ><span class="nav-icon">💿</span> Media
+                                Collection</a
+                            >
+                        </li>
+                        <li>
+                            <a href="merch.html"
+                                ><span class="nav-icon">👕</span> Merchandise</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">Data</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="backup.html"
+                                ><span class="nav-icon">☁️</span> Backup &
+                                Sync</a
+                            >
+                        </li>
+                        <li>
+                            <a href="import.html"
+                                ><span class="nav-icon">📥</span> Import Data</a
+                            >
+                        </li>
+                        <li>
+                            <a href="integrations.html"
+                                ><span class="nav-icon">🔗</span>
+                                Integrations</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-section">
+                    <div class="nav-section-header">
+                        <span class="nav-section-title">More</span>
+                        <span class="nav-section-toggle">▼</span>
+                    </div>
+                    <ul class="nav-section-items">
+                        <li>
+                            <a href="achievements.html"
+                                ><span class="nav-icon">🏆</span>
+                                Achievements</a
+                            >
+                        </li>
+                        <li>
+                            <a href="spending.html"
+                                ><span class="nav-icon">💰</span> Spending
+                                Tracker</a
+                            >
+                        </li>
+                        <li>
+                            <a href="year-in-review.html"
+                                ><span class="nav-icon">📅</span> Year in
+                                Review</a
+                            >
+                        </li>
+                        <li>
+                            <a href="settings.html"
+                                ><span class="nav-icon">⚙️</span> Settings</a
+                            >
+                        </li>
+                        <li>
+                            <a href="faq.html"
+                                ><span class="nav-icon">❓</span> FAQ</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-toggle-icon">☀️</span>
+                    <span class="theme-toggle-label">Light</span>
+                </button>
+                <span class="version">v1.0.22</span>
             </div>
-            <a href="getting-started.html" class="btn btn-primary">Full Getting Started Guide</a>
-        </section>
+        </nav>
 
-        <section class="platforms">
-            <h2>Available Platforms</h2>
-            <div class="platform-grid">
-                <div class="platform">
-                    <div class="platform-icon">&#128241;</div>
-                    <span>Android</span>
-                </div>
-                <div class="platform">
-                    <div class="platform-icon">&#63743;</div>
-                    <span>iOS</span>
-                </div>
-                <div class="platform">
-                    <div class="platform-icon">&#128187;</div>
-                    <span>Windows</span>
-                </div>
-                <div class="platform">
-                    <div class="platform-icon">&#63743;</div>
-                    <span>macOS</span>
-                </div>
-                <div class="platform">
-                    <div class="platform-icon">&#128039;</div>
-                    <span>Linux</span>
-                </div>
-            </div>
-        </section>
+        <main class="content">
+            <header>
+                <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+                <h1>Welcome to PocketDemon</h1>
+            </header>
 
-        <section class="highlights">
-            <h2>Key Highlights</h2>
-            <div class="highlight-list">
-                <div class="highlight">
-                    <h3>&#128274; Privacy First</h3>
-                    <p>All data stored locally on your device. No accounts, no tracking, no ads. Optional Dropbox sync if you want cloud backup.</p>
+            <section class="hero">
+                <div class="hero-text">
+                    <h2>Your Personal Concert Diary</h2>
+                    <p>
+                        Track every band you've seen live, build your concert
+                        history, and discover insights about your music journey.
+                    </p>
+                    <div class="hero-badges">
+                        <span class="badge">100% Offline</span>
+                        <span class="badge">No Subscription</span>
+                        <span class="badge">Your Data, Your Device</span>
+                    </div>
                 </div>
-                <div class="highlight">
-                    <h3>&#127760; Works Offline</h3>
-                    <p>Full functionality without internet. Perfect for festivals with poor connectivity. Offline map caching available.</p>
+                <div class="hero-image">
+                    <div class="placeholder-image">Screenshot</div>
                 </div>
-                <div class="highlight">
-                    <h3>&#128176; No Subscription</h3>
-                    <p>Buy once, use forever. No monthly fees, no premium tiers, no locked features.</p>
-                </div>
-                <div class="highlight">
-                    <h3>&#128230; Your Data</h3>
-                    <p>Export everything as JSON or CSV. Import from setlist.fm, Last.fm, and Discogs. You own your data.</p>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <footer>
-            <p>&copy; 2024-2025 Technodystopia. All rights reserved.</p>
-            <p>PocketDemon v1.0.22</p>
-        </footer>
-    </main>
+            <section class="features-overview">
+                <h2>What Can You Do?</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <span class="feature-icon">🎶</span>
+                        <h3>Log Concerts</h3>
+                        <p>
+                            Record every band, event, and venue. Add ratings,
+                            notes, photos, and ticket prices.
+                        </p>
+                        <a href="events.html">Learn more →</a>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">📊</span>
+                        <h3>View Statistics</h3>
+                        <p>
+                            See your most-seen bands, top venues, genre
+                            diversity, distance traveled, and more.
+                        </p>
+                        <a href="statistics.html">Learn more →</a>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">🌍</span>
+                        <h3>Explore Maps</h3>
+                        <p>
+                            Visualize your concerts on a world map. See band
+                            origins and venue locations.
+                        </p>
+                        <a href="maps.html">Learn more →</a>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">🤝</span>
+                        <h3>Connect with Buddies</h3>
+                        <p>
+                            Track who you went to concerts with. Share stats and
+                            find your concert twin.
+                        </p>
+                        <a href="buddies.html">Learn more →</a>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">🏆</span>
+                        <h3>Earn Achievements</h3>
+                        <p>
+                            Unlock 32 badges across 7 categories as you grow
+                            your concert history.
+                        </p>
+                        <a href="achievements.html">Learn more →</a>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">📸</span>
+                        <h3>Build Your Gallery</h3>
+                        <p>
+                            Add photos to events and share them as
+                            polaroid-style cards.
+                        </p>
+                        <a href="gallery.html">Learn more →</a>
+                    </div>
+                </div>
+            </section>
 
-    <script src="script.js"></script>
-</body>
+            <section class="quick-start">
+                <h2>Quick Start</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Create Account</h3>
+                        <p>
+                            Set up a local account with a nickname and password.
+                            No email required.
+                        </p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Add Your First Concert</h3>
+                        <p>
+                            Tap the + button to add an event, then add the bands
+                            you saw.
+                        </p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Explore Your Stats</h3>
+                        <p>
+                            Visit the Statistics tab to see insights about your
+                            concert history.
+                        </p>
+                    </div>
+                </div>
+                <a href="getting-started.html" class="btn btn-primary"
+                    >Full Getting Started Guide</a
+                >
+            </section>
+
+            <section class="platforms">
+                <h2>Available Platforms</h2>
+                <div class="platform-grid">
+                    <div class="platform">
+                        <span class="platform-icon">📱</span>
+                        <span>Android</span>
+                    </div>
+                    <div class="platform">
+                        <span class="platform-icon">🍎</span>
+                        <span>iOS</span>
+                    </div>
+                    <div class="platform">
+                        <span class="platform-icon">🪟</span>
+                        <span>Windows</span>
+                    </div>
+                    <div class="platform">
+                        <span class="platform-icon">🍏</span>
+                        <span>macOS</span>
+                    </div>
+                    <div class="platform">
+                        <span class="platform-icon">🐧</span>
+                        <span>Linux</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="highlights">
+                <h2>Key Highlights</h2>
+                <div class="highlight-list">
+                    <div class="highlight">
+                        <h3>🔒 Privacy First</h3>
+                        <p>
+                            All data stored locally on your device. No accounts,
+                            no tracking, no ads. Optional Dropbox sync if you
+                            want cloud backup.
+                        </p>
+                    </div>
+                    <div class="highlight">
+                        <h3>🌐 Works Offline</h3>
+                        <p>
+                            Full functionality without internet. Perfect for
+                            festivals with poor connectivity. Offline map
+                            caching available.
+                        </p>
+                    </div>
+                    <div class="highlight">
+                        <h3>💵 No Subscription</h3>
+                        <p>
+                            Buy once, use forever. No monthly fees, no premium
+                            tiers, no locked features.
+                        </p>
+                    </div>
+                    <div class="highlight">
+                        <h3>📦 Your Data</h3>
+                        <p>
+                            Export everything as JSON or CSV. Import from
+                            setlist.fm, Last.fm, and Discogs. You own your data.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2024-2025 Technodystopia. All rights reserved.</p>
+                <p>PocketDemon v1.0.22</p>
+            </footer>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
 </html>

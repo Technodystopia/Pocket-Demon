@@ -1,40 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ - PocketDemon Manual</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/icon.png">
 </head>
 <body>
-    <nav class="sidebar">
-        <div class="sidebar-header">
-            <h2>PocketDemon</h2>
-            <span class="version">v1.0.20</span>
+        <nav class="sidebar">
+        <div class="logo">
+            <img src="images/DemonLogoWhite.png" alt="PocketDemon Logo" class="logo-image">
+            <div class="logo-text">
+                <h1>PocketDemon</h1>
+                <p class="tagline">Concert Tracker</p>
+            </div>
         </div>
+
+        <div class="sidebar-search">
+            <div class="search-container">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="search-input" placeholder="Search docs... (/)">
+                <div class="search-results"></div>
+            </div>
+        </div>
+
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="getting-started.html">Getting Started</a></li>
-            <li><a href="bands.html">Bands</a></li>
-            <li><a href="events.html">Events & Concerts</a></li>
-            <li><a href="venues.html">Venues</a></li>
-            <li><a href="statistics.html">Statistics</a></li>
-            <li><a href="maps.html">Maps</a></li>
-            <li><a href="buddies.html">Buddies</a></li>
-            <li><a href="achievements.html">Achievements</a></li>
-            <li><a href="backup.html">Backup & Export</a></li>
-            <li><a href="import.html">Import Data</a></li>
-            <li><a href="wishlist.html">Wishlist</a></li>
-            <li><a href="sharing.html">Sharing</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="collection.html">Collection</a></li>
-            <li><a href="merch.html">Merch Tracker</a></li>
-            <li><a href="integrations.html">Integrations</a></li>
-            <li><a href="spending.html">Spending</a></li>
-            <li><a href="year-in-review.html">Year in Review</a></li>
-            <li><a href="settings.html">Settings</a></li>
-            <li><a href="faq.html" class="active">FAQ</a></li>
+            <li><a href="index.html"><span class="nav-icon">🏠</span> Home</a></li>
+            <li><a href="getting-started.html"><span class="nav-icon">🚀</span> Getting Started</a></li>
+            
+            <li class="nav-section">
+                <div class="nav-section-header">
+                    <span class="nav-section-title">Core Features</span>
+                    <span class="nav-section-toggle">▼</span>
+                </div>
+                <ul class="nav-section-items">
+                    <li><a href="bands.html"><span class="nav-icon">🎸</span> Bands</a></li>
+                    <li><a href="events.html"><span class="nav-icon">🎫</span> Events & Concerts</a></li>
+                    <li><a href="venues.html"><span class="nav-icon">🏟️</span> Venues</a></li>
+                    <li><a href="statistics.html"><span class="nav-icon">📊</span> Statistics</a></li>
+                    <li><a href="maps.html"><span class="nav-icon">🗺️</span> Maps</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-section">
+                <div class="nav-section-header">
+                    <span class="nav-section-title">Social</span>
+                    <span class="nav-section-toggle">▼</span>
+                </div>
+                <ul class="nav-section-items">
+                    <li><a href="buddies.html"><span class="nav-icon">👥</span> Concert Buddies</a></li>
+                    <li><a href="sharing.html"><span class="nav-icon">📤</span> Sharing</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-section">
+                <div class="nav-section-header">
+                    <span class="nav-section-title">Collections</span>
+                    <span class="nav-section-toggle">▼</span>
+                </div>
+                <ul class="nav-section-items">
+                    <li><a href="wishlist.html"><span class="nav-icon">⭐</span> Wishlist</a></li>
+                    <li><a href="gallery.html"><span class="nav-icon">📷</span> Photo Gallery</a></li>
+                    <li><a href="collection.html"><span class="nav-icon">💿</span> Media Collection</a></li>
+                    <li><a href="merch.html"><span class="nav-icon">👕</span> Merchandise</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-section">
+                <div class="nav-section-header">
+                    <span class="nav-section-title">Data</span>
+                    <span class="nav-section-toggle">▼</span>
+                </div>
+                <ul class="nav-section-items">
+                    <li><a href="backup.html"><span class="nav-icon">☁️</span> Backup & Sync</a></li>
+                    <li><a href="import.html"><span class="nav-icon">📥</span> Import Data</a></li>
+                    <li><a href="integrations.html"><span class="nav-icon">🔗</span> Integrations</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-section">
+                <div class="nav-section-header">
+                    <span class="nav-section-title">More</span>
+                    <span class="nav-section-toggle">▼</span>
+                </div>
+                <ul class="nav-section-items">
+                    <li><a href="achievements.html"><span class="nav-icon">🏆</span> Achievements</a></li>
+                    <li><a href="spending.html"><span class="nav-icon">💰</span> Spending Tracker</a></li>
+                    <li><a href="year-in-review.html"><span class="nav-icon">📅</span> Year in Review</a></li>
+                    <li><a href="settings.html"><span class="nav-icon">⚙️</span> Settings</a></li>
+                    <li><a href="faq.html" class="active"><span class="nav-icon">❓</span> FAQ</a></li>
+                </ul>
+            </li>
         </ul>
+
+        <div class="sidebar-footer">
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <span class="theme-toggle-icon">☀️</span>
+                <span class="theme-toggle-label">Light</span>
+            </button>
+            <span class="version">v1.0.22</span>
+        </div>
     </nav>
 
     <main class="content">
